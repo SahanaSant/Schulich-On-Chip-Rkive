@@ -16,5 +16,16 @@ Notes I am gonna take:
     - BAUDRATE is 9600 
     - Extra signals like tx_busy, rx_data, rx_valid make the fsm operate like an RTOS, multitasking.
     - FSM acts like something to order and prioritize tasks. 
-    - While creating the stream of data, you are also sending it to the tx, while also 
+    - While creating the stream of data, you are also sending it to the tx, while also making sure u reset the 8 byte stream
 
+
+- U need to write extra tx and rx module, not just top module to coordinate
+    - tx would need around 4 states in its fsm 
+        - start state that the line is available
+        - s2 where u start, to enter u need signal from top module, tx_ready
+        - s3 collects data, tx_busy
+        - s4 sends the stop bit
+    - rx would need around __ states in the fsm
+        - starts when the line is low 
+    -make sure the fsm in top module enters into state based on baudrate not clk!
+    -baudrate ensures how many bits per second are sent 

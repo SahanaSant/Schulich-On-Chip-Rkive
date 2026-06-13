@@ -80,9 +80,9 @@ module top (
 	always_ff @(posedge clk) begin
 		if (~rst_n) begin
 			state <= STATE_PREP;
-			bit_counter <= 3'd0;
-			dataIn <= 8'd0;
-			tx_start <= 1'b0;
+			bit_counter <= 3'd0; //start at LSB
+			dataIn <= 8'd0; //if metastable, just start dataIn with 8 zeroes. 
+			tx_start <= 1'b0; //and just start going into TX state to transmit
 
 		end else begin
 			tx_start <= 1'b0; // default: don't start TX unless state says so
