@@ -1,0 +1,20 @@
+Notes I am gonna take:
+- Have an FSM 
+
+- enter into idle state; create 8 bit data for rx readily, using the button
+- enter into state where u create pattern for button, click it 8 times (dont use clk?)
+
+- second state is not sending stuff at clk edge
+    -Prepares to go to next MSB or byte of data
+
+- third is sending from to TX to RX
+- Update on the clock edge
+
+- Add extra signals 
+    - The stop bit is the eigth bit
+    - after that go into idle state 
+    - BAUDRATE is 9600 
+    - Extra signals like tx_busy, rx_data, rx_valid make the fsm operate like an RTOS, multitasking.
+    - FSM acts like something to order and prioritize tasks. 
+    - While creating the stream of data, you are also sending it to the tx, while also 
+

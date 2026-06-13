@@ -42,16 +42,77 @@ module top (
 
 	// ------- ADD YOUR WIRES AND REGISTERS FOR THE DESIGN HERE ------- \\
 	
+	// Control state machine
+	localparam STATE_PREP = 4'b0001; //State 1
+	localparam STATE_SEND = 4'b0010; // State 2
 
+	logic [2:0] bit_counter; //this will count from 0 to 7
+	logic [3:0] state; 
+
+	logic tx_start;
+	logic tx_busy;
+	
+	logic rx_valid;
+	logic [7:0] rx_data; 
 
 	// ------------ INSTANTIATE YOUR RX AND TX MODULES HERE ------------ \\
+
+	//module instantiations
+	uart_tx txModule (
+		.clk(clk),
+		.rst_n(rst_n),
+		.data_in(dataIn),
+		.start(tx_start),
+		.tx(tx),
+		.busy(tx_busy)
+	);
+
+	uart_rx rxModule (
+		.clk(clk),
+		.rst_n(rst_n),
+		.rx(rx),
+		.data_out(rx_data),
+		.valid(rx_valid)
+	);
+
 	
 
-	always @(posedge clk) begin
+	always_ff @(posedge clk) begin
 		if (~rst_n) begin
-			// Initialize registers that need it here
+			state <= STATE_PREP;
+			bit_counter <= 3'd0;
+			dataIn <= 8'd0;
+			tx_start <= 1'b0;
+
 		end else begin
-			// Otherwise, put the logic to write TX after reciving a byte from RX here
+			tx_start <= 1'b0; // default: don't start TX unless state says so
+
+			case (state)
+				STATE_PREP: begin
+					dataIn[bit_counter] <= 1'b0; // put 0 into this bit
+
+					if (bit_counter == 3'd7) begin
+						bit_counter <= 3'd0;
+						state <= STATE_SEND;
+
+					end else begin
+						bit_counter <= bit_counter + 3'd1;
+					end
+				end
+
+				STATE_SEND: begin
+					if (!tx_busy) begin
+						tx_start <= 1'b1; // tell TX module: send dataIn
+						state <= STATE_PREP;
+                	end
+				end
+
+				default: begin
+					state <= STATE_PREP;
+				end
+		
+			endcase 
+
 		end
 	end
 	
