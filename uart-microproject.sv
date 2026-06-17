@@ -47,17 +47,23 @@ module top (
 	localparam STATE_SEND = 4'b0010; // State 2
 
 	logic [2:0] bit_counter; //this will count from 0 to 7
-	logic [3:0] state; 
+	logic [1:0] state; 
 
 	logic tx_start;
 	logic tx_busy;
 	
 	logic rx_valid;
-	logic [7:0] rx_data; 
+	logic [7:0] rx_data;
 
 	// ------------ INSTANTIATE YOUR RX AND TX MODULES HERE ------------ \\
 
-	//module instantiations
+	//module instantiations, create a copy of these modules in top module's logic.
+	//connect local variables to these params of the modules
+	//basically this is where fsms layer onto each other, 
+	//think of this like the stack diagrams from encm 335
+		//except theres tons of background tasks and multitasking
+		//sort of like recursion?
+		//or like 370 with throughput and forwarding and stalling  
 	uart_tx txModule (
 		.clk(clk),
 		.rst_n(rst_n),
@@ -76,7 +82,7 @@ module top (
 	);
 
 	
-
+	// ------------ Top Module's Behaviour ------------ \\
 	always_ff @(posedge clk) begin
 		if (~rst_n) begin
 			state <= STATE_PREP;
@@ -117,3 +123,108 @@ module top (
 	end
 	
 endmodule
+
+// ------------ TX Transmitter Behaviour ------------ \\
+
+module uart_tx (
+    input  wire clk,
+    input  wire rst_n,
+
+    input  logic [7:0] data_in,
+    input  logic start,
+
+    output logic tx, //outputting signals to top module constantly
+    output logic busy
+	);
+
+	localparam CLOCK_FREQ = 50_000_000;
+    localparam BAUD_RATE = 9600;
+    localparam CLKS_PER_BIT = CLOCK_FREQ / BAUD_RATE; // so in this case 5208 clk periods
+
+    localparam TX_IDLE  = 2'd0;
+    localparam TX_START = 2'd1;
+    localparam TX_DATA  = 2'd2;
+    localparam TX_STOP  = 2'd3;
+
+	logic [1:0] state;
+    logic [12:0] cycle_counter;
+    logic [2:0] bit_counter;
+	logic [7:0] saved_data;
+
+	always_ff @(posedge clk) begin
+		if (~rst_n) begin
+			state <= TX_IDLE;
+			//configure metastable values if needed?
+			tx <= 1'b1;
+        	busy <= 1'b0;
+     		cycle_counter <= 13'd0;
+        	bit_counter <= 3'd0;
+        	saved_data <= 8'd0;
+		end else begin
+			case (state)
+				
+				TX_IDLE: begin
+				//output that tx line is available and low (only goes active when the line gets high)
+					tx <= 1'b1;
+					busy <= 1'b0;
+					cycle_counter <= 13'd0;
+					bit_counter <= 3'd0;
+					if (start) begin 
+						saved_data <= data_in;
+						//why not put tx here? read later
+						busy <= 1'b1; 
+						state <= TX_START; 
+					end
+				end
+
+				TX_START: begin 
+					tx <= 1'b0; //this is like, shooting a gun/ blwoing a whistle to start a race. 
+					//putting to 0 after constant 1 tells fsm, hey, something is changing, note it down!
+					//start tracking one cycle of 5208 clk periods
+
+					if (cycle_counter == CLKS_PER_BIT - 1) begin
+							cycle_counter <= 13'd0; //according to baud rate, hold this tx = 0 value down as a gunshot
+							// and then change to actually transmitting the message for sure
+							state <= TX_DATA;
+						end else begin //or keep counting
+							cycle_counter <= cycle_counter + 13'd1;
+					end
+				end
+
+				TX_DATA: begin //lets start telephoning dis message
+					tx <= saved_data[bit_counter]; 
+
+					if (cycle_counter == CLKS_PER_BIT - 1) begin
+							cycle_counter <= 13'd0; //according to baud rate, hold this bit value down
+							if (bit_counter == 3'd7) begin
+								bit_counter <= 3'd0;
+								state <= TX_STOP; 
+							end else begin
+								bit_counter <= bit_counter + 3'd1; //move onto next bit of dataIn
+							end
+						end else begin //or keep counting
+							cycle_counter <= cycle_counter + 13'd1;
+					end
+				end
+
+				TX_STOP: begin
+					tx <= 1'b1; //this is to show the message ended
+					if (cycle_counter == CLKS_PER_BIT - 1) begin
+							cycle_counter <= 13'd0; //according to baud rate
+							state <= TX_IDLE;
+						end else begin //or keep counting
+							cycle_counter <= cycle_counter + 13'd1;
+					end
+				end
+
+				default: begin
+					state <= TX_IDLE;
+				end
+
+			endcase
+		end
+	end
+	
+endmodule
+
+	

@@ -18,14 +18,29 @@ Notes I am gonna take:
     - FSM acts like something to order and prioritize tasks. 
     - While creating the stream of data, you are also sending it to the tx, while also making sure u reset the 8 byte stream
 
-
 - U need to write extra tx and rx module, not just top module to coordinate
     - tx would need around 4 states in its fsm 
         - start state that the line is available
         - s2 where u start, to enter u need signal from top module, tx_ready
         - s3 collects data, tx_busy
         - s4 sends the stop bit
-    - rx would need around __ states in the fsm
+    
+    - rx would need around 5 states in the fsm
         - starts when the line is low 
+        - see what the tx is spitting output
+        - note down
+        - check that tx is done 
+        - then end 
+
     -make sure the fsm in top module enters into state based on baudrate not clk!
     -baudrate ensures how many bits per second are sent 
+    - 96 000 bits per second, clk is 50 MHz
+        - how long should one uart bit last? clk periods to send one bit is 5208 
+        - track the clk cycles during the process to switch between sending out bits and preparing bits to send
+
+One More,
+Keep top module high level 
+    make/load dataIn
+    pulse tx_start
+    wait for tx_busy
+    maybe read rx_valid
