@@ -43,8 +43,8 @@ module top (
 	// ------- ADD YOUR WIRES AND REGISTERS FOR THE DESIGN HERE ------- \\
 	
 	// Control state machine
-	localparam STATE_PREP = 4'b0001; //State 1
-	localparam STATE_SEND = 4'b0010; // State 2
+	localparam STATE_PREP = 2'd0; //State 1
+	localparam STATE_SEND = 2'd1; // State 2
 
 	logic [2:0] bit_counter; //this will count from 0 to 7
 	logic [1:0] state; 
@@ -160,6 +160,7 @@ module uart_tx (
      		cycle_counter <= 13'd0;
         	bit_counter <= 3'd0;
         	saved_data <= 8'd0;
+
 		end else begin
 			case (state)
 				
@@ -186,8 +187,8 @@ module uart_tx (
 							cycle_counter <= 13'd0; //according to baud rate, hold this tx = 0 value down as a gunshot
 							// and then change to actually transmitting the message for sure
 							state <= TX_DATA;
-						end else begin //or keep counting
-							cycle_counter <= cycle_counter + 13'd1;
+					end else begin //or keep counting
+						cycle_counter <= cycle_counter + 13'd1;
 					end
 				end
 
@@ -195,15 +196,15 @@ module uart_tx (
 					tx <= saved_data[bit_counter]; 
 
 					if (cycle_counter == CLKS_PER_BIT - 1) begin
-							cycle_counter <= 13'd0; //according to baud rate, hold this bit value down
-							if (bit_counter == 3'd7) begin
-								bit_counter <= 3'd0;
-								state <= TX_STOP; 
-							end else begin
-								bit_counter <= bit_counter + 3'd1; //move onto next bit of dataIn
-							end
-						end else begin //or keep counting
-							cycle_counter <= cycle_counter + 13'd1;
+						cycle_counter <= 13'd0; //according to baud rate, hold this bit value down
+						if (bit_counter == 3'd7) begin
+							bit_counter <= 3'd0;
+							state <= TX_STOP; 
+					end else begin
+						bit_counter <= bit_counter + 3'd1; //move onto next bit of dataIn
+						end
+					end else begin //or keep counting
+						cycle_counter <= cycle_counter + 13'd1;
 					end
 				end
 
@@ -212,8 +213,8 @@ module uart_tx (
 					if (cycle_counter == CLKS_PER_BIT - 1) begin
 							cycle_counter <= 13'd0; //according to baud rate
 							state <= TX_IDLE;
-						end else begin //or keep counting
-							cycle_counter <= cycle_counter + 13'd1;
+					end else begin //or keep counting
+						cycle_counter <= cycle_counter + 13'd1;
 					end
 				end
 
@@ -227,4 +228,106 @@ module uart_tx (
 	
 endmodule
 
-	
+//biggest mindf*** is def that uart_tx does not automatically feed uart_rx explicitly in code, it has to be physically wired like on the ice pi board. 
+
+// ------------ RX Receiver Behaviour ------------ \\	
+
+module uart_rx (
+	input  wire clk,
+	input  wire rst_n,
+
+	input  logic rx, //rx is not the full 8 bit messgae, its one bit at a time!
+
+	output logic [7:0] data_out, //outputting signals to top module constantly
+	output logic valid
+	);
+
+	localparam CLOCK_FREQ = 50_000_000;
+	localparam BAUD_RATE = 9600;
+	localparam CLKS_PER_BIT = CLOCK_FREQ / BAUD_RATE; // so in this case 5208 clk periods
+	localparam HALF_CLKS_PER_BIT = CLKS_PER_BIT /2; 
+
+	localparam RX_IDLE  = 3'd0;
+	localparam RX_START = 3'd1;
+	localparam RX_DATA  = 3'd2;
+	localparam RX_STOP  = 3'd3;
+	localparam RX_FINISH = 3'd4; 
+
+	logic [2:0] state;
+	logic [12:0] cycle_counter;
+	logic [2:0] bit_counter;
+	logic [7:0] saved_data;
+
+	always_ff @(posedge clk) begin
+		if (~rst_n) begin
+			state <= RX_IDLE;
+			//configure metastable values if needed?
+			valid <= 1'b0;
+			cycle_counter <= 13'd0;
+			bit_counter <= 3'd0;
+			data_out <= 8'd0;
+		end else begin
+			case (state)
+
+				RX_IDLE: begin
+				//output that rx line is available and low (only goes active when the line gets high)
+					valid <= 1'd0; 
+					cycle_counter <= 13'd0;
+					bit_counter <= 3'd0;
+					if (rx == 1'b0) begin 
+						valid <= 1'd1; 
+						state <= RX_START; 
+					end
+				end
+
+				RX_START : begin 
+					if (cycle_counter == (HALF_CLKS_PER_BIT - 1)) begin
+						cycle_counter <= 13'd0; //according to baud rate, hold this rx = 1 value down as a gunshot
+						// and then change to actually transmitting the message for sure
+						state <= RX_DATA;
+
+					end else begin //or keep counting
+						cycle_counter <= cycle_counter + 13'd1;
+					end
+				end
+
+				RX_DATA: begin 
+				//lets start recording dis message 
+					saved_data[bit_counter] <= rx;
+					if (cycle_counter == CLKS_PER_BIT - 1) begin
+						cycle_counter <= 13'd0; //according to baud rate, hold this bit value down
+						if (bit_counter == 3'd7) begin
+							bit_counter <= 3'd0;
+							state <= RX_STOP; 
+						end else begin
+							bit_counter <= bit_counter + 3'd1; //move onto next bit of data we are receiving
+						end
+					end else begin //or keep counting
+						cycle_counter <= cycle_counter + 13'd1;
+					end
+				end
+
+
+				RX_STOP: begin
+					valid <= 1'b1; //this is to show the recording is finished
+					if (cycle_counter == CLKS_PER_BIT - 1) begin
+						cycle_counter <= 13'd0; //according to baud rate
+						state <= RX_FINISH;
+					end else begin //or keep counting
+						cycle_counter <= cycle_counter + 13'd1;
+					end
+				end
+
+				RX_FINISH: begin
+					data_out <= saved_data;
+					valid <= 1'b0; 
+					state <= RX_IDLE;
+				end
+
+			endcase
+		end
+	end
+
+endmodule
+
+

@@ -44,3 +44,33 @@ Keep top module high level
     pulse tx_start
     wait for tx_busy
     maybe read rx_valid
+
+What are the params in rx module for?
+    .clk(clk),
+    .rst_n(rst_n),
+    .rx(rx),
+        signal value, possibly a signal to top module?
+        nah i think its the data from tx
+    .data_out(rx_data),
+        rx will spit out 8 bit messgae, output
+    .valid(rx_valid)
+        this is the stop bit? output
+
+What local variables do I use?
+    RX_IDLE
+    RX_START
+    RX_DATA
+    RX_STOP
+
+    logic [1:0] state; 
+    logic [12:0] cycle_counter;
+    logic [2:0] bit_counter; 
+    logic [7:0] final_message; 
+
+***see on line 231, 
+    "biggest mindf*** is def that uart_tx does not automatically feed uart_rx explicitly in code, it has to be physically wired like on the ice pi board."
+
+
+    Another note, 
+    think of hte tx and rx using their ownt imers. Because of setup and hold time constraints, rx sampels tx's communciated value at half of the baud rate heartbeat. 
+    Waiting 5207 (almost 5208!) clock cycles to accept previous byte when tx is making a new byte is dangerous. So instead wait 2604 cycles, and then rx can sample and record what tx is saying. 
