@@ -45,6 +45,7 @@ module top (
 	// Control state machine
 	localparam STATE_PREP = 2'd0; //State 1
 	localparam STATE_SEND = 2'd1; // State 2
+	localparam STATE_WAIT = 2'd2; // State 3
 
 	logic [2:0] bit_counter; //this will count from 0 to 7
 	logic [1:0] state; 
@@ -109,6 +110,12 @@ module top (
 				STATE_SEND: begin
 					if (!tx_busy) begin
 						tx_start <= 1'b1; // tell TX module: send dataIn
+						state <= STATE_WAIT;
+                	end
+				end
+
+				STATE_WAIT: begin
+					if (!tx_busy) begin
 						state <= STATE_PREP;
                 	end
 				end
@@ -266,6 +273,7 @@ module uart_rx (
 			cycle_counter <= 13'd0;
 			bit_counter <= 3'd0;
 			data_out <= 8'd0;
+
 		end else begin
 			case (state)
 
@@ -275,7 +283,6 @@ module uart_rx (
 					cycle_counter <= 13'd0;
 					bit_counter <= 3'd0;
 					if (rx == 1'b0) begin 
-						valid <= 1'd1; 
 						state <= RX_START; 
 					end
 				end
@@ -284,8 +291,11 @@ module uart_rx (
 					if (cycle_counter == (HALF_CLKS_PER_BIT - 1)) begin
 						cycle_counter <= 13'd0; //according to baud rate, hold this rx = 1 value down as a gunshot
 						// and then change to actually transmitting the message for sure
-						state <= RX_DATA;
-
+						if (rx == 1'b0) begin
+							state <= RX_DATA;
+						end else begin
+							state <= RX_IDLE;
+						end
 					end else begin //or keep counting
 						cycle_counter <= cycle_counter + 13'd1;
 					end
@@ -293,9 +303,9 @@ module uart_rx (
 
 				RX_DATA: begin 
 				//lets start recording dis message 
-					saved_data[bit_counter] <= rx;
 					if (cycle_counter == CLKS_PER_BIT - 1) begin
 						cycle_counter <= 13'd0; //according to baud rate, hold this bit value down
+						saved_data[bit_counter] <= rx;
 						if (bit_counter == 3'd7) begin
 							bit_counter <= 3'd0;
 							state <= RX_STOP; 
@@ -309,10 +319,14 @@ module uart_rx (
 
 
 				RX_STOP: begin
-					valid <= 1'b1; //this is to show the recording is finished
+					valid <= 1'b0; //this is to show the recording is finished
 					if (cycle_counter == CLKS_PER_BIT - 1) begin
 						cycle_counter <= 13'd0; //according to baud rate
-						state <= RX_FINISH;
+						if (rx == 1'b1) begin //if there is a valid stop bit!
+							state <= RX_FINISH; //go to next state
+						end else begin
+    						state <= RX_IDLE;
+						end
 					end else begin //or keep counting
 						cycle_counter <= cycle_counter + 13'd1;
 					end
@@ -320,7 +334,7 @@ module uart_rx (
 
 				RX_FINISH: begin
 					data_out <= saved_data;
-					valid <= 1'b0; 
+					valid <= 1'b1; 
 					state <= RX_IDLE;
 				end
 
