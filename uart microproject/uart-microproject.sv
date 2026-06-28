@@ -1,4 +1,4 @@
-`timescale 1ps/1ns
+`timescale 1ns/1ps
 `default_nettype none
 
 module top (
@@ -235,7 +235,7 @@ module uart_tx (
 	
 endmodule
 
-//biggest mindf*** is def that uart_tx does not automatically feed uart_rx explicitly in code, it has to be physically wired like on the ice pi board. 
+// biggest mindf*** is def that uart_tx does not automatically feed uart_rx explicitly in code, it has to be physically wired like on the ice pi board. 
 
 // ------------ RX Receiver Behaviour ------------ \\	
 
