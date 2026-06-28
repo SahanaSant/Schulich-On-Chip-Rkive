@@ -30,12 +30,24 @@ async def send_byte(dut, value):
     dut.start.value = 0
 
 
-@cocotb.test()
+#Before getting into the test cases, we need to ensure that the DUT is reset and ready for testing. 
+# The reset_dut function handles this by asserting the reset signal and waiting for a few clock cycles before deasserting it. 
+# The send_byte function is used to send a byte of data to the UART transmitter by setting the data_in signal and asserting the start signal for one clock cycle.
+
+
+#To explain some of the syntax,
+#Await generally means that the function will pause at that point until the awaited event occurs.
+#In this case, we are waiting for clock edges or timers to ensure proper timing in our testbench.
+#This is a different purpose than our three modules bcs FSMs only change state over time
+
+@cocotb.test() #Testcase to check if the UART transmitter sends the start bit, data bits, and stop bit correctly
 async def uart_tx_sends_start_data_and_stop_bits(dut):
     cocotb.start_soon(Clock(dut.clk, CLK_PERIOD_NS, unit="ns").start())
     await reset_dut(dut)
 
-    value = 0xA5
+    value = 0xA5 #lets choose to send this eight bit value (10100101 in binary) 
+    #to the UART transmitter. This value is chosen because it has a mix of 1s and 0s, 
+    # which allows us to test the transmitter's ability to handle different bit patterns.
     await send_byte(dut, value)
 
     await FallingEdge(dut.tx)

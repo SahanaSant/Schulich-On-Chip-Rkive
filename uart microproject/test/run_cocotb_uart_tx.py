@@ -1,4 +1,5 @@
 from pathlib import Path
+import os
 
 try:
     from cocotb_tools.runner import get_runner
@@ -7,8 +8,10 @@ except ModuleNotFoundError:
 
 
 def main():
-    root = Path(__file__).resolve().parent
-    source = root / "Schulich-On-Chip-Rkive" / "uart-microproject.sv"
+    test_dir = Path(__file__).resolve().parent
+    project_dir = test_dir.parent
+    source = project_dir / "uart-microproject.sv"
+    os.environ["PYTHONPATH"] = str(test_dir) + os.pathsep + os.environ.get("PYTHONPATH", "")
 
     runner = get_runner("icarus")
     runner.build(

@@ -74,3 +74,14 @@ What local variables do I use?
     Another note, 
     think of hte tx and rx using their ownt imers. Because of setup and hold time constraints, rx sampels tx's communciated value at half of the baud rate heartbeat. 
     Waiting 5207 (almost 5208!) clock cycles to accept previous byte when tx is making a new byte is dangerous. So instead wait 2604 cycles, and then rx can sample and record what tx is saying. 
+
+
+Things about test bench to take note of
+    "Await" in cocotb ide controls the timing of fsm
+        In this case, we wait [5208 cycles or 2604 cycles] times [clk period]. 
+    "Assert" checked whether the fsm did the correct task asked,
+        Python checks whether the 8 bit message we transmitted at the specific bit index was transmitted by Verilog correctly!
+
+To test this, we need to test in terminal with runner file
+    py <filename>.py
+Check for the output. 
