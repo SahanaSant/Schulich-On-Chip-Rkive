@@ -137,3 +137,6 @@ py <filename>.py
 ```
 
 Check for the output.
+
+<img width="1298" height="312" alt="image" src="https://github.com/user-attachments/assets/553611a6-a5c1-4842-9823-526220e75940" />
+
