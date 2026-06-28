@@ -2,13 +2,13 @@
 
 Small SystemVerilog archive for Schulich-on-Chip practice projects, notes, and testbenches.
 
-## Running The UART cocotb Test
+## Running cocotb Test
 
 From PowerShell:
 
 ```powershell
-cd "C:\Users\sahan\projects\SystemVerilog\Schulich-On-Chip-Rkive\uart microproject\test"
-py run_cocotb_uart_tx.py
+cd "C:\Users\sahan\projects\SystemVerilog\Schulich-On-Chip-Rkive\<project folder>\test"
+py <runner file name>.py
 ```
 
 The test uses Icarus Verilog plus cocotb. A successful run should end with something like:
