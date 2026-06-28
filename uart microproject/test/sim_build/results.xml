@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1782677067" />
+    <testcase name="uart_tx_sends_start_data_and_stop_bits" classname="test_uart_tx" file="C:\Users\sahan\projects\SystemVerilog\Schulich-On-Chip-Rkive\uart microproject\test\test_uart_tx.py" lineno="43" time="2.4856648445129395" sim_time_ns="1093840.0" ratio_time="440059.3275536049" />
+  </testsuite>
+</testsuites>
