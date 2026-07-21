@@ -24,6 +24,7 @@ Expected local tools:
 - Python
 - cocotb
 - Icarus Verilog (`iverilog` and `vvp`)
+- LibreLane
 
 Install cocotb with:
 
@@ -36,6 +37,12 @@ Check that Icarus is visible from the terminal:
 ```powershell
 iverilog -V
 vvp -V
+```
+
+A passed smoke test confirms WSL2, systemd, Nix, the binary cache, and LibreLane are working together. 
+When opening Ubunto, enter the environment with the following file path. 
+```Ubuntu
+cd ~/librelane && nix-shell
 ```
 
 ## Notes
