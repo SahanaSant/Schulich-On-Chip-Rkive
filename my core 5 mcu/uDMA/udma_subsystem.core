@@ -1,0 +1,96 @@
+CAPI=2:
+
+# Local camera-free uDMA subsystem build manifest.
+# The SystemVerilog sources remain unchanged from the copied upstream design,
+# except for the separately authorized camera-count configuration headers.
+
+name: local:schulich:udma_subsystem:0.1.0
+description: Camera-free CORE-V-MCU uDMA subsystem for the game core
+
+filesets:
+  rtl:
+    depend:
+      - pulp-platform.org::common_cells
+      - openhwgroup.org:ip:logint_dc_fifo_xbar
+      - openhwgroup.org:ip:udma_core
+      - openhwgroup.org:ip:udma_uart
+      - openhwgroup.org:ip:udma_qspi
+      - openhwgroup.org:ip:udma_i2c
+      - openhwgroup.org:ip:udma_i2s
+      - openhwgroup.org:ip:udma_sdio
+      - openhwgroup.org:ip:udma_filter
+      - openhwgroup.org:ip:udma_external_per
+    files:
+      - includes/pulp_soc_defines.svh:
+          is_include_file: true
+          include_path: includes
+      - includes/pulp_peripheral_defines.svh:
+          is_include_file: true
+          include_path: includes
+      - dependencies/tech_cells_generic/src/rtl/tc_clk.sv
+      - dependencies/tech_cells_generic/src/deprecated/pulp_clk_cells.sv
+      - dependencies/tech_cells_generic/src/deprecated/pulp_clock_gating_async.sv
+      - udma_subsystem/udma_subsystem.sv
+    file_type: systemVerilogSource
+
+  tb:
+    files:
+      - tb/udma_subsystem_smoke_tb.sv
+    file_type: systemVerilogSource
+
+  tb_uart_tx:
+    files:
+      - tb/udma_subsystem_uart_tx_tb.sv
+    file_type: systemVerilogSource
+
+targets:
+  default:
+    filesets:
+      - rtl
+    toplevel:
+      - udma_subsystem
+
+  lint:
+    default_tool: verilator
+    filesets:
+      - rtl
+    toplevel:
+      - udma_subsystem
+    tools:
+      verilator:
+        mode: lint-only
+        verilator_options:
+          - -Wno-fatal
+          - --timing
+
+  sim:
+    description: Run the camera-free uDMA reset and configuration smoke test
+    default_tool: verilator
+    filesets:
+      - rtl
+      - tb
+    toplevel:
+      - udma_subsystem_smoke_tb
+    tools:
+      verilator:
+        mode: binary
+        verilator_options:
+          - -Wno-fatal
+          - --timing
+          - --trace
+
+  sim_uart_tx:
+    description: Exercise APB configuration and one UART0 TX DMA transfer
+    default_tool: verilator
+    filesets:
+      - rtl
+      - tb_uart_tx
+    toplevel:
+      - udma_subsystem_uart_tx_tb
+    tools:
+      verilator:
+        mode: binary
+        verilator_options:
+          - -Wno-fatal
+          - --timing
+          - --trace
