@@ -43,6 +43,11 @@ filesets:
       - tb/udma_subsystem_uart_tx_tb.sv
     file_type: systemVerilogSource
 
+  tb_uart_rx:
+    files:
+      - tb/udma_subsystem_uart_rx_tb.sv
+    file_type: systemVerilogSource
+
 targets:
   default:
     filesets:
@@ -87,6 +92,22 @@ targets:
       - tb_uart_tx
     toplevel:
       - udma_subsystem_uart_tx_tb
+    tools:
+      verilator:
+        mode: binary
+        verilator_options:
+          - -Wno-fatal
+          - --timing
+          - --trace
+
+  sim_uart_rx:
+    description: Exercise APB configuration and one UART0 RX DMA transfer
+    default_tool: verilator
+    filesets:
+      - rtl
+      - tb_uart_rx
+    toplevel:
+      - udma_subsystem_uart_rx_tb
     tools:
       verilator:
         mode: binary

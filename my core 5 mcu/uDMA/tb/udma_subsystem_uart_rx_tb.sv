@@ -3,19 +3,20 @@
 `include "pulp_soc_defines.svh"
 `include "pulp_peripheral_defines.svh"
 
-module udma_subsystem_uart_tx_tb;
+module udma_subsystem_uart_rx_tb;
 
   localparam int L2_DATA_WIDTH = 32;
   localparam int APB_ADDR_WIDTH = 12;
+  localparam int UART_DIV = 8;
 
   localparam logic [APB_ADDR_WIDTH-1:0] UDMA_CTRL_CG      = 12'h000;
-  localparam logic [APB_ADDR_WIDTH-1:0] UART0_TX_SADDR    = 12'h090;
-  localparam logic [APB_ADDR_WIDTH-1:0] UART0_TX_SIZE     = 12'h094;
-  localparam logic [APB_ADDR_WIDTH-1:0] UART0_TX_CFG      = 12'h098;
+  localparam logic [APB_ADDR_WIDTH-1:0] UART0_RX_SADDR    = 12'h080;
+  localparam logic [APB_ADDR_WIDTH-1:0] UART0_RX_SIZE     = 12'h084;
+  localparam logic [APB_ADDR_WIDTH-1:0] UART0_RX_CFG      = 12'h088;
   localparam logic [APB_ADDR_WIDTH-1:0] UART0_SETUP       = 12'h0A4;
-  localparam logic [31:0]               TEST_L2_ADDR      = 32'h1C00_0100;
-  localparam logic [31:0]               TEST_L2_DATA      = 32'h0000_00A5;
-  localparam logic [31:0]               UART_SETUP_VALUE  = 32'h0000_0106;
+  localparam logic [31:0]               TEST_L2_ADDR      = 32'h1C00_0200;
+  localparam logic [7:0]                TEST_UART_DATA    = 8'hA5;
+  localparam logic [31:0]               UART_SETUP_VALUE  = 32'h0008_0206;
 
   logic                         L2_ro_wen_o;
   logic                         L2_ro_req_o;
@@ -69,19 +70,17 @@ module udma_subsystem_uart_tx_tb;
   logic [`N_PERIO-1:0]          perio_out_o;
   logic [`N_PERIO-1:0]          perio_oe_o;
 
-  logic                         saw_l2_read;
-  logic                         saw_tx_event;
-  logic                         saw_uart_start;
-  logic                         watch_uart_tx;
-  integer                       l2_read_count;
+  logic                         saw_l2_write;
+  logic                         saw_rx_event;
+  integer                       l2_write_count;
 
   udma_subsystem #(
     .L2_DATA_WIDTH  (L2_DATA_WIDTH),
     .APB_ADDR_WIDTH (APB_ADDR_WIDTH)
   ) dut (.*);
 
-  assign L2_ro_gnt_i = L2_ro_req_o;
-  assign L2_wo_gnt_i = 1'b0;
+  assign L2_ro_gnt_i = 1'b0;
+  assign L2_wo_gnt_i = L2_wo_req_o;
 
   initial begin
     sys_clk_i = 1'b0;
@@ -166,48 +165,66 @@ module udma_subsystem_uart_tx_tb;
     end
   endtask
 
-  always_ff @(posedge sys_clk_i or negedge sys_resetn_i) begin
-    if (!sys_resetn_i) begin
-      L2_ro_rvalid_i <= 1'b0;
-      L2_ro_rdata_i  <= '0;
-      saw_l2_read    <= 1'b0;
-      saw_tx_event   <= 1'b0;
-      l2_read_count  <= 0;
-    end else begin
-      L2_ro_rvalid_i <= 1'b0;
+  task automatic drive_uart_byte(input logic [7:0] data);
+    begin
+      // UART is idle high. Send one start bit, eight LSB-first data bits,
+      // and one stop bit. Each bit lasts UART_DIV+1 peripheral clocks.
+      perio_in_i[`PERIO_UART0_RX] = 1'b0;
+      repeat (UART_DIV + 1) @(posedge periph_clk_i);
 
-      if (L2_ro_req_o && L2_ro_gnt_i) begin
-        if (L2_ro_addr_o !== TEST_L2_ADDR)
-          $fatal(
-            1,
-            "Unexpected L2 read address: expected 0x%08h, got 0x%08h",
-            TEST_L2_ADDR,
-            L2_ro_addr_o
-          );
-        L2_ro_rdata_i  <= TEST_L2_DATA;
-        L2_ro_rvalid_i <= 1'b1;
-        saw_l2_read    <= 1'b1;
-        l2_read_count  <= l2_read_count + 1;
+      for (int bit_index = 0; bit_index < 8; bit_index++) begin
+        perio_in_i[`PERIO_UART0_RX] = data[bit_index];
+        repeat (UART_DIV + 1) @(posedge periph_clk_i);
       end
 
-      if (events_o[1])
-        saw_tx_event <= 1'b1;
+      perio_in_i[`PERIO_UART0_RX] = 1'b1;
+      repeat (UART_DIV + 2) @(posedge periph_clk_i);
     end
-  end
+  endtask
 
-  always_ff @(posedge periph_clk_i or negedge sys_resetn_i) begin
-    if (!sys_resetn_i)
-      saw_uart_start <= 1'b0;
-    else if (watch_uart_tx && (perio_out_o[`PERIO_UART0_TX] === 1'b0))
-      saw_uart_start <= 1'b1;
+  always_ff @(posedge sys_clk_i or negedge sys_resetn_i) begin
+    if (!sys_resetn_i) begin
+      saw_l2_write   <= 1'b0;
+      saw_rx_event   <= 1'b0;
+      l2_write_count <= 0;
+    end else begin
+      if (L2_wo_req_o && L2_wo_gnt_i) begin
+        if (L2_wo_addr_o !== TEST_L2_ADDR)
+          $fatal(
+            1,
+            "Unexpected L2 write address: expected 0x%08h, got 0x%08h",
+            TEST_L2_ADDR,
+            L2_wo_addr_o
+          );
+        if (L2_wo_wdata_o !== {24'h0, TEST_UART_DATA})
+          $fatal(
+            1,
+            "Unexpected L2 write data: expected 0x%08h, got 0x%08h",
+            {24'h0, TEST_UART_DATA},
+            L2_wo_wdata_o
+          );
+        if (L2_wo_be_o !== 4'b0001)
+          $fatal(
+            1,
+            "Unexpected L2 byte enable: expected 0x1, got 0x%0h",
+            L2_wo_be_o
+          );
+
+        saw_l2_write   <= 1'b1;
+        l2_write_count <= l2_write_count + 1;
+      end
+
+      if (events_o[0])
+        saw_rx_event <= 1'b1;
+    end
   end
 
   initial begin : test_sequence
     logic [31:0] readback;
     integer wait_cycles;
 
-    $dumpfile("udma_subsystem_uart_tx.vcd");
-    $dumpvars(0, udma_subsystem_uart_tx_tb);
+    $dumpfile("udma_subsystem_uart_rx.vcd");
+    $dumpvars(0, udma_subsystem_uart_rx_tb);
 
     L2_ro_rvalid_i        = 1'b0;
     L2_ro_rdata_i         = '0;
@@ -228,7 +245,6 @@ module udma_subsystem_uart_tx_tb;
     efpga_data_rx_i       = '0;
     efpga_setup_i         = '0;
     perio_in_i            = '1;
-    watch_uart_tx         = 1'b0;
 
     #1ns;
     sys_resetn_i = 1'b0;
@@ -261,36 +277,37 @@ module udma_subsystem_uart_tx_tb;
         readback
       );
 
-    apb_write(UART0_TX_SADDR, 32'h0000_0100);
-    apb_write(UART0_TX_SIZE, 32'h0000_0001);
+    apb_write(UART0_RX_SADDR, 32'h0000_0200);
+    apb_write(UART0_RX_SIZE, 32'h0000_0001);
+    apb_write(UART0_RX_CFG, 32'h0000_0010);
 
-    watch_uart_tx = 1'b1;
-    apb_write(UART0_TX_CFG, 32'h0000_0010);
+    repeat (5) @(posedge periph_clk_i);
+    drive_uart_byte(TEST_UART_DATA);
 
     wait_cycles = 0;
-    while (!(saw_l2_read && saw_tx_event && saw_uart_start)) begin
+    while (!(saw_l2_write && saw_rx_event)) begin
       @(posedge sys_clk_i);
       wait_cycles = wait_cycles + 1;
       if (wait_cycles > 500)
         $fatal(
           1,
-          "UART TX DMA timeout: L2=%0b event=%0b start=%0b reads=%0d",
-          saw_l2_read,
-          saw_tx_event,
-          saw_uart_start,
-          l2_read_count
+          "UART RX DMA timeout: L2=%0b event=%0b writes=%0d",
+          saw_l2_write,
+          saw_rx_event,
+          l2_write_count
         );
     end
 
-    if (l2_read_count != 1)
-      $fatal(1, "Expected exactly one L2 read, got %0d", l2_read_count);
-    if (L2_wo_req_o !== 1'b0)
-      $fatal(1, "Unexpected L2 write request during UART TX test");
+    if (l2_write_count != 1)
+      $fatal(1, "Expected exactly one L2 write, got %0d", l2_write_count);
+    if (L2_ro_req_o !== 1'b0)
+      $fatal(1, "Unexpected L2 read request during UART RX test");
 
     $display(
-      "PASS uDMA UART TX: APB readback ok, L2 addr=0x%08h, data=0x%02h, event observed",
+      "PASS uDMA UART RX: L2 addr=0x%08h, data=0x%02h, byte-enable=0x%0h, event observed",
       TEST_L2_ADDR,
-      TEST_L2_DATA[7:0]
+      TEST_UART_DATA,
+      4'b0001
     );
     $finish;
   end
