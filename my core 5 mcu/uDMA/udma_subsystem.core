@@ -48,6 +48,11 @@ filesets:
       - tb/udma_subsystem_uart_rx_tb.sv
     file_type: systemVerilogSource
 
+  synth_script:
+    files:
+      - synth/udma_generic_synth.tcl:
+          file_type: user
+
 targets:
   default:
     filesets:
@@ -115,3 +120,19 @@ targets:
           - -Wno-fatal
           - --timing
           - --trace
+
+  synth:
+    description: Run technology-independent Yosys synthesis sanity checks
+    default_tool: yosys
+    filesets:
+      - rtl
+      - synth_script
+    toplevel:
+      - udma_subsystem
+    tools:
+      yosys:
+        # The custom template performs generic synthesis. This field is still
+        # required by the legacy backend but is not used by the template.
+        arch: xilinx
+        output_format: json
+        yosys_template: src/local_schulich_udma_subsystem_0.1.0/synth/udma_generic_synth.tcl
