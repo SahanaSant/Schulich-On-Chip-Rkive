@@ -1,0 +1,11 @@
+
+14. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\udma_uart_tx.\tx_o' from process `\udma_uart_tx.$proc$/mnt/c/Users/sahan/projects/SystemVerilog/Schulich-On-Chip-Rkive/my$20core$205$20mcu/uDMA/udma_uart/rtl/udma_uart_tx.sv:71$3'.
+No latch inferred for signal `\udma_uart_tx.\tx_ready_o' from process `\udma_uart_tx.$proc$/mnt/c/Users/sahan/projects/SystemVerilog/Schulich-On-Chip-Rkive/my$20core$205$20mcu/uDMA/udma_uart/rtl/udma_uart_tx.sv:71$3'.
+No latch inferred for signal `\udma_uart_tx.\NS' from process `\udma_uart_tx.$proc$/mnt/c/Users/sahan/projects/SystemVerilog/Schulich-On-Chip-Rkive/my$20core$205$20mcu/uDMA/udma_uart/rtl/udma_uart_tx.sv:71$3'.
+No latch inferred for signal `\udma_uart_tx.\reg_data_next' from process `\udma_uart_tx.$proc$/mnt/c/Users/sahan/projects/SystemVerilog/Schulich-On-Chip-Rkive/my$20core$205$20mcu/uDMA/udma_uart/rtl/udma_uart_tx.sv:71$3'.
+No latch inferred for signal `\udma_uart_tx.\reg_bit_count_next' from process `\udma_uart_tx.$proc$/mnt/c/Users/sahan/projects/SystemVerilog/Schulich-On-Chip-Rkive/my$20core$205$20mcu/uDMA/udma_uart/rtl/udma_uart_tx.sv:71$3'.
+No latch inferred for signal `\udma_uart_tx.\parity_bit_next' from process `\udma_uart_tx.$proc$/mnt/c/Users/sahan/projects/SystemVerilog/Schulich-On-Chip-Rkive/my$20core$205$20mcu/uDMA/udma_uart/rtl/udma_uart_tx.sv:71$3'.
+No latch inferred for signal `\udma_uart_tx.\sampleData' from process `\udma_uart_tx.$proc$/mnt/c/Users/sahan/projects/SystemVerilog/Schulich-On-Chip-Rkive/my$20core$205$20mcu/uDMA/udma_uart/rtl/udma_uart_tx.sv:71$3'.
+No latch inferred for signal `\udma_uart_tx.\baudgen_en' from process `\udma_uart_tx.$proc$/mnt/c/Users/sahan/projects/SystemVerilog/Schulich-On-Chip-Rkive/my$20core$205$20mcu/uDMA/udma_uart/rtl/udma_uart_tx.sv:71$3'.
+No latch inferred for signal `\udma_uart_tx.\s_target_bits' from process `\udma_uart_tx.$proc$/mnt/c/Users/sahan/projects/SystemVerilog/Schulich-On-Chip-Rkive/my$20core$205$20mcu/uDMA/udma_uart/rtl/udma_uart_tx.sv:57$2'.

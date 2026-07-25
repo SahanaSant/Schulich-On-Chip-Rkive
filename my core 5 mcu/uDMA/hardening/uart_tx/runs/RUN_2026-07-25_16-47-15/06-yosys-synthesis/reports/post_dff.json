@@ -1,0 +1,65 @@
+{
+   "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
+   "invocation": "stat -json -liberty /mnt/c/Users/sahan/projects/SystemVerilog/Schulich-On-Chip-Rkive/my core 5 mcu/uDMA/hardening/uart_tx/runs/RUN_2026-07-25_16-47-15/tmp/14cf206643d24430ba418232f861d9e8.lib ",
+   "modules": {
+      "\\udma_uart_tx": {
+         "num_wires":         209,
+         "num_wire_bits":     285,
+         "num_pub_wires":     21,
+         "num_pub_wire_bits": 76,
+         "num_ports":         12,
+         "num_port_bits":     35,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         251,
+         "num_submodules":       0,
+         "area":              2423.500800,
+         "sequential_area":    2423.500800,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 57,
+            "$_AND_": 9,
+            "$_MUX_": 29,
+            "$_NAND_": 13,
+            "$_NOR_": 7,
+            "$_NOT_": 6,
+            "$_ORNOT_": 9,
+            "$_OR_": 53,
+            "$_XNOR_": 8,
+            "$_XOR_": 28,
+            "gf180mcu_fd_sc_mcu7t5v0__dffrnq_1": 24,
+            "gf180mcu_fd_sc_mcu7t5v0__dffsnq_1": 8
+         }
+      }
+   },
+      "design": {
+         "num_wires":         209,
+         "num_wire_bits":     285,
+         "num_pub_wires":     21,
+         "num_pub_wire_bits": 76,
+         "num_ports":         12,
+         "num_port_bits":     35,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         251,
+         "num_submodules":       0,
+         "area":              2423.500800,
+         "sequential_area":    2423.500800,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 57,
+            "$_AND_": 9,
+            "$_MUX_": 29,
+            "$_NAND_": 13,
+            "$_NOR_": 7,
+            "$_NOT_": 6,
+            "$_ORNOT_": 9,
+            "$_OR_": 53,
+            "$_XNOR_": 8,
+            "$_XOR_": 28,
+            "gf180mcu_fd_sc_mcu7t5v0__dffrnq_1": 24,
+            "gf180mcu_fd_sc_mcu7t5v0__dffsnq_1": 8
+         }
+      }
+}
+

@@ -1,0 +1,831 @@
+module udma_uart_tx (busy_o,
+    cfg_en_i,
+    cfg_parity_en_i,
+    cfg_stop_bits_i,
+    clk_i,
+    rstn_i,
+    tx_o,
+    tx_ready_o,
+    tx_valid_i,
+    cfg_bits_i,
+    cfg_div_i,
+    tx_data_i);
+ output busy_o;
+ input cfg_en_i;
+ input cfg_parity_en_i;
+ input cfg_stop_bits_i;
+ input clk_i;
+ input rstn_i;
+ output tx_o;
+ output tx_ready_o;
+ input tx_valid_i;
+ input [1:0] cfg_bits_i;
+ input [15:0] cfg_div_i;
+ input [7:0] tx_data_i;
+
+ wire \CS[0] ;
+ wire \CS[1] ;
+ wire \CS[2] ;
+ wire _000_;
+ wire _001_;
+ wire _002_;
+ wire _003_;
+ wire _004_;
+ wire _005_;
+ wire _006_;
+ wire _007_;
+ wire _008_;
+ wire _009_;
+ wire _010_;
+ wire _011_;
+ wire _012_;
+ wire _013_;
+ wire _014_;
+ wire _015_;
+ wire _016_;
+ wire _017_;
+ wire _018_;
+ wire _019_;
+ wire _020_;
+ wire _021_;
+ wire _022_;
+ wire _023_;
+ wire _024_;
+ wire _025_;
+ wire _026_;
+ wire _027_;
+ wire _028_;
+ wire _029_;
+ wire _030_;
+ wire _031_;
+ wire _032_;
+ wire _033_;
+ wire _034_;
+ wire _035_;
+ wire _036_;
+ wire _037_;
+ wire _038_;
+ wire _039_;
+ wire _040_;
+ wire _041_;
+ wire _042_;
+ wire _043_;
+ wire _044_;
+ wire _045_;
+ wire _046_;
+ wire _047_;
+ wire _048_;
+ wire _049_;
+ wire _050_;
+ wire _051_;
+ wire _052_;
+ wire _053_;
+ wire _054_;
+ wire _055_;
+ wire _056_;
+ wire _057_;
+ wire _058_;
+ wire _059_;
+ wire _060_;
+ wire _061_;
+ wire _062_;
+ wire _063_;
+ wire _064_;
+ wire _065_;
+ wire _066_;
+ wire _067_;
+ wire _068_;
+ wire _069_;
+ wire _070_;
+ wire _071_;
+ wire _072_;
+ wire _073_;
+ wire _074_;
+ wire _075_;
+ wire _076_;
+ wire _077_;
+ wire _078_;
+ wire _079_;
+ wire _080_;
+ wire _081_;
+ wire _082_;
+ wire _083_;
+ wire _084_;
+ wire _085_;
+ wire _086_;
+ wire _087_;
+ wire _088_;
+ wire _089_;
+ wire _090_;
+ wire _091_;
+ wire _092_;
+ wire _093_;
+ wire _094_;
+ wire _095_;
+ wire _096_;
+ wire _097_;
+ wire _098_;
+ wire _099_;
+ wire _100_;
+ wire _101_;
+ wire _102_;
+ wire _103_;
+ wire _104_;
+ wire _105_;
+ wire _106_;
+ wire _107_;
+ wire _108_;
+ wire _109_;
+ wire _110_;
+ wire _111_;
+ wire _112_;
+ wire _113_;
+ wire _114_;
+ wire _115_;
+ wire _116_;
+ wire _117_;
+ wire _118_;
+ wire _119_;
+ wire _120_;
+ wire _121_;
+ wire _122_;
+ wire _123_;
+ wire _124_;
+ wire _125_;
+ wire _126_;
+ wire _127_;
+ wire _128_;
+ wire _129_;
+ wire _130_;
+ wire _131_;
+ wire _132_;
+ wire _133_;
+ wire _134_;
+ wire _135_;
+ wire _136_;
+ wire _137_;
+ wire \baud_cnt[0] ;
+ wire \baud_cnt[10] ;
+ wire \baud_cnt[11] ;
+ wire \baud_cnt[12] ;
+ wire \baud_cnt[13] ;
+ wire \baud_cnt[14] ;
+ wire \baud_cnt[15] ;
+ wire \baud_cnt[1] ;
+ wire \baud_cnt[2] ;
+ wire \baud_cnt[3] ;
+ wire \baud_cnt[4] ;
+ wire \baud_cnt[5] ;
+ wire \baud_cnt[6] ;
+ wire \baud_cnt[7] ;
+ wire \baud_cnt[8] ;
+ wire \baud_cnt[9] ;
+ wire bit_done;
+ wire parity_bit;
+ wire \reg_bit_count[0] ;
+ wire \reg_bit_count[1] ;
+ wire \reg_data[0] ;
+ wire \reg_data[1] ;
+ wire \reg_data[2] ;
+ wire \reg_data[3] ;
+ wire \reg_data[4] ;
+ wire \reg_data[5] ;
+ wire \reg_data[6] ;
+ wire \reg_data[7] ;
+
+ gf180mcu_fd_sc_mcu7t5v0__clkinv_1 _138_ (.I(\CS[2] ),
+    .ZN(_136_));
+ gf180mcu_fd_sc_mcu7t5v0__clkinv_1 _139_ (.I(\CS[0] ),
+    .ZN(_137_));
+ gf180mcu_fd_sc_mcu7t5v0__clkinv_1 _140_ (.I(\CS[1] ),
+    .ZN(_033_));
+ gf180mcu_fd_sc_mcu7t5v0__clkinv_1 _141_ (.I(cfg_en_i),
+    .ZN(_034_));
+ gf180mcu_fd_sc_mcu7t5v0__clkinv_1 _142_ (.I(\reg_bit_count[0] ),
+    .ZN(_035_));
+ gf180mcu_fd_sc_mcu7t5v0__clkinv_1 _143_ (.I(\reg_bit_count[1] ),
+    .ZN(_036_));
+ gf180mcu_fd_sc_mcu7t5v0__clkinv_1 _144_ (.I(_017_),
+    .ZN(_037_));
+ gf180mcu_fd_sc_mcu7t5v0__clkinv_1 _145_ (.I(bit_done),
+    .ZN(_038_));
+ gf180mcu_fd_sc_mcu7t5v0__clkinv_1 _146_ (.I(tx_valid_i),
+    .ZN(_039_));
+ gf180mcu_fd_sc_mcu7t5v0__nor2_1 _147_ (.A1(\CS[2] ),
+    .A2(\CS[1] ),
+    .ZN(_040_));
+ gf180mcu_fd_sc_mcu7t5v0__nor3_1 _148_ (.A1(\CS[2] ),
+    .A2(\CS[0] ),
+    .A3(\CS[1] ),
+    .ZN(_041_));
+ gf180mcu_fd_sc_mcu7t5v0__clkinv_1 _149_ (.I(_041_),
+    .ZN(busy_o));
+ gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _150_ (.A1(\CS[2] ),
+    .A2(\CS[1] ),
+    .B(_041_),
+    .ZN(_042_));
+ gf180mcu_fd_sc_mcu7t5v0__xor2_1 _151_ (.A1(cfg_div_i[15]),
+    .A2(\baud_cnt[15] ),
+    .Z(_043_));
+ gf180mcu_fd_sc_mcu7t5v0__xnor2_1 _152_ (.A1(cfg_div_i[1]),
+    .A2(\baud_cnt[1] ),
+    .ZN(_044_));
+ gf180mcu_fd_sc_mcu7t5v0__xnor2_1 _153_ (.A1(cfg_div_i[2]),
+    .A2(\baud_cnt[2] ),
+    .ZN(_045_));
+ gf180mcu_fd_sc_mcu7t5v0__xor2_1 _154_ (.A1(cfg_div_i[7]),
+    .A2(\baud_cnt[7] ),
+    .Z(_046_));
+ gf180mcu_fd_sc_mcu7t5v0__xor2_1 _155_ (.A1(cfg_div_i[5]),
+    .A2(\baud_cnt[5] ),
+    .Z(_047_));
+ gf180mcu_fd_sc_mcu7t5v0__xnor2_1 _156_ (.A1(cfg_div_i[14]),
+    .A2(\baud_cnt[14] ),
+    .ZN(_048_));
+ gf180mcu_fd_sc_mcu7t5v0__xor2_1 _157_ (.A1(cfg_div_i[8]),
+    .A2(\baud_cnt[8] ),
+    .Z(_049_));
+ gf180mcu_fd_sc_mcu7t5v0__xnor2_1 _158_ (.A1(cfg_div_i[10]),
+    .A2(\baud_cnt[10] ),
+    .ZN(_050_));
+ gf180mcu_fd_sc_mcu7t5v0__xor2_1 _159_ (.A1(cfg_div_i[3]),
+    .A2(\baud_cnt[3] ),
+    .Z(_051_));
+ gf180mcu_fd_sc_mcu7t5v0__xor2_1 _160_ (.A1(cfg_div_i[9]),
+    .A2(\baud_cnt[9] ),
+    .Z(_052_));
+ gf180mcu_fd_sc_mcu7t5v0__xor2_1 _161_ (.A1(cfg_div_i[4]),
+    .A2(\baud_cnt[4] ),
+    .Z(_053_));
+ gf180mcu_fd_sc_mcu7t5v0__nor2_1 _162_ (.A1(_052_),
+    .A2(_053_),
+    .ZN(_054_));
+ gf180mcu_fd_sc_mcu7t5v0__xor2_1 _163_ (.A1(cfg_div_i[0]),
+    .A2(\baud_cnt[0] ),
+    .Z(_055_));
+ gf180mcu_fd_sc_mcu7t5v0__xor2_1 _164_ (.A1(cfg_div_i[12]),
+    .A2(\baud_cnt[12] ),
+    .Z(_056_));
+ gf180mcu_fd_sc_mcu7t5v0__xor2_1 _165_ (.A1(cfg_div_i[6]),
+    .A2(\baud_cnt[6] ),
+    .Z(_057_));
+ gf180mcu_fd_sc_mcu7t5v0__xor2_1 _166_ (.A1(cfg_div_i[13]),
+    .A2(\baud_cnt[13] ),
+    .Z(_058_));
+ gf180mcu_fd_sc_mcu7t5v0__nor2_1 _167_ (.A1(_046_),
+    .A2(_058_),
+    .ZN(_059_));
+ gf180mcu_fd_sc_mcu7t5v0__xor2_1 _168_ (.A1(cfg_div_i[11]),
+    .A2(\baud_cnt[11] ),
+    .Z(_060_));
+ gf180mcu_fd_sc_mcu7t5v0__nor4_1 _169_ (.A1(_047_),
+    .A2(_055_),
+    .A3(_057_),
+    .A4(_060_),
+    .ZN(_061_));
+ gf180mcu_fd_sc_mcu7t5v0__nand4_1 _170_ (.A1(_044_),
+    .A2(_048_),
+    .A3(_059_),
+    .A4(_061_),
+    .ZN(_062_));
+ gf180mcu_fd_sc_mcu7t5v0__nor4_1 _171_ (.A1(_043_),
+    .A2(_049_),
+    .A3(_051_),
+    .A4(_056_),
+    .ZN(_063_));
+ gf180mcu_fd_sc_mcu7t5v0__nand4_1 _172_ (.A1(_045_),
+    .A2(_050_),
+    .A3(_054_),
+    .A4(_063_),
+    .ZN(_064_));
+ gf180mcu_fd_sc_mcu7t5v0__nor2_1 _173_ (.A1(_062_),
+    .A2(_064_),
+    .ZN(_065_));
+ gf180mcu_fd_sc_mcu7t5v0__and2_1 _174_ (.A1(_042_),
+    .A2(_065_),
+    .Z(_016_));
+ gf180mcu_fd_sc_mcu7t5v0__nor2_1 _175_ (.A1(_034_),
+    .A2(busy_o),
+    .ZN(tx_ready_o));
+ gf180mcu_fd_sc_mcu7t5v0__oai21_1 _176_ (.A1(_062_),
+    .A2(_064_),
+    .B(_042_),
+    .ZN(_066_));
+ gf180mcu_fd_sc_mcu7t5v0__nor2_1 _177_ (.A1(\baud_cnt[0] ),
+    .A2(_066_),
+    .ZN(_000_));
+ gf180mcu_fd_sc_mcu7t5v0__xnor2_1 _178_ (.A1(\baud_cnt[0] ),
+    .A2(\baud_cnt[1] ),
+    .ZN(_067_));
+ gf180mcu_fd_sc_mcu7t5v0__nor2_1 _179_ (.A1(_066_),
+    .A2(_067_),
+    .ZN(_007_));
+ gf180mcu_fd_sc_mcu7t5v0__and3_1 _180_ (.A1(\baud_cnt[0] ),
+    .A2(\baud_cnt[1] ),
+    .A3(\baud_cnt[2] ),
+    .Z(_068_));
+ gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _181_ (.A1(\baud_cnt[0] ),
+    .A2(\baud_cnt[1] ),
+    .B(\baud_cnt[2] ),
+    .ZN(_069_));
+ gf180mcu_fd_sc_mcu7t5v0__nor3_1 _182_ (.A1(_066_),
+    .A2(_068_),
+    .A3(_069_),
+    .ZN(_008_));
+ gf180mcu_fd_sc_mcu7t5v0__and2_1 _183_ (.A1(\baud_cnt[3] ),
+    .A2(_068_),
+    .Z(_070_));
+ gf180mcu_fd_sc_mcu7t5v0__nand4_1 _184_ (.A1(\baud_cnt[0] ),
+    .A2(\baud_cnt[1] ),
+    .A3(\baud_cnt[2] ),
+    .A4(\baud_cnt[3] ),
+    .ZN(_071_));
+ gf180mcu_fd_sc_mcu7t5v0__nor2_1 _185_ (.A1(\baud_cnt[3] ),
+    .A2(_068_),
+    .ZN(_072_));
+ gf180mcu_fd_sc_mcu7t5v0__nor3_1 _186_ (.A1(_066_),
+    .A2(_070_),
+    .A3(_072_),
+    .ZN(_009_));
+ gf180mcu_fd_sc_mcu7t5v0__xor2_1 _187_ (.A1(\baud_cnt[4] ),
+    .A2(_071_),
+    .Z(_073_));
+ gf180mcu_fd_sc_mcu7t5v0__nor2_1 _188_ (.A1(_066_),
+    .A2(_073_),
+    .ZN(_010_));
+ gf180mcu_fd_sc_mcu7t5v0__nand2_1 _189_ (.A1(\baud_cnt[4] ),
+    .A2(\baud_cnt[5] ),
+    .ZN(_074_));
+ gf180mcu_fd_sc_mcu7t5v0__nor2_1 _190_ (.A1(_071_),
+    .A2(_074_),
+    .ZN(_075_));
+ gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _191_ (.A1(\baud_cnt[4] ),
+    .A2(_070_),
+    .B(\baud_cnt[5] ),
+    .ZN(_076_));
+ gf180mcu_fd_sc_mcu7t5v0__nor3_1 _192_ (.A1(_066_),
+    .A2(_075_),
+    .A3(_076_),
+    .ZN(_011_));
+ gf180mcu_fd_sc_mcu7t5v0__xnor2_1 _193_ (.A1(\baud_cnt[6] ),
+    .A2(_075_),
+    .ZN(_077_));
+ gf180mcu_fd_sc_mcu7t5v0__nor2_1 _194_ (.A1(_066_),
+    .A2(_077_),
+    .ZN(_012_));
+ gf180mcu_fd_sc_mcu7t5v0__nand2_1 _195_ (.A1(\baud_cnt[6] ),
+    .A2(\baud_cnt[7] ),
+    .ZN(_078_));
+ gf180mcu_fd_sc_mcu7t5v0__nor3_1 _196_ (.A1(_071_),
+    .A2(_074_),
+    .A3(_078_),
+    .ZN(_079_));
+ gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _197_ (.A1(\baud_cnt[6] ),
+    .A2(_075_),
+    .B(\baud_cnt[7] ),
+    .ZN(_080_));
+ gf180mcu_fd_sc_mcu7t5v0__nor3_1 _198_ (.A1(_066_),
+    .A2(_079_),
+    .A3(_080_),
+    .ZN(_013_));
+ gf180mcu_fd_sc_mcu7t5v0__xnor2_1 _199_ (.A1(\baud_cnt[8] ),
+    .A2(_079_),
+    .ZN(_081_));
+ gf180mcu_fd_sc_mcu7t5v0__nor2_1 _200_ (.A1(_066_),
+    .A2(_081_),
+    .ZN(_014_));
+ gf180mcu_fd_sc_mcu7t5v0__and3_1 _201_ (.A1(\baud_cnt[8] ),
+    .A2(\baud_cnt[9] ),
+    .A3(_079_),
+    .Z(_082_));
+ gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _202_ (.A1(\baud_cnt[8] ),
+    .A2(_079_),
+    .B(\baud_cnt[9] ),
+    .ZN(_083_));
+ gf180mcu_fd_sc_mcu7t5v0__nor3_1 _203_ (.A1(_066_),
+    .A2(_082_),
+    .A3(_083_),
+    .ZN(_015_));
+ gf180mcu_fd_sc_mcu7t5v0__nor2_1 _204_ (.A1(\baud_cnt[10] ),
+    .A2(_082_),
+    .ZN(_084_));
+ gf180mcu_fd_sc_mcu7t5v0__and2_1 _205_ (.A1(\baud_cnt[10] ),
+    .A2(_082_),
+    .Z(_085_));
+ gf180mcu_fd_sc_mcu7t5v0__nor3_1 _206_ (.A1(_066_),
+    .A2(_084_),
+    .A3(_085_),
+    .ZN(_001_));
+ gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _207_ (.A1(\baud_cnt[10] ),
+    .A2(_082_),
+    .B(\baud_cnt[11] ),
+    .ZN(_086_));
+ gf180mcu_fd_sc_mcu7t5v0__nand4_1 _208_ (.A1(\baud_cnt[8] ),
+    .A2(\baud_cnt[9] ),
+    .A3(\baud_cnt[10] ),
+    .A4(\baud_cnt[11] ),
+    .ZN(_087_));
+ gf180mcu_fd_sc_mcu7t5v0__nor4_1 _209_ (.A1(_071_),
+    .A2(_074_),
+    .A3(_078_),
+    .A4(_087_),
+    .ZN(_088_));
+ gf180mcu_fd_sc_mcu7t5v0__nor3_1 _210_ (.A1(_066_),
+    .A2(_086_),
+    .A3(_088_),
+    .ZN(_002_));
+ gf180mcu_fd_sc_mcu7t5v0__xnor2_1 _211_ (.A1(\baud_cnt[12] ),
+    .A2(_088_),
+    .ZN(_089_));
+ gf180mcu_fd_sc_mcu7t5v0__nor2_1 _212_ (.A1(_066_),
+    .A2(_089_),
+    .ZN(_003_));
+ gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _213_ (.A1(\baud_cnt[12] ),
+    .A2(_088_),
+    .B(\baud_cnt[13] ),
+    .ZN(_090_));
+ gf180mcu_fd_sc_mcu7t5v0__and3_1 _214_ (.A1(\baud_cnt[12] ),
+    .A2(\baud_cnt[13] ),
+    .A3(_088_),
+    .Z(_091_));
+ gf180mcu_fd_sc_mcu7t5v0__nor3_1 _215_ (.A1(_066_),
+    .A2(_090_),
+    .A3(_091_),
+    .ZN(_004_));
+ gf180mcu_fd_sc_mcu7t5v0__oai221_1 _216_ (.A1(_062_),
+    .A2(_064_),
+    .B1(_091_),
+    .B2(\baud_cnt[14] ),
+    .C(_042_),
+    .ZN(_092_));
+ gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _217_ (.A1(\baud_cnt[14] ),
+    .A2(_091_),
+    .B(_092_),
+    .ZN(_005_));
+ gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _218_ (.A1(\baud_cnt[14] ),
+    .A2(_091_),
+    .B(\baud_cnt[15] ),
+    .ZN(_093_));
+ gf180mcu_fd_sc_mcu7t5v0__and3_1 _219_ (.A1(\baud_cnt[14] ),
+    .A2(\baud_cnt[15] ),
+    .A3(_091_),
+    .Z(_094_));
+ gf180mcu_fd_sc_mcu7t5v0__nor3_1 _220_ (.A1(_066_),
+    .A2(_093_),
+    .A3(_094_),
+    .ZN(_006_));
+ gf180mcu_fd_sc_mcu7t5v0__nand2_1 _221_ (.A1(\CS[0] ),
+    .A2(_040_),
+    .ZN(_095_));
+ gf180mcu_fd_sc_mcu7t5v0__nand2_1 _222_ (.A1(\CS[0] ),
+    .A2(parity_bit),
+    .ZN(_096_));
+ gf180mcu_fd_sc_mcu7t5v0__aoi211_1 _223_ (.A1(_137_),
+    .A2(\reg_data[0] ),
+    .B(_033_),
+    .C(\CS[2] ),
+    .ZN(_097_));
+ gf180mcu_fd_sc_mcu7t5v0__aoi22_1 _224_ (.A1(\CS[0] ),
+    .A2(_040_),
+    .B1(_096_),
+    .B2(_097_),
+    .ZN(tx_o));
+ gf180mcu_fd_sc_mcu7t5v0__aoi211_1 _225_ (.A1(\CS[2] ),
+    .A2(\CS[1] ),
+    .B(bit_done),
+    .C(_041_),
+    .ZN(_098_));
+ gf180mcu_fd_sc_mcu7t5v0__nand2_1 _226_ (.A1(\CS[0] ),
+    .A2(_098_),
+    .ZN(_099_));
+ gf180mcu_fd_sc_mcu7t5v0__nor3_1 _227_ (.A1(\CS[2] ),
+    .A2(\CS[0] ),
+    .A3(_033_),
+    .ZN(_100_));
+ gf180mcu_fd_sc_mcu7t5v0__xor2_1 _228_ (.A1(cfg_bits_i[1]),
+    .A2(\reg_bit_count[1] ),
+    .Z(_101_));
+ gf180mcu_fd_sc_mcu7t5v0__and2_1 _229_ (.A1(cfg_bits_i[0]),
+    .A2(_035_),
+    .Z(_102_));
+ gf180mcu_fd_sc_mcu7t5v0__oai21_1 _230_ (.A1(cfg_bits_i[0]),
+    .A2(_035_),
+    .B(_017_),
+    .ZN(_103_));
+ gf180mcu_fd_sc_mcu7t5v0__oai31_1 _231_ (.A1(_101_),
+    .A2(_102_),
+    .A3(_103_),
+    .B(_100_),
+    .ZN(_104_));
+ gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _232_ (.A1(_039_),
+    .A2(_041_),
+    .B(_098_),
+    .ZN(_105_));
+ gf180mcu_fd_sc_mcu7t5v0__nand2_1 _233_ (.A1(_104_),
+    .A2(_105_),
+    .ZN(_106_));
+ gf180mcu_fd_sc_mcu7t5v0__nand4_1 _234_ (.A1(\CS[2] ),
+    .A2(_137_),
+    .A3(_033_),
+    .A4(cfg_stop_bits_i),
+    .ZN(_107_));
+ gf180mcu_fd_sc_mcu7t5v0__nand2_1 _235_ (.A1(_137_),
+    .A2(cfg_parity_en_i),
+    .ZN(_108_));
+ gf180mcu_fd_sc_mcu7t5v0__nand4_1 _236_ (.A1(_136_),
+    .A2(_137_),
+    .A3(\CS[1] ),
+    .A4(cfg_parity_en_i),
+    .ZN(_109_));
+ gf180mcu_fd_sc_mcu7t5v0__nand3_1 _237_ (.A1(busy_o),
+    .A2(_107_),
+    .A3(_109_),
+    .ZN(_110_));
+ gf180mcu_fd_sc_mcu7t5v0__nand3_1 _238_ (.A1(_104_),
+    .A2(_105_),
+    .A3(_110_),
+    .ZN(_111_));
+ gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _239_ (.A1(_099_),
+    .A2(_111_),
+    .B(_034_),
+    .ZN(_018_));
+ gf180mcu_fd_sc_mcu7t5v0__and4_1 _240_ (.A1(_095_),
+    .A2(_104_),
+    .A3(_105_),
+    .A4(_109_),
+    .Z(_112_));
+ gf180mcu_fd_sc_mcu7t5v0__aoi211_1 _241_ (.A1(_033_),
+    .A2(_106_),
+    .B(_112_),
+    .C(_034_),
+    .ZN(_019_));
+ gf180mcu_fd_sc_mcu7t5v0__nand3_1 _242_ (.A1(_136_),
+    .A2(\CS[1] ),
+    .A3(_108_),
+    .ZN(_113_));
+ gf180mcu_fd_sc_mcu7t5v0__and4_1 _243_ (.A1(_104_),
+    .A2(_105_),
+    .A3(_107_),
+    .A4(_113_),
+    .Z(_114_));
+ gf180mcu_fd_sc_mcu7t5v0__aoi211_1 _244_ (.A1(_136_),
+    .A2(_106_),
+    .B(_114_),
+    .C(_034_),
+    .ZN(_020_));
+ gf180mcu_fd_sc_mcu7t5v0__nand2_1 _245_ (.A1(tx_valid_i),
+    .A2(_041_),
+    .ZN(_115_));
+ gf180mcu_fd_sc_mcu7t5v0__nor4_1 _246_ (.A1(\CS[2] ),
+    .A2(\CS[0] ),
+    .A3(_033_),
+    .A4(_038_),
+    .ZN(_116_));
+ gf180mcu_fd_sc_mcu7t5v0__oai31_1 _247_ (.A1(_101_),
+    .A2(_102_),
+    .A3(_103_),
+    .B(_116_),
+    .ZN(_117_));
+ gf180mcu_fd_sc_mcu7t5v0__nand2_1 _248_ (.A1(_115_),
+    .A2(_117_),
+    .ZN(_118_));
+ gf180mcu_fd_sc_mcu7t5v0__mux2_2 _249_ (.I0(tx_data_i[0]),
+    .I1(\reg_data[1] ),
+    .S(_115_),
+    .Z(_119_));
+ gf180mcu_fd_sc_mcu7t5v0__mux2_2 _250_ (.I0(\reg_data[0] ),
+    .I1(_119_),
+    .S(_118_),
+    .Z(_021_));
+ gf180mcu_fd_sc_mcu7t5v0__mux2_2 _251_ (.I0(tx_data_i[1]),
+    .I1(\reg_data[2] ),
+    .S(_115_),
+    .Z(_120_));
+ gf180mcu_fd_sc_mcu7t5v0__mux2_2 _252_ (.I0(\reg_data[1] ),
+    .I1(_120_),
+    .S(_118_),
+    .Z(_022_));
+ gf180mcu_fd_sc_mcu7t5v0__mux2_2 _253_ (.I0(tx_data_i[2]),
+    .I1(\reg_data[3] ),
+    .S(_115_),
+    .Z(_121_));
+ gf180mcu_fd_sc_mcu7t5v0__mux2_2 _254_ (.I0(\reg_data[2] ),
+    .I1(_121_),
+    .S(_118_),
+    .Z(_023_));
+ gf180mcu_fd_sc_mcu7t5v0__mux2_2 _255_ (.I0(tx_data_i[3]),
+    .I1(\reg_data[4] ),
+    .S(_115_),
+    .Z(_122_));
+ gf180mcu_fd_sc_mcu7t5v0__mux2_2 _256_ (.I0(\reg_data[3] ),
+    .I1(_122_),
+    .S(_118_),
+    .Z(_024_));
+ gf180mcu_fd_sc_mcu7t5v0__mux2_2 _257_ (.I0(tx_data_i[4]),
+    .I1(\reg_data[5] ),
+    .S(_115_),
+    .Z(_123_));
+ gf180mcu_fd_sc_mcu7t5v0__mux2_2 _258_ (.I0(\reg_data[4] ),
+    .I1(_123_),
+    .S(_118_),
+    .Z(_025_));
+ gf180mcu_fd_sc_mcu7t5v0__mux2_2 _259_ (.I0(tx_data_i[5]),
+    .I1(\reg_data[6] ),
+    .S(_115_),
+    .Z(_124_));
+ gf180mcu_fd_sc_mcu7t5v0__mux2_2 _260_ (.I0(\reg_data[5] ),
+    .I1(_124_),
+    .S(_118_),
+    .Z(_026_));
+ gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _261_ (.A1(tx_valid_i),
+    .A2(_041_),
+    .B(\reg_data[7] ),
+    .ZN(_125_));
+ gf180mcu_fd_sc_mcu7t5v0__nor2_1 _262_ (.A1(tx_data_i[6]),
+    .A2(_115_),
+    .ZN(_126_));
+ gf180mcu_fd_sc_mcu7t5v0__nor2_1 _263_ (.A1(_125_),
+    .A2(_126_),
+    .ZN(_127_));
+ gf180mcu_fd_sc_mcu7t5v0__mux2_2 _264_ (.I0(\reg_data[6] ),
+    .I1(_127_),
+    .S(_118_),
+    .Z(_027_));
+ gf180mcu_fd_sc_mcu7t5v0__nor2_1 _265_ (.A1(tx_data_i[7]),
+    .A2(_115_),
+    .ZN(_128_));
+ gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _266_ (.A1(_117_),
+    .A2(_125_),
+    .B(_128_),
+    .ZN(_028_));
+ gf180mcu_fd_sc_mcu7t5v0__mux2_2 _267_ (.I0(_116_),
+    .I1(_117_),
+    .S(_035_),
+    .Z(_129_));
+ gf180mcu_fd_sc_mcu7t5v0__clkinv_1 _268_ (.I(_129_),
+    .ZN(_029_));
+ gf180mcu_fd_sc_mcu7t5v0__or2_1 _269_ (.A1(_035_),
+    .A2(_117_),
+    .Z(_130_));
+ gf180mcu_fd_sc_mcu7t5v0__oai32_1 _270_ (.A1(_101_),
+    .A2(_102_),
+    .A3(_103_),
+    .B1(_036_),
+    .B2(_035_),
+    .ZN(_131_));
+ gf180mcu_fd_sc_mcu7t5v0__and2_1 _271_ (.A1(_116_),
+    .A2(_131_),
+    .Z(_132_));
+ gf180mcu_fd_sc_mcu7t5v0__aoi21_1 _272_ (.A1(_036_),
+    .A2(_130_),
+    .B(_132_),
+    .ZN(_030_));
+ gf180mcu_fd_sc_mcu7t5v0__nand2_1 _273_ (.A1(\reg_bit_count[1] ),
+    .A2(_037_),
+    .ZN(_133_));
+ gf180mcu_fd_sc_mcu7t5v0__oai22_1 _274_ (.A1(_037_),
+    .A2(_132_),
+    .B1(_133_),
+    .B2(_130_),
+    .ZN(_031_));
+ gf180mcu_fd_sc_mcu7t5v0__nand2_1 _275_ (.A1(\reg_data[0] ),
+    .A2(_116_),
+    .ZN(_134_));
+ gf180mcu_fd_sc_mcu7t5v0__oai211_1 _276_ (.A1(_038_),
+    .A2(_095_),
+    .B(_134_),
+    .C(parity_bit),
+    .ZN(_135_));
+ gf180mcu_fd_sc_mcu7t5v0__oai21_1 _277_ (.A1(parity_bit),
+    .A2(_134_),
+    .B(_135_),
+    .ZN(_032_));
+ gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 _278_ (.D(_018_),
+    .RN(rstn_i),
+    .CLK(clk_i),
+    .Q(\CS[0] ));
+ gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 _279_ (.D(_019_),
+    .RN(rstn_i),
+    .CLK(clk_i),
+    .Q(\CS[1] ));
+ gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 _280_ (.D(_020_),
+    .RN(rstn_i),
+    .CLK(clk_i),
+    .Q(\CS[2] ));
+ gf180mcu_fd_sc_mcu7t5v0__dffsnq_1 _281_ (.D(_021_),
+    .SETN(rstn_i),
+    .CLK(clk_i),
+    .Q(\reg_data[0] ));
+ gf180mcu_fd_sc_mcu7t5v0__dffsnq_1 _282_ (.D(_022_),
+    .SETN(rstn_i),
+    .CLK(clk_i),
+    .Q(\reg_data[1] ));
+ gf180mcu_fd_sc_mcu7t5v0__dffsnq_1 _283_ (.D(_023_),
+    .SETN(rstn_i),
+    .CLK(clk_i),
+    .Q(\reg_data[2] ));
+ gf180mcu_fd_sc_mcu7t5v0__dffsnq_1 _284_ (.D(_024_),
+    .SETN(rstn_i),
+    .CLK(clk_i),
+    .Q(\reg_data[3] ));
+ gf180mcu_fd_sc_mcu7t5v0__dffsnq_1 _285_ (.D(_025_),
+    .SETN(rstn_i),
+    .CLK(clk_i),
+    .Q(\reg_data[4] ));
+ gf180mcu_fd_sc_mcu7t5v0__dffsnq_1 _286_ (.D(_026_),
+    .SETN(rstn_i),
+    .CLK(clk_i),
+    .Q(\reg_data[5] ));
+ gf180mcu_fd_sc_mcu7t5v0__dffsnq_1 _287_ (.D(_027_),
+    .SETN(rstn_i),
+    .CLK(clk_i),
+    .Q(\reg_data[6] ));
+ gf180mcu_fd_sc_mcu7t5v0__dffsnq_1 _288_ (.D(_028_),
+    .SETN(rstn_i),
+    .CLK(clk_i),
+    .Q(\reg_data[7] ));
+ gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 _289_ (.D(_029_),
+    .RN(rstn_i),
+    .CLK(clk_i),
+    .Q(\reg_bit_count[0] ));
+ gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 _290_ (.D(_030_),
+    .RN(rstn_i),
+    .CLK(clk_i),
+    .Q(\reg_bit_count[1] ));
+ gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 _291_ (.D(_031_),
+    .RN(rstn_i),
+    .CLK(clk_i),
+    .Q(_017_));
+ gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 _292_ (.D(_032_),
+    .RN(rstn_i),
+    .CLK(clk_i),
+    .Q(parity_bit));
+ gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 _293_ (.D(_000_),
+    .RN(rstn_i),
+    .CLK(clk_i),
+    .Q(\baud_cnt[0] ));
+ gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 _294_ (.D(_007_),
+    .RN(rstn_i),
+    .CLK(clk_i),
+    .Q(\baud_cnt[1] ));
+ gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 _295_ (.D(_008_),
+    .RN(rstn_i),
+    .CLK(clk_i),
+    .Q(\baud_cnt[2] ));
+ gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 _296_ (.D(_009_),
+    .RN(rstn_i),
+    .CLK(clk_i),
+    .Q(\baud_cnt[3] ));
+ gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 _297_ (.D(_010_),
+    .RN(rstn_i),
+    .CLK(clk_i),
+    .Q(\baud_cnt[4] ));
+ gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 _298_ (.D(_011_),
+    .RN(rstn_i),
+    .CLK(clk_i),
+    .Q(\baud_cnt[5] ));
+ gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 _299_ (.D(_012_),
+    .RN(rstn_i),
+    .CLK(clk_i),
+    .Q(\baud_cnt[6] ));
+ gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 _300_ (.D(_013_),
+    .RN(rstn_i),
+    .CLK(clk_i),
+    .Q(\baud_cnt[7] ));
+ gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 _301_ (.D(_014_),
+    .RN(rstn_i),
+    .CLK(clk_i),
+    .Q(\baud_cnt[8] ));
+ gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 _302_ (.D(_015_),
+    .RN(rstn_i),
+    .CLK(clk_i),
+    .Q(\baud_cnt[9] ));
+ gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 _303_ (.D(_001_),
+    .RN(rstn_i),
+    .CLK(clk_i),
+    .Q(\baud_cnt[10] ));
+ gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 _304_ (.D(_002_),
+    .RN(rstn_i),
+    .CLK(clk_i),
+    .Q(\baud_cnt[11] ));
+ gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 _305_ (.D(_003_),
+    .RN(rstn_i),
+    .CLK(clk_i),
+    .Q(\baud_cnt[12] ));
+ gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 _306_ (.D(_004_),
+    .RN(rstn_i),
+    .CLK(clk_i),
+    .Q(\baud_cnt[13] ));
+ gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 _307_ (.D(_005_),
+    .RN(rstn_i),
+    .CLK(clk_i),
+    .Q(\baud_cnt[14] ));
+ gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 _308_ (.D(_006_),
+    .RN(rstn_i),
+    .CLK(clk_i),
+    .Q(\baud_cnt[15] ));
+ gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 _309_ (.D(_016_),
+    .RN(rstn_i),
+    .CLK(clk_i),
+    .Q(bit_done));
+endmodule
