@@ -1,2 +1,8 @@
 # FuseSoC-generated work products.
 /build/
+# LibreLane-generated runs and logs
+/hardening/**/runs/
+/hardening/**/*.log
+
+# Waveforms
+*.vcd
