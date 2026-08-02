@@ -1,0 +1,106 @@
+Reading timing models for corner max_ff_n40C_5v50…
+Reading timing library for the 'max_ff_n40C_5v50' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50.lib'…
+Reading timing models for corner max_tt_025C_5v00…
+Reading timing library for the 'max_tt_025C_5v00' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib'…
+Reading timing models for corner nom_ff_n40C_5v50…
+Reading timing library for the 'nom_ff_n40C_5v50' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50.lib'…
+[WARNING STA-1140] /home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50 already exists.
+Reading timing models for corner nom_tt_025C_5v00…
+Reading timing library for the 'nom_tt_025C_5v00' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib'…
+[WARNING STA-1140] /home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00 already exists.
+Reading timing models for corner min_ss_125C_4v50…
+Reading timing library for the 'min_ss_125C_4v50' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50.lib'…
+Reading timing models for corner min_ff_n40C_5v50…
+Reading timing library for the 'min_ff_n40C_5v50' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50.lib'…
+[WARNING STA-1140] /home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50 already exists.
+Reading timing models for corner min_tt_025C_5v00…
+Reading timing library for the 'min_tt_025C_5v00' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib'…
+[WARNING STA-1140] /home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00 already exists.
+Reading timing models for corner max_ss_125C_4v50…
+Reading timing library for the 'max_ss_125C_4v50' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50.lib'…
+[WARNING STA-1140] /home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50 already exists.
+Reading timing models for corner nom_ss_125C_4v50…
+Reading timing library for the 'nom_ss_125C_4v50' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50.lib'…
+[WARNING STA-1140] /home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50 already exists.
+Reading OpenROAD database at '/home/sahana/core5_udma/hardening/uart_rx/runs/RUN_2026-07-26_12-38-49/28-openroad-globalplacement/udma_uart_rx.odb'…
+Reading design constraints file at '/nix/store/ffl2vg3m80k0p74pyffnmai83fnv38mf-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/base.sdc'…
+[INFO] Using clock clk_i…
+[INFO] Setting output delay to: 4
+[INFO] Setting input delay to: 4
+[INFO] Setting load to: 0.07291
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[INFO] Setting timing derate to: 5%
+[INFO RSZ-0027] Inserted 23 gf180mcu_fd_sc_mcu7t5v0__dlyb_1 input buffers.
+[INFO RSZ-0028] Inserted 13 gf180mcu_fd_sc_mcu7t5v0__dlyb_1 output buffers.
++ repair_design -verbose -max_wire_length 0 -slew_margin 20 -cap_margin 20
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |       280
+       10 |     +0.0% |       0 |       0 |             0 |       270
+       20 |     +0.0% |       0 |       0 |             0 |       260
+       30 |     +0.0% |       0 |       0 |             0 |       250
+       40 |     +1.0% |       0 |       2 |             1 |       240
+       50 |     +1.0% |       0 |       2 |             1 |       230
+       60 |     +1.0% |       0 |       2 |             1 |       220
+       70 |     +1.9% |       0 |       4 |             2 |       210
+       80 |     +1.9% |       0 |       4 |             2 |       200
+       90 |     +1.9% |       0 |       4 |             2 |       190
+      100 |     +1.9% |       0 |       4 |             2 |       180
+      110 |     +1.9% |       0 |       4 |             2 |       170
+      120 |     +1.9% |       0 |       4 |             2 |       160
+      130 |     +1.9% |       0 |       4 |             2 |       150
+      140 |     +1.9% |       0 |       4 |             2 |       140
+      150 |     +1.9% |       0 |       4 |             2 |       130
+      160 |     +1.9% |       0 |       4 |             2 |       120
+      170 |     +1.9% |       0 |       4 |             2 |       110
+      180 |     +1.9% |       0 |       4 |             2 |       100
+      190 |     +1.9% |       0 |       4 |             2 |        90
+      200 |     +1.9% |       0 |       4 |             2 |        80
+      210 |     +1.9% |       0 |       4 |             2 |        70
+      220 |     +1.9% |       0 |       4 |             2 |        60
+      230 |     +1.9% |       0 |       4 |             2 |        50
+      240 |     +1.9% |       0 |       4 |             2 |        40
+      250 |     +3.8% |       0 |       8 |             3 |        30
+      260 |     +3.8% |       0 |       8 |             3 |        20
+      270 |     +3.8% |       0 |       8 |             3 |        10
+      280 |     +3.8% |       0 |       8 |             3 |         0
+    final |     +3.8% |       0 |       8 |             3 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0034] Found 3 slew violations.
+[INFO RSZ-0035] Found 3 fanout violations.
+[INFO RSZ-0038] Inserted 8 buffers in 3 nets.
+[WARNING RSZ-0020] found 2 floating nets.
+ VDD
+ VSS
++ detailed_placement -max_displacement  500 100 
+Placement Analysis
+---------------------------------
+total displacement       1379.2 u
+average displacement        2.9 u
+max displacement           28.8 u
+original HPWL            7116.9 u
+legalized HPWL           7506.0 u
+delta HPWL                    5 %
+
+[INFO DPL-0020] Mirrored 96 instances
+[INFO DPL-0021] HPWL before            7506.0 u
+[INFO DPL-0022] HPWL after             7239.0 u
+[INFO DPL-0023] HPWL delta               -3.6 %
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 176 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Endcap cell                              72     316.11
+  Tap cell                                133     583.92
+  Timing Repair Buffer                     44    1545.42
+  Inverter                                 22     193.18
+  Sequential cell                          36    2735.22
+  Multi-Input combinational cell          161    3112.79
+  Total                                   468    8486.64
+Writing OpenROAD database to '/home/sahana/core5_udma/hardening/uart_rx/runs/RUN_2026-07-26_12-38-49/32-openroad-repairdesignpostgpl/udma_uart_rx.odb'…
+Writing netlist to '/home/sahana/core5_udma/hardening/uart_rx/runs/RUN_2026-07-26_12-38-49/32-openroad-repairdesignpostgpl/udma_uart_rx.nl.v'…
+Writing powered netlist to '/home/sahana/core5_udma/hardening/uart_rx/runs/RUN_2026-07-26_12-38-49/32-openroad-repairdesignpostgpl/udma_uart_rx.pnl.v'…
+Writing layout to '/home/sahana/core5_udma/hardening/uart_rx/runs/RUN_2026-07-26_12-38-49/32-openroad-repairdesignpostgpl/udma_uart_rx.def'…
+Writing timing constraints to '/home/sahana/core5_udma/hardening/uart_rx/runs/RUN_2026-07-26_12-38-49/32-openroad-repairdesignpostgpl/udma_uart_rx.sdc'…

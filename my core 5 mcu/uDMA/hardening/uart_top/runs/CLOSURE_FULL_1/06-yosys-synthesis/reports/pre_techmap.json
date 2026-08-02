@@ -1,0 +1,65 @@
+{
+   "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/sahana/core5_udma/hardening/uart_top/runs/CLOSURE_FULL_1/tmp/a9e37fbcbfa54a4d8c34565941c1ab7c.lib ",
+   "modules": {
+      "\\udma_uart_top": {
+         "num_wires":         1384,
+         "num_wire_bits":     1842,
+         "num_pub_wires":     136,
+         "num_pub_wire_bits": 587,
+         "num_ports":         43,
+         "num_port_bits":     279,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1662,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 448,
+            "$_AND_": 28,
+            "$_DFFE_PN0P_": 223,
+            "$_DFFE_PN1P_": 24,
+            "$_DFF_PN0_": 81,
+            "$_DFF_PN1_": 11,
+            "$_MUX_": 73,
+            "$_NAND_": 55,
+            "$_NOR_": 29,
+            "$_NOT_": 44,
+            "$_ORNOT_": 72,
+            "$_OR_": 477,
+            "$_XNOR_": 13,
+            "$_XOR_": 84
+         }
+      }
+   },
+      "design": {
+         "num_wires":         1384,
+         "num_wire_bits":     1842,
+         "num_pub_wires":     136,
+         "num_pub_wire_bits": 587,
+         "num_ports":         43,
+         "num_port_bits":     279,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1662,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 448,
+            "$_AND_": 28,
+            "$_DFFE_PN0P_": 223,
+            "$_DFFE_PN1P_": 24,
+            "$_DFF_PN0_": 81,
+            "$_DFF_PN1_": 11,
+            "$_MUX_": 73,
+            "$_NAND_": 55,
+            "$_NOR_": 29,
+            "$_NOT_": 44,
+            "$_ORNOT_": 72,
+            "$_OR_": 477,
+            "$_XNOR_": 13,
+            "$_XOR_": 84
+         }
+      }
+}
+

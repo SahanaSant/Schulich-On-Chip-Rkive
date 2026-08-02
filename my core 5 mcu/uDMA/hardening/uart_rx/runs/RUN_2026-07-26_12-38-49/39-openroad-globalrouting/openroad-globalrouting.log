@@ -1,0 +1,75 @@
+Reading timing models for corner nom_tt_025C_5v00…
+Reading timing library for the 'nom_tt_025C_5v00' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib'…
+Reading OpenROAD database at '/home/sahana/core5_udma/hardening/uart_rx/runs/RUN_2026-07-26_12-38-49/37-openroad-resizertimingpostcts/udma_uart_rx.odb'…
+Reading design constraints file at '/nix/store/ffl2vg3m80k0p74pyffnmai83fnv38mf-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/base.sdc'…
+[INFO] Using clock clk_i…
+[INFO] Setting output delay to: 4
+[INFO] Setting input delay to: 4
+[INFO] Setting load to: 0.07291
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[INFO] Setting timing derate to: 5%
+[INFO] Setting signal min routing layer to: Metal2 and clock min routing layer to Metal2. 
+[INFO] Setting signal max routing layer to: Metal5 and clock max routing layer to Metal5. 
++ global_route -congestion_iterations 50 -verbose
+[INFO GRT-0020] Min routing layer: Metal2
+[INFO GRT-0021] Max routing layer: Metal5
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0088] Layer Metal1  Track-Pitch = 0.5600  line-2-Via Pitch: 0.4750
+[INFO GRT-0088] Layer Metal2  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal3  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal4  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal5  Track-Pitch = 0.9000  line-2-Via Pitch: 0.8200
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 0
+[INFO GRT-0019] Found 6 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 11
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+Metal1     Horizontal          0             0          0.00%
+Metal2     Vertical         5158          3445          33.21%
+Metal3     Horizontal       5214          3467          33.51%
+Metal4     Vertical         5155          3443          33.21%
+Metal5     Horizontal       3196          2142          32.98%
+---------------------------------------------------------------
+
+[INFO GRT-0197] Via related to pin nodes: 1562
+[INFO GRT-0198] Via related Steiner nodes: 27
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 1890
+[INFO GRT-0112] Final usage 3D: 6741
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+Metal1               0             0            0.00%             0 /  0 /  0
+Metal2            3445           590           17.13%             0 /  0 /  0
+Metal3            3467           481           13.87%             0 /  0 /  0
+Metal4            3443             0            0.00%             0 /  0 /  0
+Metal5            2142             0            0.00%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total            12497          1071            8.57%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 14557 um
+[INFO GRT-0014] Routed nets: 292
+[INFO GRT-0303] Global routing runtime = 00:00:00
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 0 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Endcap cell                              72     316.11
+  Tap cell                                133     583.92
+  Clock buffer                              8     601.48
+  Timing Repair Buffer                     44    1545.42
+  Inverter                                 22     193.18
+  Sequential cell                          36    2735.22
+  Multi-Input combinational cell          161    3112.79
+  Total                                   476    9088.13
+Writing OpenROAD database to '/home/sahana/core5_udma/hardening/uart_rx/runs/RUN_2026-07-26_12-38-49/39-openroad-globalrouting/udma_uart_rx.odb'…
+Writing layout to '/home/sahana/core5_udma/hardening/uart_rx/runs/RUN_2026-07-26_12-38-49/39-openroad-globalrouting/udma_uart_rx.def'…

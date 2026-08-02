@@ -1,0 +1,22 @@
+
+===========================================================================
+Clock Skew (Setup)
+============================================================================
+======================= max_ss_125C_4v50 Corner ===================================
+
+Clock periph_clk
+1.954382 source latency _1975_/CLK ^
+-1.933955 target latency _1783_/CLK ^
+0.250000 clock uncertainty
+0.000000 CRPR
+--------------
+0.270426 setup skew
+
+Clock sys_clk
+2.023736 source latency _2030_/CLK ^
+-1.994813 target latency _1808_/CLK ^
+0.250000 clock uncertainty
+0.000000 CRPR
+--------------
+0.278924 setup skew
+

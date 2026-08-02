@@ -1,0 +1,5 @@
+- cell: udma_uart_rx
+  inout: []
+  input:
+  - cfg_stop_bits_i
+  output: []

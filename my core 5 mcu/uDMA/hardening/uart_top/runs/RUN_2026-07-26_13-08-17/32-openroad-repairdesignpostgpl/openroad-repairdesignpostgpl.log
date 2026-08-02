@@ -1,0 +1,240 @@
+Reading timing models for corner max_ff_n40C_5v50…
+Reading timing library for the 'max_ff_n40C_5v50' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50.lib'…
+Reading timing models for corner max_tt_025C_5v00…
+Reading timing library for the 'max_tt_025C_5v00' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib'…
+Reading timing models for corner nom_ff_n40C_5v50…
+Reading timing library for the 'nom_ff_n40C_5v50' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50.lib'…
+[WARNING STA-1140] /home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50 already exists.
+Reading timing models for corner nom_tt_025C_5v00…
+Reading timing library for the 'nom_tt_025C_5v00' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib'…
+[WARNING STA-1140] /home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00 already exists.
+Reading timing models for corner min_ss_125C_4v50…
+Reading timing library for the 'min_ss_125C_4v50' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50.lib'…
+Reading timing models for corner min_ff_n40C_5v50…
+Reading timing library for the 'min_ff_n40C_5v50' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50.lib'…
+[WARNING STA-1140] /home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50 already exists.
+Reading timing models for corner min_tt_025C_5v00…
+Reading timing library for the 'min_tt_025C_5v00' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib'…
+[WARNING STA-1140] /home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00 already exists.
+Reading timing models for corner max_ss_125C_4v50…
+Reading timing library for the 'max_ss_125C_4v50' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50.lib'…
+[WARNING STA-1140] /home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50 already exists.
+Reading timing models for corner nom_ss_125C_4v50…
+Reading timing library for the 'nom_ss_125C_4v50' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50.lib'…
+[WARNING STA-1140] /home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50 already exists.
+Reading OpenROAD database at '/home/sahana/core5_udma/hardening/uart_top/runs/RUN_2026-07-26_13-08-17/28-openroad-globalplacement/udma_uart_top.odb'…
+Reading design constraints file at '/home/sahana/core5_udma/hardening/uart_top/constraints.sdc'…
+[INFO RSZ-0027] Inserted 112 gf180mcu_fd_sc_mcu7t5v0__dlyb_1 input buffers.
+[INFO RSZ-0028] Inserted 108 gf180mcu_fd_sc_mcu7t5v0__dlyb_1 output buffers.
++ repair_design -verbose -max_wire_length 0 -slew_margin 20 -cap_margin 20
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |      1642
+       10 |     +0.0% |       0 |       0 |             0 |      1632
+       20 |     +0.0% |       0 |       0 |             0 |      1622
+       30 |     +0.0% |       0 |       0 |             0 |      1612
+       40 |     +0.0% |       0 |       0 |             0 |      1602
+       50 |     +0.0% |       0 |       0 |             0 |      1592
+       60 |     +0.0% |       0 |       0 |             0 |      1582
+       70 |     +0.0% |       0 |       0 |             0 |      1572
+       80 |     +0.0% |       0 |       0 |             0 |      1562
+       90 |     +0.0% |       0 |       0 |             0 |      1552
+      100 |     +0.0% |       0 |       0 |             0 |      1542
+      110 |     +0.0% |       0 |       0 |             0 |      1532
+      120 |     +0.0% |       0 |       0 |             0 |      1522
+      130 |     +0.0% |       0 |       0 |             0 |      1512
+      140 |     +0.0% |       0 |       0 |             0 |      1502
+      150 |     +0.1% |       0 |       1 |             1 |      1492
+      160 |     +0.1% |       0 |       1 |             1 |      1482
+      170 |     +0.1% |       0 |       1 |             1 |      1472
+      180 |     +0.1% |       0 |       1 |             1 |      1462
+      190 |     +0.1% |       0 |       1 |             1 |      1452
+      200 |     +0.1% |       0 |       1 |             1 |      1442
+      210 |     +0.1% |       0 |       1 |             1 |      1432
+      220 |     +0.1% |       0 |       2 |             2 |      1422
+      230 |     +0.2% |       1 |       4 |             3 |      1412
+      240 |     +0.2% |       1 |       5 |             4 |      1402
+      250 |     +0.5% |       1 |       9 |             6 |      1392
+      260 |     +0.5% |       1 |       9 |             6 |      1382
+      270 |     +0.5% |       1 |       9 |             6 |      1372
+      280 |     +0.5% |       1 |       9 |             6 |      1362
+      290 |     +0.5% |       1 |       9 |             6 |      1352
+      300 |     +0.5% |       1 |      10 |             7 |      1342
+      310 |     +0.6% |       1 |      11 |             8 |      1332
+      320 |     +0.6% |       1 |      11 |             8 |      1322
+      330 |     +0.6% |       1 |      11 |             8 |      1312
+      340 |     +0.6% |       1 |      11 |             8 |      1302
+      350 |     +0.8% |       1 |      14 |            10 |      1292
+      360 |     +0.8% |       1 |      14 |            10 |      1282
+      370 |     +0.8% |       1 |      14 |            10 |      1272
+      380 |     +0.8% |       1 |      16 |            11 |      1262
+      390 |     +0.9% |       1 |      18 |            13 |      1252
+      400 |     +0.9% |       1 |      19 |            14 |      1242
+      410 |     +0.9% |       1 |      19 |            14 |      1232
+      420 |     +1.0% |       1 |      20 |            15 |      1222
+      430 |     +1.0% |       1 |      20 |            15 |      1212
+      440 |     +1.0% |       1 |      20 |            15 |      1202
+      450 |     +1.0% |       1 |      20 |            15 |      1192
+      460 |     +1.0% |       1 |      20 |            15 |      1182
+      470 |     +1.0% |       1 |      20 |            15 |      1172
+      480 |     +1.0% |       1 |      20 |            15 |      1162
+      490 |     +1.0% |       1 |      20 |            15 |      1152
+      500 |     +1.0% |       1 |      20 |            15 |      1142
+      510 |     +1.0% |       1 |      20 |            15 |      1132
+      520 |     +1.0% |       1 |      20 |            15 |      1122
+      530 |     +1.0% |       1 |      20 |            15 |      1112
+      540 |     +1.0% |       1 |      20 |            15 |      1102
+      550 |     +1.1% |       1 |      21 |            16 |      1092
+      560 |     +1.3% |       1 |      24 |            18 |      1082
+      570 |     +1.7% |       1 |      33 |            22 |      1072
+      580 |     +1.8% |       1 |      34 |            23 |      1062
+      590 |     +1.8% |       1 |      34 |            23 |      1052
+      600 |     +1.8% |       1 |      34 |            23 |      1042
+      610 |     +1.8% |       1 |      34 |            23 |      1032
+      620 |     +1.8% |       1 |      34 |            23 |      1022
+      630 |     +1.8% |       1 |      34 |            23 |      1012
+      640 |     +1.8% |       1 |      34 |            23 |      1002
+      650 |     +1.8% |       1 |      34 |            23 |       992
+      660 |     +1.9% |       1 |      36 |            24 |       982
+      670 |     +1.9% |       1 |      36 |            24 |       972
+      680 |     +2.0% |       1 |      37 |            25 |       962
+      690 |     +2.2% |       1 |      41 |            26 |       952
+      700 |     +2.2% |       1 |      41 |            26 |       942
+      710 |     +2.3% |       1 |      42 |            27 |       932
+      720 |     +2.7% |       1 |      49 |            31 |       922
+      730 |     +2.7% |       1 |      49 |            31 |       912
+      740 |     +2.9% |       1 |      52 |            32 |       902
+      750 |     +2.9% |       1 |      52 |            32 |       892
+      760 |     +2.9% |       1 |      52 |            32 |       882
+      770 |     +3.0% |       1 |      53 |            33 |       872
+      780 |     +3.2% |       1 |      56 |            35 |       862
+      790 |     +3.2% |       1 |      56 |            35 |       852
+      800 |     +3.2% |       1 |      56 |            35 |       842
+      810 |     +3.2% |       1 |      56 |            35 |       832
+      820 |     +3.2% |       1 |      56 |            35 |       822
+      830 |     +3.2% |       1 |      56 |            35 |       812
+      840 |     +3.2% |       1 |      56 |            35 |       802
+      850 |     +3.2% |       1 |      56 |            35 |       792
+      860 |     +3.2% |       1 |      56 |            35 |       782
+      870 |     +3.2% |       1 |      56 |            35 |       772
+      880 |     +3.3% |       1 |      58 |            37 |       762
+      890 |     +3.3% |       1 |      58 |            37 |       752
+      900 |     +3.7% |       1 |      64 |            38 |       742
+      910 |     +3.7% |       1 |      64 |            38 |       732
+      920 |     +3.7% |       1 |      64 |            38 |       722
+      930 |     +3.7% |       1 |      64 |            38 |       712
+      940 |     +3.7% |       1 |      64 |            38 |       702
+      950 |     +3.7% |       1 |      64 |            38 |       692
+      960 |     +3.7% |       1 |      64 |            38 |       682
+      970 |     +3.7% |       1 |      64 |            38 |       672
+      980 |     +3.7% |       1 |      64 |            38 |       662
+      990 |     +3.7% |       1 |      64 |            38 |       652
+     1000 |     +3.7% |       1 |      64 |            38 |       642
+     1010 |     +3.7% |       1 |      64 |            38 |       632
+     1020 |     +3.7% |       1 |      64 |            38 |       622
+     1030 |     +3.7% |       1 |      64 |            38 |       612
+     1040 |     +3.7% |       1 |      64 |            38 |       602
+     1050 |     +3.7% |       1 |      64 |            38 |       592
+     1060 |     +3.7% |       1 |      64 |            38 |       582
+     1070 |     +3.7% |       1 |      64 |            38 |       572
+     1080 |     +3.7% |       1 |      64 |            38 |       562
+     1090 |     +3.7% |       1 |      64 |            38 |       552
+     1100 |     +3.7% |       1 |      64 |            38 |       542
+     1110 |     +3.7% |       1 |      64 |            38 |       532
+     1120 |     +3.7% |       1 |      64 |            38 |       522
+     1130 |     +3.7% |       1 |      64 |            38 |       512
+     1140 |     +3.7% |       1 |      64 |            38 |       502
+     1150 |     +3.7% |       1 |      64 |            38 |       492
+     1160 |     +3.7% |       1 |      64 |            38 |       482
+     1170 |     +3.7% |       1 |      64 |            38 |       472
+     1180 |     +3.7% |       1 |      64 |            38 |       462
+     1190 |     +3.7% |       1 |      64 |            38 |       452
+     1200 |     +3.7% |       1 |      64 |            38 |       442
+     1210 |     +3.7% |       1 |      64 |            38 |       432
+     1220 |     +3.7% |       1 |      64 |            38 |       422
+     1230 |     +3.7% |       1 |      64 |            38 |       412
+     1240 |     +3.7% |       1 |      64 |            38 |       402
+     1250 |     +3.7% |       1 |      64 |            38 |       392
+     1260 |     +3.7% |       1 |      64 |            38 |       382
+     1270 |     +3.8% |       1 |      65 |            39 |       372
+     1280 |     +3.8% |       1 |      65 |            39 |       362
+     1290 |     +3.8% |       1 |      65 |            39 |       352
+     1300 |     +3.8% |       1 |      65 |            39 |       342
+     1310 |     +3.8% |       1 |      65 |            39 |       332
+     1320 |     +3.8% |       1 |      65 |            39 |       322
+     1330 |     +3.8% |       1 |      65 |            39 |       312
+     1340 |     +3.8% |       1 |      65 |            39 |       302
+     1350 |     +3.8% |       1 |      65 |            39 |       292
+     1360 |     +3.8% |       1 |      65 |            39 |       282
+     1370 |     +3.8% |       1 |      65 |            39 |       272
+     1380 |     +3.8% |       1 |      65 |            39 |       262
+     1390 |     +3.8% |       1 |      65 |            39 |       252
+     1400 |     +3.8% |       1 |      65 |            39 |       242
+     1410 |     +3.8% |       1 |      65 |            39 |       232
+     1420 |     +3.8% |       1 |      65 |            39 |       222
+     1430 |     +3.8% |       1 |      65 |            39 |       212
+     1440 |     +3.8% |       1 |      65 |            39 |       202
+     1450 |     +3.8% |       1 |      65 |            39 |       192
+     1460 |     +6.4% |       1 |     104 |            40 |       182
+     1470 |     +6.4% |       1 |     104 |            40 |       172
+     1480 |     +6.4% |       1 |     104 |            40 |       162
+     1490 |     +6.4% |       1 |     104 |            40 |       152
+     1500 |     +6.4% |       1 |     104 |            40 |       142
+     1510 |     +6.4% |       1 |     104 |            40 |       132
+     1520 |     +6.4% |       1 |     104 |            40 |       122
+     1530 |     +6.4% |       1 |     104 |            40 |       112
+     1540 |     +6.4% |       1 |     104 |            40 |       102
+     1550 |     +6.4% |       1 |     104 |            40 |        92
+     1560 |     +6.4% |       1 |     104 |            40 |        82
+     1570 |     +6.4% |       1 |     104 |            40 |        72
+     1580 |     +6.4% |       1 |     104 |            40 |        62
+     1590 |     +6.4% |       1 |     104 |            40 |        52
+     1600 |     +6.4% |       1 |     104 |            40 |        42
+     1610 |     +6.4% |       1 |     104 |            40 |        32
+     1620 |     +6.4% |       1 |     104 |            40 |        22
+     1630 |     +6.4% |       1 |     104 |            40 |        12
+     1640 |     +6.4% |       1 |     104 |            40 |         2
+    final |     +6.4% |       1 |     104 |            40 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0034] Found 36 slew violations.
+[INFO RSZ-0035] Found 22 fanout violations.
+[INFO RSZ-0036] Found 1 capacitance violations.
+[INFO RSZ-0039] Resized 1 instances.
+[INFO RSZ-0038] Inserted 104 buffers in 40 nets.
+[INFO RSZ-0042] Inserted 32 tie gf180mcu_fd_sc_mcu7t5v0__tiel instances.
+[INFO RSZ-0042] Inserted 1 tie gf180mcu_fd_sc_mcu7t5v0__tieh instances.
+[WARNING RSZ-0020] found 2 floating nets.
+ VDD
+ VSS
++ detailed_placement -max_displacement  500 100 
+Placement Analysis
+---------------------------------
+total displacement      13801.2 u
+average displacement        5.0 u
+max displacement           62.7 u
+original HPWL           60431.6 u
+legalized HPWL          68697.6 u
+delta HPWL                   14 %
+
+[INFO DPL-0020] Mirrored 571 instances
+[INFO DPL-0021] HPWL before           68697.6 u
+[INFO DPL-0022] HPWL after            66743.5 u
+[INFO DPL-0023] HPWL delta               -2.8 %
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 1428 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Endcap cell                             194     851.74
+  Tap cell                                942    4135.76
+  Tie cell                                 33     289.77
+  Timing Repair Buffer                    324   11037.47
+  Inverter                                 69     605.88
+  Sequential cell                         339   25455.54
+  Multi-Input combinational cell          843   17713.07
+  Total                                  2744   60089.21
+Writing OpenROAD database to '/home/sahana/core5_udma/hardening/uart_top/runs/RUN_2026-07-26_13-08-17/32-openroad-repairdesignpostgpl/udma_uart_top.odb'…
+Writing netlist to '/home/sahana/core5_udma/hardening/uart_top/runs/RUN_2026-07-26_13-08-17/32-openroad-repairdesignpostgpl/udma_uart_top.nl.v'…
+Writing powered netlist to '/home/sahana/core5_udma/hardening/uart_top/runs/RUN_2026-07-26_13-08-17/32-openroad-repairdesignpostgpl/udma_uart_top.pnl.v'…
+Writing layout to '/home/sahana/core5_udma/hardening/uart_top/runs/RUN_2026-07-26_13-08-17/32-openroad-repairdesignpostgpl/udma_uart_top.def'…
+Writing timing constraints to '/home/sahana/core5_udma/hardening/uart_top/runs/RUN_2026-07-26_13-08-17/32-openroad-repairdesignpostgpl/udma_uart_top.sdc'…

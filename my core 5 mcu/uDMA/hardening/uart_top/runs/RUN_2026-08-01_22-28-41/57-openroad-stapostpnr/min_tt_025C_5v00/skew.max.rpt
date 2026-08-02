@@ -1,0 +1,22 @@
+
+===========================================================================
+Clock Skew (Setup)
+============================================================================
+======================= min_tt_025C_5v00 Corner ===================================
+
+Clock periph_clk
+1.069022 source latency _2001_/CLK ^
+-1.059702 target latency _2079_/CLK ^
+0.250000 clock uncertainty
+0.000000 CRPR
+--------------
+0.259320 setup skew
+
+Clock sys_clk
+1.144924 source latency _2092_/CLK ^
+-1.095697 target latency _2093_/CLK ^
+0.250000 clock uncertainty
+0.000000 CRPR
+--------------
+0.299227 setup skew
+

@@ -1,0 +1,126 @@
+Reading timing models for corner max_ff_n40C_5v50…
+Reading timing library for the 'max_ff_n40C_5v50' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50.lib'…
+Reading timing models for corner max_tt_025C_5v00…
+Reading timing library for the 'max_tt_025C_5v00' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib'…
+Reading timing models for corner nom_ff_n40C_5v50…
+Reading timing library for the 'nom_ff_n40C_5v50' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50.lib'…
+[WARNING STA-1140] /home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50 already exists.
+Reading timing models for corner nom_tt_025C_5v00…
+Reading timing library for the 'nom_tt_025C_5v00' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib'…
+[WARNING STA-1140] /home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00 already exists.
+Reading timing models for corner min_ss_125C_4v50…
+Reading timing library for the 'min_ss_125C_4v50' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50.lib'…
+Reading timing models for corner min_ff_n40C_5v50…
+Reading timing library for the 'min_ff_n40C_5v50' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50.lib'…
+[WARNING STA-1140] /home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50 already exists.
+Reading timing models for corner min_tt_025C_5v00…
+Reading timing library for the 'min_tt_025C_5v00' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib'…
+[WARNING STA-1140] /home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00 already exists.
+Reading timing models for corner max_ss_125C_4v50…
+Reading timing library for the 'max_ss_125C_4v50' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50.lib'…
+[WARNING STA-1140] /home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50 already exists.
+Reading timing models for corner nom_ss_125C_4v50…
+Reading timing library for the 'nom_ss_125C_4v50' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50.lib'…
+[WARNING STA-1140] /home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50 already exists.
+Reading OpenROAD database at '/home/sahana/core5_udma/hardening/uart_top/runs/CLOSURE_FULL_1/35-openroad-cts/udma_uart_top.odb'…
+Reading design constraints file at '/home/sahana/core5_udma/hardening/uart_top/constraints.sdc'…
++ repair_timing -verbose -setup -setup_margin 0.05000000000000000277555756156289135105907917022705078125 -max_buffer_percent 50 -repair_tns 100 -max_utilization 60
+[INFO RSZ-0100] Repair move sequence: UnbufferMove SizeUpMove SwapPinsMove BufferMove CloneMove SplitLoadMove 
+[INFO RSZ-0094] Found 41 endpoints with setup violations.
+[INFO RSZ-0099] Repairing 41 out of 41 (100.00%) violating endpoints...
+   Iter   | Removed | Resized | Inserted | Cloned |  Pin  |   Area   |    WNS   |   TNS      |  Viol  | Worst
+          | Buffers |  Gates  | Buffers  |  Gates | Swaps |          |          |            | Endpts | Endpt
+--------------------------------------------------------------------------------------------------------------
+        0 |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -1.925 |      -55.6 |     41 | cfg_data_o[24]
+        6 |       1 |       4 |        0 |      0 |     0 |    -0.1% |   -0.673 |       -2.4 |     39 | cfg_data_o[9]
+        7 |       1 |       4 |        0 |      0 |     0 |    -0.1% |   -0.673 |       -2.4 |     38 | cfg_data_o[9]
+        8 |       1 |       4 |        0 |      0 |     0 |    -0.1% |   -0.673 |       -2.4 |     37 | cfg_data_o[9]
+        9 |       1 |       4 |        0 |      0 |     0 |    -0.1% |   -0.673 |       -2.4 |     36 | cfg_data_o[9]
+       10 |       1 |       4 |        0 |      0 |     0 |    -0.1% |   -0.673 |       -2.4 |     36 | cfg_data_o[9]
+       10 |       1 |       4 |        0 |      0 |     0 |    -0.1% |   -0.673 |       -2.4 |     35 | cfg_data_o[9]
+       11 |       1 |       4 |        0 |      0 |     0 |    -0.1% |   -0.673 |       -2.4 |     34 | cfg_data_o[9]
+       12 |       1 |       4 |        0 |      0 |     0 |    -0.1% |   -0.673 |       -2.4 |     33 | cfg_data_o[9]
+       13 |       1 |       4 |        0 |      0 |     0 |    -0.1% |   -0.673 |       -2.4 |     32 | cfg_data_o[9]
+       14 |       1 |       4 |        0 |      0 |     0 |    -0.1% |   -0.673 |       -2.4 |     31 | cfg_data_o[9]
+       15 |       1 |       4 |        0 |      0 |     0 |    -0.1% |   -0.673 |       -2.4 |     30 | cfg_data_o[9]
+       18 |       1 |       6 |        0 |      0 |     0 |    -0.2% |   -0.476 |       -1.1 |     28 | cfg_data_o[9]
+       20 |       1 |       7 |        0 |      0 |     0 |    -0.2% |   -0.499 |       -1.2 |     28 | cfg_data_o[9]
+       20 |       1 |       6 |        0 |      0 |     0 |    -0.2% |   -0.476 |       -1.1 |     27 | cfg_data_o[9]
+       21 |       1 |       6 |        0 |      0 |     0 |    -0.2% |   -0.476 |       -1.1 |     26 | cfg_data_o[9]
+       22 |       1 |       6 |        0 |      0 |     0 |    -0.2% |   -0.476 |       -1.1 |     25 | cfg_data_o[9]
+       24 |       1 |       7 |        0 |      0 |     0 |    -0.2% |   -0.476 |       -0.9 |     23 | cfg_data_o[9]
+       26 |       1 |       8 |        0 |      0 |     0 |    -0.2% |   -0.476 |       -0.5 |     21 | cfg_data_o[9]
+       27 |       1 |       8 |        0 |      0 |     0 |    -0.2% |   -0.476 |       -0.5 |     20 | cfg_data_o[9]
+       28 |       1 |       8 |        0 |      0 |     0 |    -0.2% |   -0.476 |       -0.5 |     19 | cfg_data_o[9]
+       29 |       1 |       8 |        0 |      0 |     0 |    -0.2% |   -0.476 |       -0.5 |     18 | cfg_data_o[9]
+       30 |       1 |       8 |        0 |      0 |     0 |    -0.2% |   -0.476 |       -0.5 |     18 | cfg_data_o[9]
+       32 |       1 |      10 |        0 |      0 |     0 |    -0.2% |    0.279 |        0.0 |     16 | cfg_data_o[9]
+       33 |       1 |      10 |        0 |      0 |     0 |    -0.2% |    0.279 |        0.0 |     15 | cfg_data_o[9]
+       34 |       1 |      10 |        0 |      0 |     0 |    -0.2% |    0.279 |        0.0 |     14 | cfg_data_o[9]
+       35 |       1 |      10 |        0 |      0 |     0 |    -0.2% |    0.279 |        0.0 |     13 | cfg_data_o[9]
+       36 |       1 |      10 |        0 |      0 |     0 |    -0.2% |    0.279 |        0.0 |     12 | cfg_data_o[9]
+       37 |       1 |      10 |        0 |      0 |     0 |    -0.2% |    0.279 |        0.0 |     11 | cfg_data_o[9]
+       38 |       1 |      10 |        0 |      0 |     0 |    -0.2% |    0.279 |        0.0 |     10 | cfg_data_o[9]
+       39 |       1 |      10 |        0 |      0 |     0 |    -0.2% |    0.279 |        0.0 |      9 | cfg_data_o[9]
+       40 |       1 |      10 |        0 |      0 |     0 |    -0.2% |    0.279 |        0.0 |      9 | cfg_data_o[9]
+       40 |       1 |      10 |        0 |      0 |     0 |    -0.2% |    0.279 |        0.0 |      8 | cfg_data_o[9]
+       41 |       1 |      10 |        0 |      0 |     0 |    -0.2% |    0.279 |        0.0 |      7 | cfg_data_o[9]
+       42 |       1 |      10 |        0 |      0 |     0 |    -0.2% |    0.279 |        0.0 |      6 | cfg_data_o[9]
+       43 |       1 |      10 |        0 |      0 |     0 |    -0.2% |    0.279 |        0.0 |      5 | cfg_data_o[9]
+       44 |       1 |      10 |        0 |      0 |     0 |    -0.2% |    0.279 |        0.0 |      4 | cfg_data_o[9]
+       45 |       1 |      10 |        0 |      0 |     0 |    -0.2% |    0.279 |        0.0 |      3 | cfg_data_o[9]
+       46 |       1 |      10 |        0 |      0 |     0 |    -0.2% |    0.279 |        0.0 |      2 | cfg_data_o[9]
+       47 |       1 |      10 |        0 |      0 |     0 |    -0.2% |    0.279 |        0.0 |      1 | cfg_data_o[9]
+       48 |       1 |      10 |        0 |      0 |     0 |    -0.2% |    0.279 |        0.0 |      0 | cfg_data_o[9]
+       49 |       1 |      10 |        0 |      0 |     0 |    -0.2% |    0.279 |        0.0 |      0 | cfg_data_o[9]
+       50 |       1 |      10 |        0 |      0 |     0 |    -0.2% |    0.279 |        0.0 |      0 | cfg_data_o[9]
+       50 |       1 |      10 |        0 |      0 |     0 |    -0.2% |    0.279 |        0.0 |      0 | cfg_data_o[9]
+       51 |       1 |      10 |        0 |      0 |     0 |    -0.2% |    0.279 |        0.0 |      0 | cfg_data_o[9]
+       52 |       1 |      10 |        0 |      0 |     0 |    -0.2% |    0.279 |        0.0 |      0 | cfg_data_o[9]
+       53 |       1 |      10 |        0 |      0 |     0 |    -0.2% |    0.279 |        0.0 |      0 | cfg_data_o[9]
+    final |       1 |      10 |        0 |      0 |     0 |    -0.2% |    0.279 |        0.0 |      0 | cfg_data_o[9]
+--------------------------------------------------------------------------------------------------------------
+[INFO RSZ-0059] Removed 1 buffers.
+[INFO RSZ-0051] Resized 10 instances: 10 up, 0 up match, 0 down, 0 VT
++ repair_timing -verbose -hold -setup_margin 0.05000000000000000277555756156289135105907917022705078125 -hold_margin 0.1000000000000000055511151231257827021181583404541015625 -max_buffer_percent 50
+[INFO RSZ-0046] Found 16 endpoints with hold violations.
+Iteration | Resized | Buffers | Cloned Gates |   Area   |   WNS   |   TNS   | Endpoint
+--------------------------------------------------------------------------------------
+        0 |       0 |       0 |            0 |    +0.0% |   0.073 |   0.000 | _2147_/D
+       10 |       0 |       9 |            0 |    +0.7% |   0.074 |   0.000 | _2180_/D
+    final |       0 |      16 |            0 |    +1.3% |   0.102 |   0.000 | _2177_/D
+--------------------------------------------------------------------------------------
+[INFO RSZ-0032] Inserted 16 hold buffers.
++ detailed_placement -max_displacement  500 100 
+Placement Analysis
+---------------------------------
+total displacement        151.9 u
+average displacement        0.0 u
+max displacement           13.3 u
+original HPWL           85029.1 u
+legalized HPWL          87885.7 u
+delta HPWL                    3 %
+
+[INFO DPL-0020] Mirrored 706 instances
+[INFO DPL-0021] HPWL before           87885.7 u
+[INFO DPL-0022] HPWL after            85114.5 u
+[INFO DPL-0023] HPWL delta               -3.2 %
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 64 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Endcap cell                             198     869.30
+  Tap cell                                961    4219.17
+  Tie cell                                 33     289.77
+  Clock buffer                            119    8174.92
+  Timing Repair Buffer                    493   14106.36
+  Inverter                                 68     597.09
+  Sequential cell                         339   25455.54
+  Multi-Input combinational cell          887   19425.32
+  Total                                  3098   73137.48
+Writing OpenROAD database to '/home/sahana/core5_udma/hardening/uart_top/runs/CLOSURE_FULL_1/37-openroad-resizertimingpostcts/udma_uart_top.odb'…
+Writing netlist to '/home/sahana/core5_udma/hardening/uart_top/runs/CLOSURE_FULL_1/37-openroad-resizertimingpostcts/udma_uart_top.nl.v'…
+Writing powered netlist to '/home/sahana/core5_udma/hardening/uart_top/runs/CLOSURE_FULL_1/37-openroad-resizertimingpostcts/udma_uart_top.pnl.v'…
+Writing layout to '/home/sahana/core5_udma/hardening/uart_top/runs/CLOSURE_FULL_1/37-openroad-resizertimingpostcts/udma_uart_top.def'…
+Writing timing constraints to '/home/sahana/core5_udma/hardening/uart_top/runs/CLOSURE_FULL_1/37-openroad-resizertimingpostcts/udma_uart_top.sdc'…

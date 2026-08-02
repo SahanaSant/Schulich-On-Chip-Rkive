@@ -1,0 +1,47 @@
+%Warning-PINCONNECTEMPTY: /home/sahana/core5_udma/dependencies/common_cells/src/edge_propagator.sv:46:10: Instance pin connected by name with empty reference: 'f_edge_o'
+   46 |         .f_edge_o (              ),
+      |          ^~~~~~~~
+                          ... For warning description see https://verilator.org/warn/PINCONNECTEMPTY?v=5.044
+                          ... Use "/* verilator lint_off PINCONNECTEMPTY */" and lint_on around source to disable this message.
+%Warning-VARHIDDEN: /home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_full_detector.v:20:34: Declaration of signal hides declaration in upper scope: 'full'
+   20 |     output                       full;
+      |                                  ^~~~
+                    /home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_token_ring_fifo_din.v:75:5: ... Location of original declaration
+   75 |     full
+      |     ^~~~
+                    ... For warning description see https://verilator.org/warn/VARHIDDEN?v=5.044
+                    ... Use "/* verilator lint_off VARHIDDEN */" and lint_on around source to disable this message.
+%Error-MODMISSING: /home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_data_buffer.sv:30:5: Cannot find file containing module: 'onehot_to_bin'
+   30 |     onehot_to_bin #(.ONEHOT_WIDTH(BUFFER_DEPTH)) WPRT_OH_BIN (.onehot(write_pointer), .bin(write_pointer_bin));
+      |     ^~~~~~~~~~~~~
+                   ... For error description see https://verilator.org/warn/MODMISSING?v=5.044
+                   ... This may be because there's no search path specified with -I<dir>.
+                   ... Looked in:
+                        onehot_to_bin
+                        onehot_to_bin.v
+                        onehot_to_bin.sv
+                        obj_dir/onehot_to_bin
+                        obj_dir/onehot_to_bin.v
+                        obj_dir/onehot_to_bin.sv
+%Error-MODMISSING: /home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_data_buffer.sv:31:5: Cannot find file containing module: 'onehot_to_bin'
+   31 |     onehot_to_bin #(.ONEHOT_WIDTH(BUFFER_DEPTH)) RPRT_OH_BIN (.onehot(read_pointer),  .bin(read_pointer_bin));
+      |     ^~~~~~~~~~~~~
+%Warning-WIDTHEXPAND: /home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:119:40: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'pointer_in' generates 1 bits.
+                                                                                            : ... note: In instance 'udma_uart_top.u_fifo.i_fifo'
+  119 |                         if (pointer_in == $unsigned(BUFFER_DEPTH - 1))
+      |                                        ^~
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.044
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: /home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:132:41: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'pointer_out' generates 1 bits.
+                                                                                            : ... note: In instance 'udma_uart_top.u_fifo.i_fifo'
+  132 |                         if (pointer_out == $unsigned(BUFFER_DEPTH - 1))
+      |                                         ^~
+%Warning-WIDTHEXPAND: /home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:283:24: Operator ASSIGN expects 32 bits on the Assign RHS, but Assign RHS's VARREF 'cfg_rx_curr_addr_i' generates 12 bits.
+                                                                                      : ... note: In instance 'udma_uart_top.u_reg_if'
+  283 |             cfg_data_o = cfg_rx_curr_addr_i;
+      |                        ^
+%Warning-WIDTHEXPAND: /home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:289:24: Operator ASSIGN expects 32 bits on the Assign RHS, but Assign RHS's VARREF 'cfg_tx_curr_addr_i' generates 12 bits.
+                                                                                      : ... note: In instance 'udma_uart_top.u_reg_if'
+  289 |             cfg_data_o = cfg_tx_curr_addr_i;
+      |                        ^
+%Error: Exiting due to 2 error(s)

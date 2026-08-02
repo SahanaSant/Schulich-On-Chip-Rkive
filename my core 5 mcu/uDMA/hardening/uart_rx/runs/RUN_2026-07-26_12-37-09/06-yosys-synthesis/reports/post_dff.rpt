@@ -1,0 +1,41 @@
+109. Printing statistics.
+
+=== udma_uart_rx ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      266        - wires
+      334        - wire bits
+       24        - public wires
+       66        - public wire bits
+       15        - ports
+       38        - port bits
+      308 2.74E+03 cells
+       57        -   $_ANDNOT_
+        9        -   $_AND_
+       18        -   $_MUX_
+       11        -   $_NAND_
+        9        -   $_NOR_
+        5        -   $_NOT_
+       17        -   $_ORNOT_
+       95        -   $_OR_
+        2        -   $_XNOR_
+       49        -   $_XOR_
+       25  1865.92   gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+       11  869.299   gf180mcu_fd_sc_mcu7t5v0__dffsnq_1
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+   Chip area for module '\udma_uart_rx': 2735.219200
+     of which used for sequential elements: 2735.219200 (100.00%)
+

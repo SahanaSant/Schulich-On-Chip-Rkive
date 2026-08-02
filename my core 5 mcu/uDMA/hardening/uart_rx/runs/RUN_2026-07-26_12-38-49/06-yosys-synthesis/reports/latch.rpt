@@ -1,0 +1,16 @@
+
+14. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\udma_uart_rx.\err_parity_o' from process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:84$3'.
+No latch inferred for signal `\udma_uart_rx.\err_overflow_o' from process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:84$3'.
+No latch inferred for signal `\udma_uart_rx.\char_event_o' from process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:84$3'.
+No latch inferred for signal `\udma_uart_rx.\rx_valid_o' from process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:84$3'.
+No latch inferred for signal `\udma_uart_rx.\NS' from process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:84$3'.
+No latch inferred for signal `\udma_uart_rx.\reg_data_next' from process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:84$3'.
+No latch inferred for signal `\udma_uart_rx.\reg_bit_count_next' from process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:84$3'.
+No latch inferred for signal `\udma_uart_rx.\parity_bit_next' from process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:84$3'.
+No latch inferred for signal `\udma_uart_rx.\s_sample_data' from process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:84$3'.
+No latch inferred for signal `\udma_uart_rx.\baudgen_en' from process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:84$3'.
+No latch inferred for signal `\udma_uart_rx.\start_bit' from process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:84$3'.
+No latch inferred for signal `\udma_uart_rx.\s_set_error_parity' from process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:84$3'.
+No latch inferred for signal `\udma_uart_rx.\s_err_clear' from process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:84$3'.
+No latch inferred for signal `\udma_uart_rx.\s_target_bits' from process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:70$2'.

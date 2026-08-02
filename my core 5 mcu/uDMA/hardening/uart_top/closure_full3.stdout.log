@@ -1,0 +1,298 @@
+[22:21:01] [I] Starting a new run of the 'Classic' flow with the tag flow.py:654
+               'CLOSURE_FULL_3'.                                                
+[22:21:01] [I] Starting…                                       sequential.py:339
+[22:21:01] [V] Running 'Verilator.Lint' at                          step.py:1138
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/01-verilator-lint'…              
+[22:21:03] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/01-verilator-lint/ve             
+               rilator-lint.log'…                                               
+[22:21:05] [V] Running 'Checker.LintTimingConstructs' at            step.py:1138
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/02-checker-linttimin             
+               gconstructs'…                                                    
+[22:21:05] [I] Check for Lint Timing Errors clear.                checker.py:412
+[22:21:05] [V] Running 'Checker.LintErrors' at                      step.py:1138
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/03-checker-linterror             
+               s'…                                                              
+[22:21:05] [I] Check for Lint errors clear.                       checker.py:131
+[22:21:05] [V] Running 'Checker.LintWarnings' at                    step.py:1138
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/04-checker-lintwarni             
+               ngs'…                                                            
+[22:21:05] [W] 12 Lint warnings found.                            checker.py:122
+[22:21:06] [V] Running 'Yosys.JsonHeader' at                        step.py:1138
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/05-yosys-jsonheader'             
+               …                                                                
+[22:21:12] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/05-yosys-jsonheader/             
+               yosys-jsonheader.log'…                                           
+[22:21:15] [V] Running 'Yosys.Synthesis' at                         step.py:1138
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/06-yosys-synthesis'…             
+[22:21:15] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/06-yosys-synthesis/y             
+               osys-synthesis.log'…                                             
+[22:21:35] [V] Parsing synthesis checks…                            pyosys.py:59
+[22:21:35] [V] Running 'Checker.YosysUnmappedCells' at              step.py:1138
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/07-checker-yosysunma             
+               ppedcells'…                                                      
+[22:21:35] [I] Check for Unmapped Yosys instances clear.          checker.py:131
+[22:21:35] [V] Running 'Checker.YosysSynthChecks' at                step.py:1138
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/08-checker-yosyssynt             
+               hchecks'…                                                        
+[22:21:35] [I] Check for Yosys check errors clear.                checker.py:131
+[22:21:35] [V] Running 'Checker.NetlistAssignStatements' at         step.py:1138
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/09-checker-netlistas             
+               signstatements'…                                                 
+[22:21:35] [V] Running 'OpenROAD.CheckSDCFiles' at                  step.py:1138
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/10-openroad-checksdc             
+               files'…                                                          
+[22:21:35] [V] Running 'OpenROAD.CheckMacroInstances' at            step.py:1138
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/11-openroad-checkmac             
+               roinstances'…                                                    
+[22:21:35] [I] No macros found, skipping instance check…         openroad.py:692
+[22:21:35] [V] Running 'OpenROAD.STAPrePNR' at                      step.py:1138
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/12-openroad-staprepn             
+               r'…                                                              
+[22:21:35] [I] Starting STA for the nom_tt_025C_5v00 timing      openroad.py:747
+               corner…                                                          
+[22:21:35] [I] Starting STA for the nom_ss_125C_4v50 timing      openroad.py:747
+               corner…                                                          
+[22:21:35] [I] Starting STA for the nom_ff_n40C_5v50 timing      openroad.py:747
+               corner…                                                          
+[22:21:35] [I] Skipping corner min_tt_025C_5v00 for STA          openroad.py:785
+               (identical to nom_tt_025C_5v00 at this stage)…                   
+[22:21:35] [I] Skipping corner min_ss_125C_4v50 for STA          openroad.py:785
+               (identical to nom_ss_125C_4v50 at this stage)…                   
+[22:21:35] [I] Skipping corner min_ff_n40C_5v50 for STA          openroad.py:785
+               (identical to nom_ff_n40C_5v50 at this stage)…                   
+[22:21:35] [I] Skipping corner max_tt_025C_5v00 for STA          openroad.py:785
+               (identical to nom_tt_025C_5v00 at this stage)…                   
+[22:21:35] [I] Skipping corner max_ss_125C_4v50 for STA          openroad.py:785
+               (identical to nom_ss_125C_4v50 at this stage)…                   
+[22:21:35] [I] Skipping corner max_ff_n40C_5v50 for STA          openroad.py:785
+               (identical to nom_ff_n40C_5v50 at this stage)…                   
+[22:21:35] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/12-openroad-staprepn             
+               r/nom_ss_125C_4v50/sta.log'…                                     
+[22:21:35] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/12-openroad-staprepn             
+               r/nom_tt_025C_5v00/sta.log'…                                     
+[22:21:35] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/12-openroad-staprepn             
+               r/nom_ff_n40C_5v50/sta.log'…                                     
+[22:21:40] [I] Finished STA for the nom_tt_025C_5v00 timing      openroad.py:762
+               corner.                                                          
+[22:21:41] [I] Finished STA for the nom_ss_125C_4v50 timing      openroad.py:762
+               corner.                                                          
+[22:21:41] [I] Finished STA for the nom_ff_n40C_5v50 timing      openroad.py:762
+               corner.                                                          
+[22:21:41] [V] Running 'OpenROAD.Floorplan' at                      step.py:1138
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/13-openroad-floorpla             
+               n'…                                                              
+[22:21:41] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/13-openroad-floorpla             
+               n/openroad-floorplan.log'…                                       
+[22:21:46] [V] Running 'OpenROAD.DumpRCValues' at                   step.py:1138
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/14-openroad-dumprcva             
+               lues'…                                                           
+[22:21:46] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/14-openroad-dumprcva             
+               lues/openroad-dumprcvalues.log'…                                 
+[22:21:47] [V] Running 'Odb.CheckMacroAntennaProperties' at         step.py:1138
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/15-odb-checkmacroant             
+               ennaproperties'…                                                 
+[22:21:47] [I] No cells provided, skipping                            odb.py:234
+               'Odb.CheckMacroAntennaProperties'…                               
+[22:21:47] [V] Running 'Odb.SetPowerConnections' at                 step.py:1138
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/16-odb-setpowerconne             
+               ctions'…                                                         
+[22:21:47] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/16-odb-setpowerconne             
+               ctions/odb-setpowerconnections.log'…                             
+[22:21:50] [V] Running 'Odb.ManualMacroPlacement' at                step.py:1138
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/17-odb-manualmacropl             
+               acement'…                                                        
+[22:21:50] [I] No instances found, skipping                           odb.py:468
+               'Odb.ManualMacroPlacement'…                                      
+[22:21:50] [V] Running 'OpenROAD.CutRows' at                        step.py:1138
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/18-openroad-cutrows'             
+               …                                                                
+[22:21:50] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/18-openroad-cutrows/             
+               openroad-cutrows.log'…                                           
+[22:21:53] [V] Running 'OpenROAD.TapEndcapInsertion' at             step.py:1138
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/19-openroad-tapendca             
+               pinsertion'…                                                     
+[22:21:54] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/19-openroad-tapendca             
+               pinsertion/openroad-tapendcapinsertion.log'…                     
+[22:21:57] [V] Running 'Odb.AddPDNObstructions' at                  step.py:1138
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/20-odb-addpdnobstruc             
+               tions'…                                                          
+[22:21:57] [I] 'PDN_OBSTRUCTIONS' is not defined. Skipping            odb.py:589
+               'Odb.AddPDNObstructions'…                                        
+[22:21:57] [V] Running 'OpenROAD.GeneratePDN' at                    step.py:1138
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/21-openroad-generate             
+               pdn'…                                                            
+[22:21:57] [I] 'PDN_CFG' not explicitly set, setting it to      openroad.py:1481
+               /nix/store/ffl2vg3m80k0p74pyffnmai83fnv38mf-pyth                 
+               on3-3.13.9-env/lib/python3.13/site-packages/libr                 
+               elane/scripts/openroad/common/pdn_cfg.tcl…                       
+[22:21:57] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/21-openroad-generate             
+               pdn/openroad-generatepdn.log'…                                   
+[22:22:00] [V] Running 'Odb.RemovePDNObstructions' at               step.py:1138
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/22-odb-removepdnobst             
+               ructions'…                                                       
+[22:22:00] [I] 'PDN_OBSTRUCTIONS' is not defined. Skipping            odb.py:589
+               'Odb.RemovePDNObstructions'…                                     
+[22:22:00] [V] Running 'Odb.AddRoutingObstructions' at              step.py:1138
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/23-odb-addroutingobs             
+               tructions'…                                                      
+[22:22:00] [I] 'ROUTING_OBSTRUCTIONS' is not defined. Skipping        odb.py:589
+               'Odb.AddRoutingObstructions'…                                    
+[22:22:00] [V] Running 'OpenROAD.GlobalPlacementSkipIO' at          step.py:1138
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/24-openroad-globalpl             
+               acementskipio'…                                                  
+[22:22:00] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/24-openroad-globalpl             
+               acementskipio/openroad-globalplacementskipio.log'…               
+[22:22:04] [V] Running 'OpenROAD.IOPlacement' at                    step.py:1138
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/25-openroad-ioplacem             
+               ent'…                                                            
+[22:22:04] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/25-openroad-ioplacem             
+               ent/openroad-ioplacement.log'…                                   
+[22:22:07] [V] Running 'Odb.CustomIOPlacement' at                   step.py:1138
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/26-odb-customioplace             
+               ment'…                                                           
+[22:22:08] [I] No custom I/O placement file configured, skipping      odb.py:718
+               'Odb.CustomIOPlacement'…                                         
+[22:22:08] [V] Running 'Odb.ApplyDEFTemplate' at                    step.py:1138
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/27-odb-applydeftempl             
+               ate'…                                                            
+[22:22:08] [I] No DEF template provided, skipping                     odb.py:302
+               'Odb.ApplyDEFTemplate'…                                          
+[22:22:08] [V] Running 'OpenROAD.GlobalPlacement' at                step.py:1138
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/28-openroad-globalpl             
+               acement'…                                                        
+[22:22:08] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/28-openroad-globalpl             
+               acement/openroad-globalplacement.log'…                           
+[22:22:12] [V] Running 'Odb.WriteVerilogHeader' at                  step.py:1138
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/29-odb-writeverilogh             
+               eader'…                                                          
+[22:22:12] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/29-odb-writeverilogh             
+               eader/odb-writeverilogheader.log'…                               
+[22:22:14] [V] Running 'Checker.PowerGridViolations' at             step.py:1138
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/30-checker-powergrid             
+               violations'…                                                     
+[22:22:14] [I] Check for power grid violations (as reported by    checker.py:131
+               OpenROAD PSM- you may ignore these if LVS passes)                
+               clear.                                                           
+[22:22:14] [V] Running 'OpenROAD.STAMidPNR' at                      step.py:1138
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/31-openroad-stamidpn             
+               r'…                                                              
+[22:22:14] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/31-openroad-stamidpn             
+               r/openroad-stamidpnr.log'…                                       
+[22:22:18] [V] Running 'OpenROAD.RepairDesignPostGPL' at            step.py:1138
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/32-openroad-repairde             
+               signpostgpl'…                                                    
+[22:22:18] [I] Logging subprocess to                                step.py:1336
+               '../../../../../../../home/sahana/core5_udma/hardeni             
+               ng/uart_top/runs/CLOSURE_FULL_3/32-openroad-repairde             
+               signpostgpl/openroad-repairdesignpostgpl.log'…                   
+[22:22:21] [W] [STA-1140]                                        openroad.py:314
+               /home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd                
+               _sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C                
+               _5v50.lib line 17, library                                       
+               gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50 already                    
+               exists.                                                          
+[22:22:22] [W] [STA-1140]                                        openroad.py:314
+               /home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd                
+               _sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C                
+               _5v00.lib line 17, library                                       
+               gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00 already                    
+               exists.                                                          
+[22:22:23] [W] [STA-1140]                                        openroad.py:314
+               /home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd                
+               _sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C                
+               _5v50.lib line 17, library                                       
+               gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50 already                    
+               exists.                                                          
+[22:22:24] [W] [STA-1140]                                        openroad.py:314
+               /home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd                
+               _sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C                
+               _5v00.lib line 17, library                                       
+               gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00 already                    
+               exists.                                                          
+[22:22:25] [W] [STA-1140]                                        openroad.py:314
+               /home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd                
+               _sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C                
+               _4v50.lib line 17, library                                       
+               gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50 already                    
+               exists.                                                          
+[22:22:26] [W] [STA-1140]                                        openroad.py:314
+               /home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd                
+               _sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C                
+               _4v50.lib line 17, library                                       
+               gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50 already                    
+               exists.                                                          
+
+[22:25:19] [W] The following warnings were generated by the flow:    flow.py:699
+[22:25:20] [W] [Checker.LintWarnings] 12 Lint warnings found.        flow.py:701
+[22:25:20] [W] [OpenROAD.RepairDesignPostGPL] [STA-1140]             flow.py:701
+               /home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_            
+               mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50.li            
+               b line 17, library                                               
+               gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50 already exists.            
+               (and 5 similar warnings)                                         

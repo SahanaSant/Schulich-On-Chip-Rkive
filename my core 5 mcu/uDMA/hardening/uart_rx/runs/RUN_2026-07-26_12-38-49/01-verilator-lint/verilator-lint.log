@@ -1,0 +1,9 @@
+%Warning-UNUSEDSIGNAL: /home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:29:27: Signal is not used: 'cfg_stop_bits_i'
+                                                                                  : ... note: In instance 'udma_uart_rx'
+   29 |   input  logic            cfg_stop_bits_i,
+      |                           ^~~~~~~~~~~~~~~
+                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.044
+                       ... Use "/* verilator lint_off UNUSEDSIGNAL */" and lint_on around source to disable this message.
+- V e r i l a t i o n   R e p o r t: Verilator 5.044 2026-01-01 rev v5.040
+- Verilator: Built from 0.293 MB sources in 300 modules, into 0.047 MB in 3 C++ files needing 0.000 MB
+- Verilator: Walltime 0.850 s (elab=0.116, cvt=0.198, bld=0.000); cpu 0.328 s on 1 threads; alloced 25.309 MB

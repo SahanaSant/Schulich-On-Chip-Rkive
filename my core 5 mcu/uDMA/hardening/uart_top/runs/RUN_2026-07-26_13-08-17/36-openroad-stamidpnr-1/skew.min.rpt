@@ -1,0 +1,23 @@
+
+===========================================================================
+Clock Skew (Hold)
+============================================================================
+Writing metric clock__skew__worst_hold__corner:nom_tt_025C_5v00: -0.2530927483671672
+======================= nom_tt_025C_5v00 Corner ===================================
+
+Clock periph_clk
+0.912993 source latency _1982_/CLK ^
+-0.916086 target latency _1846_/CLK ^
+-0.250000 clock uncertainty
+0.000000 CRPR
+--------------
+-0.253093 hold skew
+
+Clock sys_clk
+0.915843 source latency _1870_/CLK ^
+-0.918901 target latency _1842_/CLK ^
+-0.250000 clock uncertainty
+0.000000 CRPR
+--------------
+-0.253058 hold skew
+

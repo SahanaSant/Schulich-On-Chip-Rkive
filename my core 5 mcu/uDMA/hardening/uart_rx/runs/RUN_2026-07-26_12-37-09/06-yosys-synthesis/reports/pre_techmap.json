@@ -1,0 +1,65 @@
+{
+   "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/sahana/core5_udma/hardening/uart_rx/runs/RUN_2026-07-26_12-37-09/tmp/56e57001409b47a5ac26702d13bba8da.lib ",
+   "modules": {
+      "\\udma_uart_rx": {
+         "num_wires":         250,
+         "num_wire_bits":     318,
+         "num_pub_wires":     24,
+         "num_pub_wire_bits": 66,
+         "num_ports":         15,
+         "num_port_bits":     38,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         292,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 57,
+            "$_AND_": 9,
+            "$_DFFE_PN0P_": 8,
+            "$_DFFE_PN1P_": 8,
+            "$_DFF_PN0_": 17,
+            "$_DFF_PN1_": 3,
+            "$_MUX_": 2,
+            "$_NAND_": 11,
+            "$_NOR_": 9,
+            "$_NOT_": 5,
+            "$_ORNOT_": 17,
+            "$_OR_": 95,
+            "$_XNOR_": 2,
+            "$_XOR_": 49
+         }
+      }
+   },
+      "design": {
+         "num_wires":         250,
+         "num_wire_bits":     318,
+         "num_pub_wires":     24,
+         "num_pub_wire_bits": 66,
+         "num_ports":         15,
+         "num_port_bits":     38,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         292,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 57,
+            "$_AND_": 9,
+            "$_DFFE_PN0P_": 8,
+            "$_DFFE_PN1P_": 8,
+            "$_DFF_PN0_": 17,
+            "$_DFF_PN1_": 3,
+            "$_MUX_": 2,
+            "$_NAND_": 11,
+            "$_NOR_": 9,
+            "$_NOT_": 5,
+            "$_ORNOT_": 17,
+            "$_OR_": 95,
+            "$_XNOR_": 2,
+            "$_XOR_": 49
+         }
+      }
+}
+

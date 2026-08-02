@@ -1,0 +1,2693 @@
+
+===========================================================================
+report_checks -path_delay min (Hold)
+============================================================================
+======================= nom_tt_025C_5v00 Corner ===================================
+
+Startpoint: _377_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _377_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _377_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+     2    0.008620    0.149858    0.725260    0.725260 v _377_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                                         _021_ (net)
+                      0.149858    0.000000    0.725260 v _198_/I (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
+     2    0.008917    0.195295    0.154049    0.879309 ^ _198_/ZN (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
+                                                         _056_ (net)
+                      0.195295    0.000000    0.879309 ^ _359_/A1 (gf180mcu_fd_sc_mcu7t5v0__oai21_1)
+     1    0.003009    0.129024    0.107043    0.986352 v _359_/ZN (gf180mcu_fd_sc_mcu7t5v0__oai21_1)
+                                                         _036_ (net)
+                      0.129024    0.000000    0.986352 v _377_/D (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              0.986352   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _377_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.139559    0.389559   library hold time
+                                              0.389559   data required time
+---------------------------------------------------------------------------------------------
+                                              0.389559   data required time
+                                             -0.986352   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.596793   slack (MET)
+
+
+Startpoint: _378_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _378_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _378_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+     2    0.011853    0.178167    0.747059    0.747059 v _378_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                                         parity_bit (net)
+                      0.178167    0.000000    0.747059 v _361_/A1 (gf180mcu_fd_sc_mcu7t5v0__nand3_1)
+     1    0.004783    0.195903    0.168920    0.915979 ^ _361_/ZN (gf180mcu_fd_sc_mcu7t5v0__nand3_1)
+                                                         _179_ (net)
+                      0.195903    0.000000    0.915979 ^ _362_/B (gf180mcu_fd_sc_mcu7t5v0__oai21_1)
+     1    0.003009    0.125185    0.117460    1.033440 v _362_/ZN (gf180mcu_fd_sc_mcu7t5v0__oai21_1)
+                                                         _037_ (net)
+                      0.125185    0.000000    1.033440 v _378_/D (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              1.033440   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _378_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.140436    0.390436   library hold time
+                                              0.390436   data required time
+---------------------------------------------------------------------------------------------
+                                              0.390436   data required time
+                                             -1.033440   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.643004   slack (MET)
+
+
+Startpoint: _383_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _384_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _383_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+     3    0.011889    0.178482    0.747302    0.747302 v _383_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                                         baud_cnt[4] (net)
+                      0.178482    0.000000    0.747302 v _273_/A1 (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+     1    0.004090    0.249221    0.190200    0.937501 ^ _273_/ZN (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+                                                         _120_ (net)
+                      0.249221    0.000000    0.937501 ^ _274_/A3 (gf180mcu_fd_sc_mcu7t5v0__nor3_1)
+     1    0.003009    0.193022    0.167762    1.105264 v _274_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor3_1)
+                                                         _011_ (net)
+                      0.193022    0.000000    1.105264 v _384_/D (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              1.105264   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _384_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.126589    0.376589   library hold time
+                                              0.376589   data required time
+---------------------------------------------------------------------------------------------
+                                              0.376589   data required time
+                                             -1.105264   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.728674   slack (MET)
+
+
+Startpoint: _396_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _397_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _396_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+     1    0.002779    0.122829    0.738554    0.738554 ^ _396_/Q (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                                         reg_rx_sync[0] (net)
+                      0.122829    0.000000    0.738554 ^ _307_/A2 (gf180mcu_fd_sc_mcu7t5v0__or2_1)
+     1    0.002636    0.108840    0.222350    0.960903 ^ _307_/Z (gf180mcu_fd_sc_mcu7t5v0__or2_1)
+                                                         _018_ (net)
+                      0.108840    0.000000    0.960903 ^ _397_/D (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                              0.960903   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _397_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                 -0.017795    0.232205   library hold time
+                                              0.232205   data required time
+---------------------------------------------------------------------------------------------
+                                              0.232205   data required time
+                                             -0.960903   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.728698   slack (MET)
+
+
+Startpoint: _363_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _363_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _363_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+     4    0.017897    0.231090    0.787811    0.787811 v _363_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                                         r_error_parity (net)
+                      0.231090    0.000000    0.787811 v _312_/A1 (gf180mcu_fd_sc_mcu7t5v0__oai21_1)
+     1    0.004218    0.272942    0.219620    1.007431 ^ _312_/ZN (gf180mcu_fd_sc_mcu7t5v0__oai21_1)
+                                                         _145_ (net)
+                      0.272942    0.000000    1.007431 ^ _313_/I (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
+     1    0.003009    0.129263    0.110852    1.118283 v _313_/ZN (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
+                                                         _022_ (net)
+                      0.129263    0.000000    1.118283 v _363_/D (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              1.118283   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _363_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.139504    0.389504   library hold time
+                                              0.389504   data required time
+---------------------------------------------------------------------------------------------
+                                              0.389504   data required time
+                                             -1.118283   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.728779   slack (MET)
+
+
+Startpoint: _376_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _376_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _376_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+     4    0.019977    0.249539    0.801439    0.801439 v _376_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                                         _020_ (net)
+                      0.249539    0.000000    0.801439 v _356_/B (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+     1    0.004243    0.247662    0.208474    1.009912 ^ _356_/ZN (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+                                                         _176_ (net)
+                      0.247662    0.000000    1.009912 ^ _357_/A2 (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+     1    0.003009    0.150186    0.128444    1.138356 v _357_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+                                                         _035_ (net)
+                      0.150186    0.000000    1.138356 v _376_/D (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              1.138356   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _376_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.134935    0.384935   library hold time
+                                              0.384935   data required time
+---------------------------------------------------------------------------------------------
+                                              0.384935   data required time
+                                             -1.138356   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.753421   slack (MET)
+
+
+Startpoint: _397_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _398_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _397_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+     2    0.008461    0.161859    0.800105    0.800105 v _397_/Q (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                                         reg_rx_sync[1] (net)
+                      0.161859    0.000000    0.800105 v _183_/I (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
+     2    0.008753    0.195011    0.155817    0.955921 ^ _183_/ZN (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
+                                                         _041_ (net)
+                      0.195011    0.000000    0.955921 ^ _308_/A1 (gf180mcu_fd_sc_mcu7t5v0__nand2_1)
+     1    0.002636    0.117518    0.095522    1.051443 v _308_/ZN (gf180mcu_fd_sc_mcu7t5v0__nand2_1)
+                                                         _019_ (net)
+                      0.117518    0.000000    1.051443 v _398_/D (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                              1.051443   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _398_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                  0.041098    0.291098   library hold time
+                                              0.291098   data required time
+---------------------------------------------------------------------------------------------
+                                              0.291098   data required time
+                                             -1.051443   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.760345   slack (MET)
+
+
+Startpoint: _382_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _382_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _382_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+     4    0.019005    0.240791    0.795282    0.795282 v _382_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                                         baud_cnt[3] (net)
+                      0.240791    0.000000    0.795282 v _267_/A1 (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+     1    0.004090    0.243570    0.199313    0.994595 ^ _267_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+                                                         _116_ (net)
+                      0.243570    0.000000    0.994595 ^ _268_/A3 (gf180mcu_fd_sc_mcu7t5v0__nor3_1)
+     1    0.003009    0.199192    0.166692    1.161287 v _268_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor3_1)
+                                                         _009_ (net)
+                      0.199192    0.000000    1.161287 v _382_/D (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              1.161287   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _382_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.125387    0.375387   library hold time
+                                              0.375387   data required time
+---------------------------------------------------------------------------------------------
+                                              0.375387   data required time
+                                             -1.161287   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.785900   slack (MET)
+
+
+Startpoint: _393_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _393_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _393_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+     4    0.022185    0.269717    0.814906    0.814906 v _393_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                                         baud_cnt[14] (net)
+                      0.269717    0.000000    0.814906 v _301_/A1 (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+     1    0.003979    0.249224    0.206059    1.020965 ^ _301_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+                                                         _139_ (net)
+                      0.249224    0.000000    1.020965 ^ _303_/A2 (gf180mcu_fd_sc_mcu7t5v0__nor3_1)
+     1    0.003009    0.173735    0.155868    1.176834 v _303_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor3_1)
+                                                         _005_ (net)
+                      0.173735    0.000000    1.176834 v _393_/D (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              1.176834   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _393_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.130347    0.380347   library hold time
+                                              0.380347   data required time
+---------------------------------------------------------------------------------------------
+                                              0.380347   data required time
+                                             -1.176834   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.796487   slack (MET)
+
+
+Startpoint: _364_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _366_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _364_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+     5    0.021919    0.267286    0.813284    0.813284 v _364_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                                         CS[0] (net)
+                      0.267286    0.000000    0.813284 v _329_/A1 (gf180mcu_fd_sc_mcu7t5v0__oai211_1)
+     1    0.004772    0.327028    0.263132    1.076416 ^ _329_/ZN (gf180mcu_fd_sc_mcu7t5v0__oai211_1)
+                                                         _159_ (net)
+                      0.327028    0.000000    1.076416 ^ _331_/A2 (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+     1    0.003009    0.140852    0.107198    1.183613 v _331_/ZN (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+                                                         _025_ (net)
+                      0.140852    0.000000    1.183613 v _366_/D (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              1.183613   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _366_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.136856    0.386856   library hold time
+                                              0.386856   data required time
+---------------------------------------------------------------------------------------------
+                                              0.386856   data required time
+                                             -1.183613   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.796757   slack (MET)
+
+
+Startpoint: _394_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _394_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _394_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+     4    0.020638    0.255579    0.805471    0.805471 v _394_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                                         baud_cnt[15] (net)
+                      0.255579    0.000000    0.805471 v _304_/A1 (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+     1    0.004045    0.244448    0.202967    1.008438 ^ _304_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+                                                         _141_ (net)
+                      0.244448    0.000000    1.008438 ^ _305_/B (gf180mcu_fd_sc_mcu7t5v0__aoi211_1)
+     1    0.003009    0.158776    0.178755    1.187192 v _305_/ZN (gf180mcu_fd_sc_mcu7t5v0__aoi211_1)
+                                                         _006_ (net)
+                      0.158776    0.000000    1.187192 v _394_/D (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              1.187192   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _394_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.133261    0.383261   library hold time
+                                              0.383261   data required time
+---------------------------------------------------------------------------------------------
+                                              0.383261   data required time
+                                             -1.187192   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.803931   slack (MET)
+
+
+Startpoint: _392_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _392_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _392_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+     4    0.023439    0.281177    0.822555    0.822555 v _392_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                                         baud_cnt[13] (net)
+                      0.281177    0.000000    0.822555 v _297_/B (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+     1    0.003979    0.247299    0.211132    1.033687 ^ _297_/ZN (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+                                                         _136_ (net)
+                      0.247299    0.000000    1.033687 ^ _300_/A2 (gf180mcu_fd_sc_mcu7t5v0__nor3_1)
+     1    0.003009    0.173269    0.155557    1.189245 v _300_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor3_1)
+                                                         _004_ (net)
+                      0.173269    0.000000    1.189245 v _392_/D (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              1.189245   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _392_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.130438    0.380438   library hold time
+                                              0.380438   data required time
+---------------------------------------------------------------------------------------------
+                                              0.380438   data required time
+                                             -1.189245   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.808807   slack (MET)
+
+
+Startpoint: _390_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _390_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _390_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+     5    0.024928    0.294785    0.831637    0.831637 v _390_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                                         baud_cnt[11] (net)
+                      0.294785    0.000000    0.831637 v _291_/A1 (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+     1    0.003979    0.244654    0.213538    1.045176 ^ _291_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+                                                         _132_ (net)
+                      0.244654    0.000000    1.045176 ^ _294_/A2 (gf180mcu_fd_sc_mcu7t5v0__nor3_1)
+     1    0.003009    0.172629    0.155130    1.200305 v _294_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor3_1)
+                                                         _002_ (net)
+                      0.172629    0.000000    1.200305 v _390_/D (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              1.200305   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _390_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.130563    0.380563   library hold time
+                                              0.380563   data required time
+---------------------------------------------------------------------------------------------
+                                              0.380563   data required time
+                                             -1.200305   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.819743   slack (MET)
+
+
+Startpoint: _381_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _381_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _381_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+     5    0.024655    0.292290    0.829972    0.829972 v _381_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                                         baud_cnt[2] (net)
+                      0.292290    0.000000    0.829972 v _264_/B (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+     1    0.004090    0.251037    0.214900    1.044872 ^ _264_/ZN (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+                                                         _114_ (net)
+                      0.251037    0.000000    1.044872 ^ _265_/A3 (gf180mcu_fd_sc_mcu7t5v0__nor3_1)
+     1    0.003009    0.169922    0.168106    1.212978 v _265_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor3_1)
+                                                         _008_ (net)
+                      0.169922    0.000000    1.212978 v _381_/D (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              1.212978   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _381_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.131090    0.381090   library hold time
+                                              0.381090   data required time
+---------------------------------------------------------------------------------------------
+                                              0.381090   data required time
+                                             -1.212978   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.831888   slack (MET)
+
+
+Startpoint: _375_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _375_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _375_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+     5    0.031316    0.353163    0.870600    0.870600 v _375_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                                         reg_bit_count (net)
+                      0.353163    0.000000    0.870600 v _353_/S (gf180mcu_fd_sc_mcu7t5v0__mux2_2)
+     1    0.003009    0.110251    0.355159    1.225759 v _353_/Z (gf180mcu_fd_sc_mcu7t5v0__mux2_2)
+                                                         _034_ (net)
+                      0.110251    0.000000    1.225759 v _375_/D (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              1.225759   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _375_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.143848    0.393848   library hold time
+                                              0.393848   data required time
+---------------------------------------------------------------------------------------------
+                                              0.393848   data required time
+                                             -1.225759   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.831911   slack (MET)
+
+
+Startpoint: _389_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _389_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _389_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+     5    0.027620    0.319386    0.848057    0.848057 v _389_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                                         baud_cnt[10] (net)
+                      0.319386    0.000000    0.848057 v _287_/A1 (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+     1    0.003979    0.246947    0.220879    1.068936 ^ _287_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+                                                         _129_ (net)
+                      0.246947    0.000000    1.068936 ^ _290_/A2 (gf180mcu_fd_sc_mcu7t5v0__nor3_1)
+     1    0.003009    0.173184    0.155501    1.224436 v _290_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor3_1)
+                                                         _001_ (net)
+                      0.173184    0.000000    1.224436 v _389_/D (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              1.224436   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _389_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.130454    0.380454   library hold time
+                                              0.380454   data required time
+---------------------------------------------------------------------------------------------
+                                              0.380454   data required time
+                                             -1.224436   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.843982   slack (MET)
+
+
+Startpoint: _388_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _388_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _388_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+     6    0.028920    0.331267    0.855986    0.855986 v _388_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                                         baud_cnt[9] (net)
+                      0.331267    0.000000    0.855986 v _284_/A1 (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+     1    0.003979    0.237953    0.224327    1.080313 ^ _284_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+                                                         _127_ (net)
+                      0.237953    0.000000    1.080313 ^ _286_/A2 (gf180mcu_fd_sc_mcu7t5v0__nor3_1)
+     1    0.003009    0.171008    0.154047    1.234360 v _286_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor3_1)
+                                                         _015_ (net)
+                      0.171008    0.000000    1.234360 v _388_/D (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              1.234360   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _388_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.130878    0.380878   library hold time
+                                              0.380878   data required time
+---------------------------------------------------------------------------------------------
+                                              0.380878   data required time
+                                             -1.234360   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.853481   slack (MET)
+
+
+Startpoint: _387_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _387_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _387_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+     6    0.031981    0.359241    0.874656    0.874656 v _387_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                                         baud_cnt[8] (net)
+                      0.359241    0.000000    0.874656 v _282_/A1 (gf180mcu_fd_sc_mcu7t5v0__xor2_1)
+     1    0.004243    0.279673    0.253105    1.127761 ^ _282_/Z (gf180mcu_fd_sc_mcu7t5v0__xor2_1)
+                                                         _126_ (net)
+                      0.279673    0.000000    1.127761 ^ _283_/A2 (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+     1    0.003009    0.158504    0.132688    1.260449 v _283_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+                                                         _014_ (net)
+                      0.158504    0.000000    1.260449 v _387_/D (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              1.260449   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _387_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.133314    0.383314   library hold time
+                                              0.383314   data required time
+---------------------------------------------------------------------------------------------
+                                              0.383314   data required time
+                                             -1.260449   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.877134   slack (MET)
+
+
+Startpoint: _385_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _385_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _385_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+     5    0.030869    0.349078    0.867874    0.867874 v _385_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                                         baud_cnt[6] (net)
+                      0.349078    0.000000    0.867874 v _276_/A1 (gf180mcu_fd_sc_mcu7t5v0__xnor2_1)
+     1    0.004243    0.263638    0.284367    1.152241 ^ _276_/ZN (gf180mcu_fd_sc_mcu7t5v0__xnor2_1)
+                                                         _122_ (net)
+                      0.263638    0.000000    1.152241 ^ _277_/A2 (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+     1    0.003009    0.154337    0.130562    1.282803 v _277_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+                                                         _012_ (net)
+                      0.154337    0.000000    1.282803 v _385_/D (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              1.282803   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _385_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.134126    0.384126   library hold time
+                                              0.384126   data required time
+---------------------------------------------------------------------------------------------
+                                              0.384126   data required time
+                                             -1.282803   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.898677   slack (MET)
+
+
+Startpoint: _391_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _391_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _391_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+     5    0.031655    0.356262    0.872668    0.872668 v _391_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                                         baud_cnt[12] (net)
+                      0.356262    0.000000    0.872668 v _295_/A1 (gf180mcu_fd_sc_mcu7t5v0__xnor2_1)
+     1    0.004243    0.263365    0.286573    1.159241 ^ _295_/ZN (gf180mcu_fd_sc_mcu7t5v0__xnor2_1)
+                                                         _135_ (net)
+                      0.263365    0.000000    1.159241 ^ _296_/A2 (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+     1    0.003009    0.154266    0.130526    1.289766 v _296_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+                                                         _003_ (net)
+                      0.154266    0.000000    1.289766 v _391_/D (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              1.289766   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _391_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.134140    0.384140   library hold time
+                                              0.384140   data required time
+---------------------------------------------------------------------------------------------
+                                              0.384140   data required time
+                                             -1.289766   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.905626   slack (MET)
+
+
+Startpoint: _379_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _380_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _379_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+     7    0.037592    0.410976    0.908691    0.908691 v _379_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                                         baud_cnt[0] (net)
+                      0.410976    0.000000    0.908691 v _261_/A1 (gf180mcu_fd_sc_mcu7t5v0__xor2_1)
+     1    0.004243    0.275029    0.267982    1.176673 ^ _261_/Z (gf180mcu_fd_sc_mcu7t5v0__xor2_1)
+                                                         _112_ (net)
+                      0.275029    0.000000    1.176673 ^ _262_/A2 (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+     1    0.003009    0.157297    0.132072    1.308746 v _262_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+                                                         _007_ (net)
+                      0.157297    0.000000    1.308746 v _380_/D (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              1.308746   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _380_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.133550    0.383550   library hold time
+                                              0.383550   data required time
+---------------------------------------------------------------------------------------------
+                                              0.383550   data required time
+                                             -1.308746   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.925196   slack (MET)
+
+
+Startpoint: _398_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _374_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _398_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+     5    0.022317    0.284326    0.895024    0.895024 v _398_/Q (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                                         reg_rx_sync[2] (net)
+                      0.284326    0.000000    0.895024 v _349_/A1 (gf180mcu_fd_sc_mcu7t5v0__nand3_1)
+     1    0.004823    0.213774    0.199260    1.094284 ^ _349_/ZN (gf180mcu_fd_sc_mcu7t5v0__nand3_1)
+                                                         _171_ (net)
+                      0.213774    0.000000    1.094284 ^ _351_/A2 (gf180mcu_fd_sc_mcu7t5v0__oai21_1)
+     1    0.002636    0.135606    0.127417    1.221701 v _351_/ZN (gf180mcu_fd_sc_mcu7t5v0__oai21_1)
+                                                         _033_ (net)
+                      0.135606    0.000000    1.221701 v _374_/D (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                              1.221701   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _374_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                  0.035151    0.285151   library hold time
+                                              0.285151   data required time
+---------------------------------------------------------------------------------------------
+                                              0.285151   data required time
+                                             -1.221701   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.936550   slack (MET)
+
+
+Startpoint: _379_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _379_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _379_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+     7    0.037592    0.685218    1.203735    1.203735 ^ _379_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                                         baud_cnt[0] (net)
+                      0.685218    0.000000    1.203735 ^ _260_/A1 (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+     1    0.003009    0.211397    0.111119    1.314854 v _260_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+                                                         _000_ (net)
+                      0.211397    0.000000    1.314854 v _379_/D (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              1.314854   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _379_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.123010    0.373010   library hold time
+                                              0.373010   data required time
+---------------------------------------------------------------------------------------------
+                                              0.373010   data required time
+                                             -1.314854   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.941844   slack (MET)
+
+
+Startpoint: _366_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _395_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _366_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+     5    0.025177    0.297060    0.833156    0.833156 v _366_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                                         CS[2] (net)
+                      0.297060    0.000000    0.833156 v _251_/A1 (gf180mcu_fd_sc_mcu7t5v0__xor2_1)
+     3    0.014147    0.568294    0.396476    1.229632 ^ _251_/Z (gf180mcu_fd_sc_mcu7t5v0__xor2_1)
+                                                         _108_ (net)
+                      0.568294    0.000000    1.229632 ^ _253_/A2 (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+     1    0.003009    0.163649    0.100605    1.330237 v _253_/ZN (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+                                                         _016_ (net)
+                      0.163649    0.000000    1.330237 v _395_/D (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              1.330237   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _395_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.132312    0.382312   library hold time
+                                              0.382312   data required time
+---------------------------------------------------------------------------------------------
+                                              0.382312   data required time
+                                             -1.330237   data arrival time
+---------------------------------------------------------------------------------------------
+                                              0.947925   slack (MET)
+
+
+Startpoint: _386_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _386_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _386_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+     4    0.017466    0.227316    0.784905    0.784905 v _386_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                                         baud_cnt[7] (net)
+                      0.227316    0.000000    0.784905 v _190_/I (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
+     2    0.012255    0.260864    0.206579    0.991484 ^ _190_/ZN (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
+                                                         _048_ (net)
+                      0.260864    0.000000    0.991484 ^ _278_/A1 (gf180mcu_fd_sc_mcu7t5v0__nand2_1)
+     1    0.002967    0.114622    0.104401    1.095885 v _278_/ZN (gf180mcu_fd_sc_mcu7t5v0__nand2_1)
+                                                         _123_ (net)
+                      0.114622    0.000000    1.095885 v _280_/A3 (gf180mcu_fd_sc_mcu7t5v0__and4_1)
+     1    0.003009    0.112733    0.314534    1.410420 v _280_/Z (gf180mcu_fd_sc_mcu7t5v0__and4_1)
+                                                         _013_ (net)
+                      0.112733    0.000000    1.410420 v _386_/D (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              1.410420   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _386_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.143281    0.393281   library hold time
+                                              0.393281   data required time
+---------------------------------------------------------------------------------------------
+                                              0.393281   data required time
+                                             -1.410420   data arrival time
+---------------------------------------------------------------------------------------------
+                                              1.017139   slack (MET)
+
+
+Startpoint: _398_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _373_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _398_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+     5    0.022317    0.284326    0.895024    0.895024 v _398_/Q (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                                         reg_rx_sync[2] (net)
+                      0.284326    0.000000    0.895024 v _346_/A1 (gf180mcu_fd_sc_mcu7t5v0__oai211_1)
+     1    0.004823    0.334715    0.268741    1.163765 ^ _346_/ZN (gf180mcu_fd_sc_mcu7t5v0__oai211_1)
+                                                         _169_ (net)
+                      0.334715    0.000000    1.163765 ^ _348_/A2 (gf180mcu_fd_sc_mcu7t5v0__oai21_1)
+     1    0.002636    0.135770    0.141694    1.305459 v _348_/ZN (gf180mcu_fd_sc_mcu7t5v0__oai21_1)
+                                                         _032_ (net)
+                      0.135770    0.000000    1.305459 v _373_/D (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                              1.305459   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _373_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                  0.035098    0.285098   library hold time
+                                              0.285098   data required time
+---------------------------------------------------------------------------------------------
+                                              0.285098   data required time
+                                             -1.305459   data arrival time
+---------------------------------------------------------------------------------------------
+                                              1.020361   slack (MET)
+
+
+Startpoint: _365_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _365_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _365_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+     7    0.032838    0.367073    0.879884    0.879884 v _365_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                                         CS[1] (net)
+                      0.367073    0.000000    0.879884 v _327_/I0 (gf180mcu_fd_sc_mcu7t5v0__mux2_2)
+     1    0.002789    0.107422    0.384187    1.264070 v _327_/Z (gf180mcu_fd_sc_mcu7t5v0__mux2_2)
+                                                         _158_ (net)
+                      0.107422    0.000000    1.264070 v _328_/A2 (gf180mcu_fd_sc_mcu7t5v0__and2_1)
+     1    0.003009    0.099735    0.246070    1.510140 v _328_/Z (gf180mcu_fd_sc_mcu7t5v0__and2_1)
+                                                         _024_ (net)
+                      0.099735    0.000000    1.510140 v _365_/D (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              1.510140   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _365_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.146251    0.396251   library hold time
+                                              0.396251   data required time
+---------------------------------------------------------------------------------------------
+                                              0.396251   data required time
+                                             -1.510140   data arrival time
+---------------------------------------------------------------------------------------------
+                                              1.113889   slack (MET)
+
+
+Startpoint: _395_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _364_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _395_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+     7    0.029397    0.556029    1.127586    1.127586 ^ _395_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                                         bit_done (net)
+                      0.556029    0.000000    1.127586 ^ _314_/A1 (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+     1    0.004011    0.197863    0.128133    1.255718 v _314_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+                                                         _146_ (net)
+                      0.197863    0.000000    1.255718 v _324_/B (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+     1    0.004243    0.240139    0.198114    1.453832 ^ _324_/ZN (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+                                                         _156_ (net)
+                      0.240139    0.000000    1.453832 ^ _325_/A2 (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+     1    0.003009    0.117458    0.127447    1.581279 v _325_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+                                                         _023_ (net)
+                      0.117458    0.000000    1.581279 v _364_/D (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              1.581279   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _364_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.142201    0.392201   library hold time
+                                              0.392201   data required time
+---------------------------------------------------------------------------------------------
+                                              0.392201   data required time
+                                             -1.581279   data arrival time
+---------------------------------------------------------------------------------------------
+                                              1.189078   slack (MET)
+
+
+Startpoint: _383_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _383_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _383_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+     3    0.011889    0.178482    0.747302    0.747302 v _383_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                                         baud_cnt[4] (net)
+                      0.178482    0.000000    0.747302 v _187_/I (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
+     4    0.024064    0.444414    0.302371    1.049672 ^ _187_/ZN (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
+                                                         _045_ (net)
+                      0.444414    0.000000    1.049672 ^ _269_/A1 (gf180mcu_fd_sc_mcu7t5v0__xor2_1)
+     1    0.004243    0.275763    0.402941    1.452614 ^ _269_/Z (gf180mcu_fd_sc_mcu7t5v0__xor2_1)
+                                                         _117_ (net)
+                      0.275763    0.000000    1.452614 ^ _270_/A2 (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+     1    0.003009    0.157488    0.132169    1.584783 v _270_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+                                                         _010_ (net)
+                      0.157488    0.000000    1.584783 v _383_/D (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              1.584783   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _383_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.133512    0.383512   library hold time
+                                              0.383512   data required time
+---------------------------------------------------------------------------------------------
+                                              0.383512   data required time
+                                             -1.584783   data arrival time
+---------------------------------------------------------------------------------------------
+                                              1.201271   slack (MET)
+
+
+Startpoint: _398_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _372_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _398_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+     5    0.022317    0.284326    0.895024    0.895024 v _398_/Q (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                                         reg_rx_sync[2] (net)
+                      0.284326    0.000000    0.895024 v _340_/A1 (gf180mcu_fd_sc_mcu7t5v0__nand2_1)
+     1    0.004243    0.170737    0.165308    1.060333 ^ _340_/ZN (gf180mcu_fd_sc_mcu7t5v0__nand2_1)
+                                                         _164_ (net)
+                      0.170737    0.000000    1.060333 ^ _341_/A2 (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+     1    0.004011    0.142302    0.127406    1.187739 v _341_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+                                                         _165_ (net)
+                      0.142302    0.000000    1.187739 v _342_/B (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+     1    0.004823    0.244642    0.194640    1.382378 ^ _342_/ZN (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+                                                         _166_ (net)
+                      0.244642    0.000000    1.382378 ^ _344_/A2 (gf180mcu_fd_sc_mcu7t5v0__oai21_1)
+     1    0.002636    0.135773    0.131186    1.513564 v _344_/ZN (gf180mcu_fd_sc_mcu7t5v0__oai21_1)
+                                                         _031_ (net)
+                      0.135773    0.000000    1.513564 v _372_/D (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                              1.513564   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _372_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                  0.035097    0.285097   library hold time
+                                              0.285097   data required time
+---------------------------------------------------------------------------------------------
+                                              0.285097   data required time
+                                             -1.513564   data arrival time
+---------------------------------------------------------------------------------------------
+                                              1.228467   slack (MET)
+
+
+Startpoint: _398_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _371_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _398_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+     5    0.022317    0.284326    0.895024    0.895024 v _398_/Q (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                                         reg_rx_sync[2] (net)
+                      0.284326    0.000000    0.895024 v _182_/I (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
+     3    0.016657    0.331515    0.264362    1.159387 ^ _182_/ZN (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
+                                                         _040_ (net)
+                      0.331515    0.000000    1.159387 ^ _338_/A1 (gf180mcu_fd_sc_mcu7t5v0__oai31_1)
+     1    0.004728    0.183899    0.154190    1.313577 v _338_/ZN (gf180mcu_fd_sc_mcu7t5v0__oai31_1)
+                                                         _163_ (net)
+                      0.183899    0.000000    1.313577 v _339_/I0 (gf180mcu_fd_sc_mcu7t5v0__mux2_2)
+     1    0.002636    0.105073    0.347501    1.661078 v _339_/Z (gf180mcu_fd_sc_mcu7t5v0__mux2_2)
+                                                         _030_ (net)
+                      0.105073    0.000000    1.661078 v _371_/D (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                              1.661078   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _371_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                  0.045189    0.295189   library hold time
+                                              0.295189   data required time
+---------------------------------------------------------------------------------------------
+                                              0.295189   data required time
+                                             -1.661078   data arrival time
+---------------------------------------------------------------------------------------------
+                                              1.365889   slack (MET)
+
+
+Startpoint: _367_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _367_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _367_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+     2    0.077643    0.803354    1.227438    1.227438 v _367_/Q (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                                         rx_data_o[0] (net)
+                      0.803354    0.000000    1.227438 v _333_/I1 (gf180mcu_fd_sc_mcu7t5v0__mux2_2)
+     1    0.002636    0.105073    0.483266    1.710704 v _333_/Z (gf180mcu_fd_sc_mcu7t5v0__mux2_2)
+                                                         _026_ (net)
+                      0.105073    0.000000    1.710704 v _367_/D (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                              1.710704   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _367_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                  0.045189    0.295189   library hold time
+                                              0.295189   data required time
+---------------------------------------------------------------------------------------------
+                                              0.295189   data required time
+                                             -1.710704   data arrival time
+---------------------------------------------------------------------------------------------
+                                              1.415514   slack (MET)
+
+
+Startpoint: _369_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _368_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _369_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+     3    0.082371    0.849381    1.255285    1.255285 v _369_/Q (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                                         rx_data_o[2] (net)
+                      0.849381    0.000000    1.255285 v _334_/I0 (gf180mcu_fd_sc_mcu7t5v0__mux2_2)
+     1    0.002636    0.105073    0.492408    1.747693 v _334_/Z (gf180mcu_fd_sc_mcu7t5v0__mux2_2)
+                                                         _027_ (net)
+                      0.105073    0.000000    1.747693 v _368_/D (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                              1.747693   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _368_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                  0.045189    0.295189   library hold time
+                                              0.295189   data required time
+---------------------------------------------------------------------------------------------
+                                              0.295189   data required time
+                                             -1.747693   data arrival time
+---------------------------------------------------------------------------------------------
+                                              1.452503   slack (MET)
+
+
+Startpoint: _370_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _369_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _370_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+     3    0.082371    0.849381    1.255285    1.255285 v _370_/Q (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                                         rx_data_o[3] (net)
+                      0.849381    0.000000    1.255285 v _335_/I0 (gf180mcu_fd_sc_mcu7t5v0__mux2_2)
+     1    0.002636    0.105073    0.492408    1.747693 v _335_/Z (gf180mcu_fd_sc_mcu7t5v0__mux2_2)
+                                                         _028_ (net)
+                      0.105073    0.000000    1.747693 v _369_/D (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                              1.747693   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _369_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                  0.045189    0.295189   library hold time
+                                              0.295189   data required time
+---------------------------------------------------------------------------------------------
+                                              0.295189   data required time
+                                             -1.747693   data arrival time
+---------------------------------------------------------------------------------------------
+                                              1.452503   slack (MET)
+
+
+Startpoint: _371_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _370_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _371_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+     3    0.082371    0.849381    1.255285    1.255285 v _371_/Q (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                                         rx_data_o[4] (net)
+                      0.849381    0.000000    1.255285 v _336_/I0 (gf180mcu_fd_sc_mcu7t5v0__mux2_2)
+     1    0.002636    0.105073    0.492408    1.747693 v _336_/Z (gf180mcu_fd_sc_mcu7t5v0__mux2_2)
+                                                         _029_ (net)
+                      0.105073    0.000000    1.747693 v _370_/D (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                              1.747693   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _370_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                  0.045189    0.295189   library hold time
+                                              0.295189   data required time
+---------------------------------------------------------------------------------------------
+                                              0.295189   data required time
+                                             -1.747693   data arrival time
+---------------------------------------------------------------------------------------------
+                                              1.452503   slack (MET)
+
+
+Startpoint: rx_i (input port clocked by clk_i)
+Endpoint: _396_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+     1    0.002779    0.095422    0.028054    4.028054 ^ rx_i (in)
+                                                         rx_i (net)
+                      0.095422    0.000000    4.028054 ^ _306_/A2 (gf180mcu_fd_sc_mcu7t5v0__or2_1)
+     1    0.002636    0.108840    0.217149    4.245202 ^ _306_/Z (gf180mcu_fd_sc_mcu7t5v0__or2_1)
+                                                         _017_ (net)
+                      0.108840    0.000000    4.245202 ^ _396_/D (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                              4.245202   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _396_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                 -0.017795    0.232205   library hold time
+                                              0.232205   data required time
+---------------------------------------------------------------------------------------------
+                                              0.232205   data required time
+                                             -4.245202   data arrival time
+---------------------------------------------------------------------------------------------
+                                              4.012997   slack (MET)
+
+
+Startpoint: _367_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: rx_data_o[0] (output port clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _367_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+     2    0.077643    0.803354    1.227438    1.227438 v _367_/Q (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                                         rx_data_o[0] (net)
+                      0.803354    0.000000    1.227438 v rx_data_o[0] (out)
+                                              1.227438   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                 -4.000000   -3.750000   output external delay
+                                             -3.750000   data required time
+---------------------------------------------------------------------------------------------
+                                             -3.750000   data required time
+                                             -1.227438   data arrival time
+---------------------------------------------------------------------------------------------
+                                              4.977437   slack (MET)
+
+
+Startpoint: _374_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: rx_data_o[7] (output port clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _374_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+     3    0.081932    0.845107    1.252699    1.252699 v _374_/Q (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                                         rx_data_o[7] (net)
+                      0.845107    0.000000    1.252699 v rx_data_o[7] (out)
+                                              1.252699   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                 -4.000000   -3.750000   output external delay
+                                             -3.750000   data required time
+---------------------------------------------------------------------------------------------
+                                             -3.750000   data required time
+                                             -1.252699   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.002699   slack (MET)
+
+
+Startpoint: _368_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: rx_data_o[1] (output port clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _368_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+     3    0.082371    0.849381    1.255285    1.255285 v _368_/Q (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                                         rx_data_o[1] (net)
+                      0.849381    0.000000    1.255285 v rx_data_o[1] (out)
+                                              1.255285   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                 -4.000000   -3.750000   output external delay
+                                             -3.750000   data required time
+---------------------------------------------------------------------------------------------
+                                             -3.750000   data required time
+                                             -1.255285   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.005285   slack (MET)
+
+
+Startpoint: _369_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: rx_data_o[2] (output port clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _369_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+     3    0.082371    0.849381    1.255285    1.255285 v _369_/Q (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                                         rx_data_o[2] (net)
+                      0.849381    0.000000    1.255285 v rx_data_o[2] (out)
+                                              1.255285   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                 -4.000000   -3.750000   output external delay
+                                             -3.750000   data required time
+---------------------------------------------------------------------------------------------
+                                             -3.750000   data required time
+                                             -1.255285   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.005285   slack (MET)
+
+
+Startpoint: _370_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: rx_data_o[3] (output port clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _370_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+     3    0.082371    0.849381    1.255285    1.255285 v _370_/Q (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                                         rx_data_o[3] (net)
+                      0.849381    0.000000    1.255285 v rx_data_o[3] (out)
+                                              1.255285   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                 -4.000000   -3.750000   output external delay
+                                             -3.750000   data required time
+---------------------------------------------------------------------------------------------
+                                             -3.750000   data required time
+                                             -1.255285   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.005285   slack (MET)
+
+
+Startpoint: _371_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: rx_data_o[4] (output port clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _371_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+     3    0.082371    0.849381    1.255285    1.255285 v _371_/Q (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                                         rx_data_o[4] (net)
+                      0.849381    0.000000    1.255285 v rx_data_o[4] (out)
+                                              1.255285   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                 -4.000000   -3.750000   output external delay
+                                             -3.750000   data required time
+---------------------------------------------------------------------------------------------
+                                             -3.750000   data required time
+                                             -1.255285   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.005285   slack (MET)
+
+
+Startpoint: _373_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: rx_data_o[6] (output port clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _373_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+     3    0.082486    0.850501    1.255962    1.255962 v _373_/Q (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                                         rx_data_o[6] (net)
+                      0.850501    0.000000    1.255962 v rx_data_o[6] (out)
+                                              1.255962   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                 -4.000000   -3.750000   output external delay
+                                             -3.750000   data required time
+---------------------------------------------------------------------------------------------
+                                             -3.750000   data required time
+                                             -1.255962   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.005962   slack (MET)
+
+
+Startpoint: _372_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: rx_data_o[5] (output port clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _372_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+     3    0.082497    0.850608    1.256027    1.256027 v _372_/Q (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                                         rx_data_o[5] (net)
+                      0.850608    0.000000    1.256027 v rx_data_o[5] (out)
+                                              1.256027   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                 -4.000000   -3.750000   output external delay
+                                             -3.750000   data required time
+---------------------------------------------------------------------------------------------
+                                             -3.750000   data required time
+                                             -1.256027   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.006027   slack (MET)
+
+
+Startpoint: _363_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: err_parity_o (output port clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _363_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+     4    0.017897    0.231090    0.787811    0.787811 v _363_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                                         r_error_parity (net)
+                      0.231090    0.000000    0.787811 v _196_/I (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
+     1    0.004482    0.148287    0.130338    0.918149 ^ _196_/ZN (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
+                                                         _054_ (net)
+                      0.148287    0.000000    0.918149 ^ _258_/A1 (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+     1    0.072910    1.049250    0.676029    1.594178 v _258_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+                                                         err_parity_o (net)
+                      1.049250    0.000000    1.594178 v err_parity_o (out)
+                                              1.594178   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                 -4.000000   -3.750000   output external delay
+                                             -3.750000   data required time
+---------------------------------------------------------------------------------------------
+                                             -3.750000   data required time
+                                             -1.594178   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.344178   slack (MET)
+
+
+Startpoint: _363_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: rx_valid_o (output port clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _363_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+     4    0.017897    0.376050    1.019769    1.019769 ^ _363_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                                         r_error_parity (net)
+                      0.376050    0.000000    1.019769 ^ _255_/A1 (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+     2    0.075699    1.087957    0.744590    1.764359 v _255_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+                                                         rx_valid_o (net)
+                      1.087957    0.000000    1.764359 v rx_valid_o (out)
+                                              1.764359   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                 -4.000000   -3.750000   output external delay
+                                             -3.750000   data required time
+---------------------------------------------------------------------------------------------
+                                             -3.750000   data required time
+                                             -1.764359   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.514359   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _363_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _363_/RN (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _363_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.519218    0.769218   library removal time
+                                              0.769218   data required time
+---------------------------------------------------------------------------------------------
+                                              0.769218   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.593484   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _364_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _364_/RN (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _364_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.519218    0.769218   library removal time
+                                              0.769218   data required time
+---------------------------------------------------------------------------------------------
+                                              0.769218   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.593484   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _365_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _365_/RN (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _365_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.519218    0.769218   library removal time
+                                              0.769218   data required time
+---------------------------------------------------------------------------------------------
+                                              0.769218   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.593484   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _366_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _366_/RN (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _366_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.519218    0.769218   library removal time
+                                              0.769218   data required time
+---------------------------------------------------------------------------------------------
+                                              0.769218   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.593484   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _375_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _375_/RN (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _375_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.519218    0.769218   library removal time
+                                              0.769218   data required time
+---------------------------------------------------------------------------------------------
+                                              0.769218   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.593484   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _376_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _376_/RN (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _376_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.519218    0.769218   library removal time
+                                              0.769218   data required time
+---------------------------------------------------------------------------------------------
+                                              0.769218   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.593484   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _377_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _377_/RN (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _377_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.519218    0.769218   library removal time
+                                              0.769218   data required time
+---------------------------------------------------------------------------------------------
+                                              0.769218   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.593484   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _378_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _378_/RN (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _378_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.519218    0.769218   library removal time
+                                              0.769218   data required time
+---------------------------------------------------------------------------------------------
+                                              0.769218   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.593484   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _379_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _379_/RN (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _379_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.519218    0.769218   library removal time
+                                              0.769218   data required time
+---------------------------------------------------------------------------------------------
+                                              0.769218   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.593484   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _380_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _380_/RN (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _380_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.519218    0.769218   library removal time
+                                              0.769218   data required time
+---------------------------------------------------------------------------------------------
+                                              0.769218   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.593484   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _381_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _381_/RN (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _381_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.519218    0.769218   library removal time
+                                              0.769218   data required time
+---------------------------------------------------------------------------------------------
+                                              0.769218   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.593484   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _382_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _382_/RN (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _382_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.519218    0.769218   library removal time
+                                              0.769218   data required time
+---------------------------------------------------------------------------------------------
+                                              0.769218   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.593484   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _383_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _383_/RN (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _383_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.519218    0.769218   library removal time
+                                              0.769218   data required time
+---------------------------------------------------------------------------------------------
+                                              0.769218   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.593484   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _384_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _384_/RN (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _384_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.519218    0.769218   library removal time
+                                              0.769218   data required time
+---------------------------------------------------------------------------------------------
+                                              0.769218   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.593484   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _385_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _385_/RN (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _385_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.519218    0.769218   library removal time
+                                              0.769218   data required time
+---------------------------------------------------------------------------------------------
+                                              0.769218   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.593484   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _386_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _386_/RN (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _386_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.519218    0.769218   library removal time
+                                              0.769218   data required time
+---------------------------------------------------------------------------------------------
+                                              0.769218   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.593484   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _387_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _387_/RN (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _387_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.519218    0.769218   library removal time
+                                              0.769218   data required time
+---------------------------------------------------------------------------------------------
+                                              0.769218   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.593484   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _388_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _388_/RN (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _388_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.519218    0.769218   library removal time
+                                              0.769218   data required time
+---------------------------------------------------------------------------------------------
+                                              0.769218   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.593484   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _389_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _389_/RN (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _389_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.519218    0.769218   library removal time
+                                              0.769218   data required time
+---------------------------------------------------------------------------------------------
+                                              0.769218   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.593484   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _390_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _390_/RN (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _390_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.519218    0.769218   library removal time
+                                              0.769218   data required time
+---------------------------------------------------------------------------------------------
+                                              0.769218   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.593484   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _391_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _391_/RN (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _391_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.519218    0.769218   library removal time
+                                              0.769218   data required time
+---------------------------------------------------------------------------------------------
+                                              0.769218   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.593484   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _392_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _392_/RN (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _392_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.519218    0.769218   library removal time
+                                              0.769218   data required time
+---------------------------------------------------------------------------------------------
+                                              0.769218   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.593484   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _393_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _393_/RN (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _393_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.519218    0.769218   library removal time
+                                              0.769218   data required time
+---------------------------------------------------------------------------------------------
+                                              0.769218   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.593484   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _394_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _394_/RN (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _394_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.519218    0.769218   library removal time
+                                              0.769218   data required time
+---------------------------------------------------------------------------------------------
+                                              0.769218   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.593484   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _395_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _395_/RN (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _395_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                  0.519218    0.769218   library removal time
+                                              0.769218   data required time
+---------------------------------------------------------------------------------------------
+                                              0.769218   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.593484   slack (MET)
+
+
+Startpoint: _363_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: err_overflow_o (output port clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _363_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+     4    0.017897    0.376050    1.019769    1.019769 ^ _363_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                                         r_error_parity (net)
+                      0.376050    0.000000    1.019769 ^ _257_/A1 (gf180mcu_fd_sc_mcu7t5v0__nor3_1)
+     1    0.072910    1.250931    0.844334    1.864102 v _257_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor3_1)
+                                                         err_overflow_o (net)
+                      1.250931    0.000000    1.864102 v err_overflow_o (out)
+                                              1.864102   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                 -4.000000   -3.750000   output external delay
+                                             -3.750000   data required time
+---------------------------------------------------------------------------------------------
+                                             -3.750000   data required time
+                                             -1.864102   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.614102   slack (MET)
+
+
+Startpoint: _366_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: busy_o (output port clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _366_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+     5    0.025177    0.297060    0.833156    0.833156 v _366_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                                         CS[2] (net)
+                      0.297060    0.000000    0.833156 v _181_/I (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
+     5    0.021903    0.412872    0.316759    1.149915 ^ _181_/ZN (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
+                                                         _039_ (net)
+                      0.412872    0.000000    1.149915 ^ _202_/A1 (gf180mcu_fd_sc_mcu7t5v0__nand2_1)
+     3    0.082660    1.281112    0.835736    1.985651 v _202_/ZN (gf180mcu_fd_sc_mcu7t5v0__nand2_1)
+                                                         busy_o (net)
+                      1.281112    0.000000    1.985651 v busy_o (out)
+                                              1.985651   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                 -4.000000   -3.750000   output external delay
+                                             -3.750000   data required time
+---------------------------------------------------------------------------------------------
+                                             -3.750000   data required time
+                                             -1.985651   data arrival time
+---------------------------------------------------------------------------------------------
+                                              5.735651   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _367_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _367_/SETN (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _367_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                 -0.079136    0.170864   library removal time
+                                              0.170864   data required time
+---------------------------------------------------------------------------------------------
+                                              0.170864   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              6.191837   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _368_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _368_/SETN (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _368_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                 -0.079136    0.170864   library removal time
+                                              0.170864   data required time
+---------------------------------------------------------------------------------------------
+                                              0.170864   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              6.191837   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _369_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _369_/SETN (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _369_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                 -0.079136    0.170864   library removal time
+                                              0.170864   data required time
+---------------------------------------------------------------------------------------------
+                                              0.170864   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              6.191837   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _370_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _370_/SETN (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _370_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                 -0.079136    0.170864   library removal time
+                                              0.170864   data required time
+---------------------------------------------------------------------------------------------
+                                              0.170864   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              6.191837   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _371_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _371_/SETN (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _371_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                 -0.079136    0.170864   library removal time
+                                              0.170864   data required time
+---------------------------------------------------------------------------------------------
+                                              0.170864   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              6.191837   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _372_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _372_/SETN (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _372_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                 -0.079136    0.170864   library removal time
+                                              0.170864   data required time
+---------------------------------------------------------------------------------------------
+                                              0.170864   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              6.191837   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _373_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _373_/SETN (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _373_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                 -0.079136    0.170864   library removal time
+                                              0.170864   data required time
+---------------------------------------------------------------------------------------------
+                                              0.170864   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              6.191837   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _374_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _374_/SETN (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _374_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                 -0.079136    0.170864   library removal time
+                                              0.170864   data required time
+---------------------------------------------------------------------------------------------
+                                              0.170864   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              6.191837   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _396_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _396_/SETN (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _396_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                 -0.079136    0.170864   library removal time
+                                              0.170864   data required time
+---------------------------------------------------------------------------------------------
+                                              0.170864   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              6.191837   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _397_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _397_/SETN (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _397_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                 -0.079136    0.170864   library removal time
+                                              0.170864   data required time
+---------------------------------------------------------------------------------------------
+                                              0.170864   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              6.191837   slack (MET)
+
+
+Startpoint: rstn_i (input port clocked by clk_i)
+Endpoint: _398_ (removal check against rising-edge clock clk_i)
+Path Group: asynchronous
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  4.000000    4.000000 ^ input external delay
+    36    0.253310    4.233507    2.362702    6.362702 ^ rstn_i (in)
+                                                         rstn_i (net)
+                      4.233507    0.000000    6.362702 ^ _398_/SETN (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                              6.362702   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                              0.250000 ^ _398_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffsnq_1)
+                                 -0.079136    0.170864   library removal time
+                                              0.170864   data required time
+---------------------------------------------------------------------------------------------
+                                              0.170864   data required time
+                                             -6.362702   data arrival time
+---------------------------------------------------------------------------------------------
+                                              6.191837   slack (MET)
+
+
+Startpoint: _363_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: char_event_o (output port clocked by clk_i)
+Path Group: clk_i
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ _363_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+     4    0.017897    0.376050    1.019769    1.019769 ^ _363_/Q (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                                         r_error_parity (net)
+                      0.376050    0.000000    1.019769 ^ _255_/A1 (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+     2    0.075699    1.087957    0.744590    1.764359 v _255_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+                                                         rx_valid_o (net)
+                      1.087957    0.000000    1.764359 v _256_/A2 (gf180mcu_fd_sc_mcu7t5v0__and2_1)
+     1    0.072910    0.754645    0.961253    2.725612 v _256_/Z (gf180mcu_fd_sc_mcu7t5v0__and2_1)
+                                                         char_event_o (net)
+                      0.754645    0.000000    2.725612 v char_event_o (out)
+                                              2.725612   data arrival time
+
+                      0.150000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  0.250000    0.250000   clock uncertainty
+                                  0.000000    0.250000   clock reconvergence pessimism
+                                 -4.000000   -3.750000   output external delay
+                                             -3.750000   data required time
+---------------------------------------------------------------------------------------------
+                                             -3.750000   data required time
+                                             -2.725612   data arrival time
+---------------------------------------------------------------------------------------------
+                                              6.475611   slack (MET)
+
+
+
