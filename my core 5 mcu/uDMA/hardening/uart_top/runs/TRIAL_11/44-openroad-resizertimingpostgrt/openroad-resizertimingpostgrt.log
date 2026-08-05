@@ -1,0 +1,156 @@
+Reading timing models for corner max_ss_125C_4v50…
+Reading timing library for the 'max_ss_125C_4v50' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50.lib'…
+Reading OpenROAD database at '/home/sahana/core5_udma/hardening/uart_top/runs/TRIAL_11/43-openroad-repairantennas/1-openroad-diodeinsertion/udma_uart_top.odb'…
+Reading design constraints file at '/home/sahana/core5_udma/hardening/uart_top/constraints.closure.sdc'…
+[INFO] Setting signal min routing layer to: Metal2 and clock min routing layer to Metal2. 
+[INFO] Setting signal max routing layer to: Metal5 and clock max routing layer to Metal5. 
++ global_route -congestion_iterations 50 -verbose
+[INFO GRT-0020] Min routing layer: Metal2
+[INFO GRT-0021] Max routing layer: Metal5
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0088] Layer Metal1  Track-Pitch = 0.5600  line-2-Via Pitch: 0.4750
+[INFO GRT-0088] Layer Metal2  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal3  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal4  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal5  Track-Pitch = 0.9000  line-2-Via Pitch: 0.8200
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 0
+[INFO GRT-0019] Found 100 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 17
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+Metal1     Horizontal          0             0          0.00%
+Metal2     Vertical        33156         22104          33.33%
+Metal3     Horizontal      33728         22481          33.35%
+Metal4     Vertical        33147         22098          33.33%
+Metal5     Horizontal      20562         13846          32.66%
+---------------------------------------------------------------
+
+[INFO GRT-0197] Via related to pin nodes: 10871
+[INFO GRT-0198] Via related Steiner nodes: 268
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 13736
+[INFO GRT-0112] Final usage 3D: 52230
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+Metal1               0             0            0.00%             0 /  0 /  0
+Metal2           22104          5636           25.50%             0 /  0 /  0
+Metal3           22481          5097           22.67%             0 /  0 /  0
+Metal4           22098           183            0.83%             0 /  0 /  0
+Metal5           13846           106            0.77%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total            80529         11022           13.69%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 135660 um
+[INFO GRT-0014] Routed nets: 1948
+[INFO GRT-0303] Global routing runtime = 00:00:00
++ repair_timing -verbose -setup -setup_margin 0.15 -max_buffer_percent 50 -repair_tns 100 -max_utilization 60
+[INFO RSZ-0100] Repair move sequence: UnbufferMove SizeUpMove SwapPinsMove BufferMove CloneMove SplitLoadMove 
+[INFO RSZ-0094] Found 9 endpoints with setup violations.
+[INFO RSZ-0099] Repairing 9 out of 9 (100.00%) violating endpoints...
+   Iter   | Removed | Resized | Inserted | Cloned |  Pin  |   Area   |    WNS   |   TNS      |  Viol  | Worst
+          | Buffers |  Gates  | Buffers  |  Gates | Swaps |          |          |            | Endpts | Endpt
+--------------------------------------------------------------------------------------------------------------
+        0 |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -0.264 |       -1.4 |      9 | _2010_/D
+        2 |       1 |       0 |        0 |      0 |     0 |    -0.1% |   -0.111 |       -0.3 |      7 | _1882_/D
+        3 |       1 |       0 |        0 |      0 |     0 |    -0.1% |   -0.111 |       -0.3 |      6 | _1882_/D
+        4 |       1 |       0 |        0 |      0 |     0 |    -0.1% |   -0.111 |       -0.3 |      5 | _1882_/D
+        5 |       1 |       0 |        0 |      0 |     0 |    -0.1% |   -0.111 |       -0.3 |      4 | _1882_/D
+        7 |       2 |       0 |        0 |      0 |     0 |    -0.2% |    0.899 |        0.0 |      2 | _1776_/D
+        8 |       2 |       0 |        0 |      0 |     0 |    -0.2% |    0.899 |        0.0 |      1 | _1776_/D
+        9 |       2 |       0 |        0 |      0 |     0 |    -0.2% |    0.899 |        0.0 |      0 | _1776_/D
+       10 |       2 |       0 |        0 |      0 |     0 |    -0.2% |    0.899 |        0.0 |      0 | _1776_/D
+       10 |       2 |       0 |        0 |      0 |     0 |    -0.2% |    0.899 |        0.0 |      0 | _1776_/D
+       11 |       2 |       0 |        0 |      0 |     0 |    -0.2% |    0.899 |        0.0 |      0 | _1776_/D
+    final |       2 |       0 |        0 |      0 |     0 |    -0.2% |    0.899 |        0.0 |      0 | _1776_/D
+--------------------------------------------------------------------------------------------------------------
+[INFO RSZ-0059] Removed 2 buffers.
++ repair_timing -verbose -hold -setup_margin 0.15 -hold_margin 0.05000000000000000277555756156289135105907917022705078125 -max_buffer_percent 50
+[INFO RSZ-0033] No hold violations found.
++ detailed_placement -max_displacement  500 100 
+Placement Analysis
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL           85280.6 u
+legalized HPWL          88037.3 u
+delta HPWL                    3 %
+
+[INFO DPL-0020] Mirrored 719 instances
+[INFO DPL-0021] HPWL before           88037.3 u
+[INFO DPL-0022] HPWL after            85280.6 u
+[INFO DPL-0023] HPWL delta               -3.1 %
++ global_route -congestion_iterations 50 -verbose
+[INFO GRT-0020] Min routing layer: Metal2
+[INFO GRT-0021] Max routing layer: Metal5
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0088] Layer Metal1  Track-Pitch = 0.5600  line-2-Via Pitch: 0.4750
+[INFO GRT-0088] Layer Metal2  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal3  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal4  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal5  Track-Pitch = 0.9000  line-2-Via Pitch: 0.8200
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 0
+[INFO GRT-0019] Found 100 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 17
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+Metal1     Horizontal          0             0          0.00%
+Metal2     Vertical        33156         22104          33.33%
+Metal3     Horizontal      33728         22481          33.35%
+Metal4     Vertical        33147         22098          33.33%
+Metal5     Horizontal      20562         13846          32.66%
+---------------------------------------------------------------
+
+[INFO GRT-0197] Via related to pin nodes: 10864
+[INFO GRT-0198] Via related Steiner nodes: 268
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 13729
+[INFO GRT-0112] Final usage 3D: 52206
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+Metal1               0             0            0.00%             0 /  0 /  0
+Metal2           22104          5635           25.49%             0 /  0 /  0
+Metal3           22481          5095           22.66%             0 /  0 /  0
+Metal4           22098           183            0.83%             0 /  0 /  0
+Metal5           13846           106            0.77%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total            80529         11019           13.68%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 135609 um
+[INFO GRT-0014] Routed nets: 1946
+[INFO GRT-0303] Global routing runtime = 00:00:00
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 0 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Endcap cell                             194     851.74
+  Tap cell                                942    4135.76
+  Tie cell                                 33     289.77
+  Clock buffer                            120    9931.08
+  Timing Repair Buffer                    450   17730.63
+  Inverter                                 69     610.27
+  Sequential cell                         339   25468.71
+  Multi-Input combinational cell          843   18863.35
+  Total                                  2990   77881.31
+Writing OpenROAD database to '/home/sahana/core5_udma/hardening/uart_top/runs/TRIAL_11/44-openroad-resizertimingpostgrt/udma_uart_top.odb'…
+Writing netlist to '/home/sahana/core5_udma/hardening/uart_top/runs/TRIAL_11/44-openroad-resizertimingpostgrt/udma_uart_top.nl.v'…
+Writing powered netlist to '/home/sahana/core5_udma/hardening/uart_top/runs/TRIAL_11/44-openroad-resizertimingpostgrt/udma_uart_top.pnl.v'…
+Writing layout to '/home/sahana/core5_udma/hardening/uart_top/runs/TRIAL_11/44-openroad-resizertimingpostgrt/udma_uart_top.def'…
+Writing timing constraints to '/home/sahana/core5_udma/hardening/uart_top/runs/TRIAL_11/44-openroad-resizertimingpostgrt/udma_uart_top.sdc'…

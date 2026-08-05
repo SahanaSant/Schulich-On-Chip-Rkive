@@ -1,0 +1,1217 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)
+
+1. Executing Verilog-2005 frontend: /home/sahana/core5_udma/hardening/uart_top/runs/TRIAL_7/tmp/670d0e71aa324f13a97cab6daca40c0a.bb.v
+Parsing SystemVerilog input from `/home/sahana/core5_udma/hardening/uart_top/runs/TRIAL_7/tmp/670d0e71aa324f13a97cab6daca40c0a.bb.v' to AST representation.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__addf_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__addf_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__addf_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__addf_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__addh_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__addh_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__addh_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__addh_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__and2_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__and2_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__and2_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__and2_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__and3_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__and3_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__and3_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__and3_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__and4_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__and4_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__and4_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__and4_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__antenna'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__antenna_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi211_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi211_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi211_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi211_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi21_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi21_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi21_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi21_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi221_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi221_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi221_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi221_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi222_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi222_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi222_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi222_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi22_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi22_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi22_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__aoi22_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__buf_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__buf_12'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__buf_16'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__buf_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__buf_20'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__buf_3'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__buf_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__buf_8'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__buf_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__bufz_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__bufz_12'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__bufz_16'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__bufz_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__bufz_3'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__bufz_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__bufz_8'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__bufz_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkbuf_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkbuf_12'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkbuf_16'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkbuf_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkbuf_20'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkbuf_3'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkbuf_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkbuf_8'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkbuf_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkinv_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkinv_12'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkinv_16'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkinv_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkinv_20'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkinv_3'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkinv_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkinv_8'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__clkinv_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffnq_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffnq_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffnq_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffnq_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffnrnq_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffnrnq_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffnrnq_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffnrsnq_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffnrsnq_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffnrsnq_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffnrsnq_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffnsnq_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffnsnq_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffnsnq_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffq_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffq_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffq_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffq_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffrnq_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffrnq_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffrnq_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffrnq_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffrsnq_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffrsnq_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffsnq_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffsnq_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffsnq_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dffsnq_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dlya_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dlya_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dlya_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dlya_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dlyb_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dlyb_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dlyb_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dlyb_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dlyc_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dlyc_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dlyc_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dlyc_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dlyd_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dlyd_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dlyd_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__dlyd_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__endcap'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__endcap_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__fill_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__fill_16'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__fill_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__fill_32'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__fill_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__fill_64'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__fill_8'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__fill_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__fillcap_16'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__fillcap_32'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__fillcap_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__fillcap_64'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__fillcap_8'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__fillcap_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__filltie'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__filltie_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__hold'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__hold_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__icgtn_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__icgtn_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__icgtn_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__icgtn_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__icgtp_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__icgtp_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__icgtp_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__icgtp_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__inv_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__inv_12'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__inv_16'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__inv_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__inv_20'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__inv_3'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__inv_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__inv_8'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__inv_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__invz_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__invz_12'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__invz_16'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__invz_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__invz_3'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__invz_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__invz_8'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__invz_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__latq_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__latq_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__latq_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__latq_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__latrnq_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__latrnq_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__latrnq_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__latrnq_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__latrsnq_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__latrsnq_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__latrsnq_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__latrsnq_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__latsnq_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__latsnq_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__latsnq_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__latsnq_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__mux2_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__mux2_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__mux2_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__mux2_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__mux4_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__mux4_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__mux4_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__mux4_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nand2_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nand2_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nand2_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nand2_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nand3_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nand3_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nand3_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nand3_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nand4_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nand4_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nand4_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nand4_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nor2_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nor2_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nor2_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nor2_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nor3_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nor3_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nor3_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nor3_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nor4_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nor4_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nor4_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__nor4_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai211_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai211_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai211_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai211_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai21_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai21_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai21_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai21_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai221_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai221_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai221_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai221_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai222_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai222_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai222_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai222_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai22_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai22_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai22_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai22_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai31_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai31_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai31_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai31_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai32_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai32_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai32_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai32_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai33_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai33_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai33_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__oai33_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__or2_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__or2_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__or2_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__or2_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__or3_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__or3_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__or3_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__or3_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__or4_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__or4_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__or4_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__or4_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__sdffq_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__sdffq_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__sdffq_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__sdffq_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__sdffrnq_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__sdffrnq_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__sdffrnq_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__sdffrnq_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__sdffrsnq_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__sdffrsnq_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__sdffrsnq_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__sdffrsnq_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__sdffsnq_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__sdffsnq_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__sdffsnq_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__sdffsnq_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__tieh'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__tieh_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__tiel'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__tiel_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xnor2_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xnor2_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xnor2_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xnor2_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xnor3_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xnor3_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xnor3_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xnor3_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xor2_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xor2_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xor2_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xor2_func'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xor3_1'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xor3_2'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xor3_4'.
+Generating RTLIL representation for module `\gf180mcu_fd_sc_mcu7t5v0__xor3_func'.
+Successfully finished Verilog frontend.
+wtaf
+
+2. Executing Verilog-2005 frontend: /home/sahana/core5_udma/dependencies/tech_cells_generic/src/rtl/tc_clk.sv
+Parsing SystemVerilog input from `/home/sahana/core5_udma/dependencies/tech_cells_generic/src/rtl/tc_clk.sv' to AST representation.
+Storing AST representation for module `$abstract\tc_clk_and2'.
+Storing AST representation for module `$abstract\tc_clk_buffer'.
+Storing AST representation for module `$abstract\tc_clk_gating'.
+Storing AST representation for module `$abstract\tc_clk_inverter'.
+Storing AST representation for module `$abstract\tc_clk_mux2'.
+Storing AST representation for module `$abstract\tc_clk_xor2'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: /home/sahana/core5_udma/dependencies/tech_cells_generic/src/deprecated/pulp_clk_cells.sv
+Parsing SystemVerilog input from `/home/sahana/core5_udma/dependencies/tech_cells_generic/src/deprecated/pulp_clk_cells.sv' to AST representation.
+Storing AST representation for module `$abstract\pulp_clock_and2'.
+Storing AST representation for module `$abstract\pulp_clock_buffer'.
+Storing AST representation for module `$abstract\pulp_clock_gating'.
+Storing AST representation for module `$abstract\pulp_clock_inverter'.
+Storing AST representation for module `$abstract\pulp_clock_mux2'.
+Storing AST representation for module `$abstract\pulp_clock_xor2'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: /home/sahana/core5_udma/dependencies/common_cells/src/deprecated/pulp_sync.sv
+Parsing SystemVerilog input from `/home/sahana/core5_udma/dependencies/common_cells/src/deprecated/pulp_sync.sv' to AST representation.
+Storing AST representation for module `$abstract\pulp_sync'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: /home/sahana/core5_udma/dependencies/common_cells/src/deprecated/pulp_sync_wedge.sv
+Parsing SystemVerilog input from `/home/sahana/core5_udma/dependencies/common_cells/src/deprecated/pulp_sync_wedge.sv' to AST representation.
+Storing AST representation for module `$abstract\pulp_sync_wedge'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: /home/sahana/core5_udma/dependencies/common_cells/src/edge_propagator.sv
+Parsing SystemVerilog input from `/home/sahana/core5_udma/dependencies/common_cells/src/edge_propagator.sv' to AST representation.
+Storing AST representation for module `$abstract\edge_propagator'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: /home/sahana/core5_udma/dependencies/common_cells/src/onehot_to_bin.sv
+Parsing SystemVerilog input from `/home/sahana/core5_udma/dependencies/common_cells/src/onehot_to_bin.sv' to AST representation.
+Storing AST representation for module `$abstract\onehot_to_bin'.
+Successfully finished Verilog frontend.
+
+8. Executing Verilog-2005 frontend: /home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_data_buffer.sv
+Parsing SystemVerilog input from `/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_data_buffer.sv' to AST representation.
+Storing AST representation for module `$abstract\dc_data_buffer'.
+Successfully finished Verilog frontend.
+
+9. Executing Verilog-2005 frontend: /home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_full_detector.v
+Parsing SystemVerilog input from `/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_full_detector.v' to AST representation.
+Storing AST representation for module `$abstract\dc_full_detector'.
+Successfully finished Verilog frontend.
+
+10. Executing Verilog-2005 frontend: /home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_synchronizer.v
+Parsing SystemVerilog input from `/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_synchronizer.v' to AST representation.
+Storing AST representation for module `$abstract\dc_synchronizer'.
+Successfully finished Verilog frontend.
+
+11. Executing Verilog-2005 frontend: /home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_token_ring.v
+Parsing SystemVerilog input from `/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_token_ring.v' to AST representation.
+Storing AST representation for module `$abstract\dc_token_ring'.
+Successfully finished Verilog frontend.
+
+12. Executing Verilog-2005 frontend: /home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_token_ring_fifo_din.v
+Parsing SystemVerilog input from `/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_token_ring_fifo_din.v' to AST representation.
+Storing AST representation for module `$abstract\dc_token_ring_fifo_din'.
+Successfully finished Verilog frontend.
+
+13. Executing Verilog-2005 frontend: /home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_token_ring_fifo_dout.v
+Parsing SystemVerilog input from `/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_token_ring_fifo_dout.v' to AST representation.
+Storing AST representation for module `$abstract\dc_token_ring_fifo_dout'.
+Successfully finished Verilog frontend.
+
+14. Executing Verilog-2005 frontend: /home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv
+Parsing SystemVerilog input from `/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv' to AST representation.
+Storing AST representation for module `$abstract\io_generic_fifo'.
+Successfully finished Verilog frontend.
+
+15. Executing Verilog-2005 frontend: /home/sahana/core5_udma/udma_core/rtl/common/io_tx_fifo.sv
+Parsing SystemVerilog input from `/home/sahana/core5_udma/udma_core/rtl/common/io_tx_fifo.sv' to AST representation.
+Storing AST representation for module `$abstract\io_tx_fifo'.
+Successfully finished Verilog frontend.
+
+16. Executing Verilog-2005 frontend: /home/sahana/core5_udma/udma_core/rtl/common/udma_dc_fifo.sv
+Parsing SystemVerilog input from `/home/sahana/core5_udma/udma_core/rtl/common/udma_dc_fifo.sv' to AST representation.
+Storing AST representation for module `$abstract\udma_dc_fifo'.
+Successfully finished Verilog frontend.
+
+17. Executing Verilog-2005 frontend: /home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv
+Parsing SystemVerilog input from `/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv' to AST representation.
+Storing AST representation for module `$abstract\udma_uart_reg_if'.
+Successfully finished Verilog frontend.
+
+18. Executing Verilog-2005 frontend: /home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv
+Parsing SystemVerilog input from `/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv' to AST representation.
+Storing AST representation for module `$abstract\udma_uart_rx'.
+Successfully finished Verilog frontend.
+
+19. Executing Verilog-2005 frontend: /home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv
+Parsing SystemVerilog input from `/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv' to AST representation.
+Storing AST representation for module `$abstract\udma_uart_tx'.
+Successfully finished Verilog frontend.
+
+20. Executing Verilog-2005 frontend: /home/sahana/core5_udma/udma_uart/rtl/udma_uart_top.sv
+Parsing SystemVerilog input from `/home/sahana/core5_udma/udma_uart/rtl/udma_uart_top.sv' to AST representation.
+Storing AST representation for module `$abstract\udma_uart_top'.
+Successfully finished Verilog frontend.
+
+21. Executing HIERARCHY pass (managing design hierarchy).
+
+22. Executing AST frontend in derive mode using pre-parsed AST for module `\udma_uart_top'.
+Generating RTLIL representation for module `\udma_uart_top'.
+
+22.1. Analyzing design hierarchy..
+Top module:  \udma_uart_top
+
+22.2. Executing AST frontend in derive mode using pre-parsed AST for module `\edge_propagator'.
+Generating RTLIL representation for module `\edge_propagator'.
+
+22.3. Executing AST frontend in derive mode using pre-parsed AST for module `\udma_uart_rx'.
+Generating RTLIL representation for module `\udma_uart_rx'.
+Parameter 1 (\DATA_WIDTH) = 8
+Parameter 2 (\BUFFER_DEPTH) = 4
+
+22.4. Executing AST frontend in derive mode using pre-parsed AST for module `\udma_dc_fifo'.
+Parameter 1 (\DATA_WIDTH) = 8
+Parameter 2 (\BUFFER_DEPTH) = 4
+Generating RTLIL representation for module `$paramod$a166b2234bf005b190ab6420bb103d60852421bb\udma_dc_fifo'.
+
+22.5. Executing AST frontend in derive mode using pre-parsed AST for module `\udma_uart_tx'.
+Generating RTLIL representation for module `\udma_uart_tx'.
+Parameter 1 (\DATA_WIDTH) = 8
+Parameter 2 (\BUFFER_DEPTH) = 4
+Found cached RTLIL representation for module `$paramod$a166b2234bf005b190ab6420bb103d60852421bb\udma_dc_fifo'.
+Parameter \DATA_WIDTH = 8
+Parameter \BUFFER_DEPTH = 2
+
+22.6. Executing AST frontend in derive mode using pre-parsed AST for module `\io_tx_fifo'.
+Parameter \DATA_WIDTH = 8
+Parameter \BUFFER_DEPTH = 2
+Generating RTLIL representation for module `$paramod$7654e522d750779c4fca23ed504328738d7ed1e9\io_tx_fifo'.
+Parameter \L2_AWIDTH_NOAL = 12
+Parameter \TRANS_SIZE = 16
+
+22.7. Executing AST frontend in derive mode using pre-parsed AST for module `\udma_uart_reg_if'.
+Parameter \L2_AWIDTH_NOAL = 12
+Parameter \TRANS_SIZE = 16
+Generating RTLIL representation for module `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if'.
+
+22.8. Analyzing design hierarchy..
+Top module:  \udma_uart_top
+Used module:     \edge_propagator
+Used module:     \udma_uart_rx
+Used module:     $paramod$a166b2234bf005b190ab6420bb103d60852421bb\udma_dc_fifo
+Used module:     \udma_uart_tx
+Used module:     $paramod$7654e522d750779c4fca23ed504328738d7ed1e9\io_tx_fifo
+Used module:     $paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if
+
+22.9. Executing AST frontend in derive mode using pre-parsed AST for module `\pulp_sync_wedge'.
+Generating RTLIL representation for module `\pulp_sync_wedge'.
+Parameter \DATA_WIDTH = 8
+Parameter \BUFFER_DEPTH = 4
+
+22.10. Executing AST frontend in derive mode using pre-parsed AST for module `\dc_token_ring_fifo_dout'.
+Parameter \DATA_WIDTH = 8
+Parameter \BUFFER_DEPTH = 4
+Generating RTLIL representation for module `$paramod$a166b2234bf005b190ab6420bb103d60852421bb\dc_token_ring_fifo_dout'.
+Parameter \DATA_WIDTH = 8
+Parameter \BUFFER_DEPTH = 4
+
+22.11. Executing AST frontend in derive mode using pre-parsed AST for module `\dc_token_ring_fifo_din'.
+Parameter \DATA_WIDTH = 8
+Parameter \BUFFER_DEPTH = 4
+Generating RTLIL representation for module `$paramod$a166b2234bf005b190ab6420bb103d60852421bb\dc_token_ring_fifo_din'.
+Parameter \DATA_WIDTH = 8
+Parameter \BUFFER_DEPTH = 2
+Parameter \LOG_BUFFER_DEPTH = 1
+
+22.12. Executing AST frontend in derive mode using pre-parsed AST for module `\io_generic_fifo'.
+Parameter \DATA_WIDTH = 8
+Parameter \BUFFER_DEPTH = 2
+Parameter \LOG_BUFFER_DEPTH = 1
+Generating RTLIL representation for module `$paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo'.
+Warning: Replacing memory \buffer with list of registers. See /home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:87
+
+22.13. Analyzing design hierarchy..
+Top module:  \udma_uart_top
+Used module:     \edge_propagator
+Used module:         \pulp_sync_wedge
+Used module:     \udma_uart_rx
+Used module:     $paramod$a166b2234bf005b190ab6420bb103d60852421bb\udma_dc_fifo
+Used module:         $paramod$a166b2234bf005b190ab6420bb103d60852421bb\dc_token_ring_fifo_dout
+Used module:         $paramod$a166b2234bf005b190ab6420bb103d60852421bb\dc_token_ring_fifo_din
+Used module:     \udma_uart_tx
+Used module:     $paramod$7654e522d750779c4fca23ed504328738d7ed1e9\io_tx_fifo
+Used module:         $paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo
+Used module:     $paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if
+
+22.14. Executing AST frontend in derive mode using pre-parsed AST for module `\pulp_clock_gating'.
+Generating RTLIL representation for module `\pulp_clock_gating'.
+Parameter \STAGES = 2
+
+22.15. Executing AST frontend in derive mode using pre-parsed AST for module `\pulp_sync'.
+Parameter \STAGES = 2
+Generating RTLIL representation for module `$paramod\pulp_sync\STAGES=32'00000000000000000000000000000010'.
+Parameter \WIDTH = 4
+Parameter \RESET_VALUE = 12
+
+22.16. Executing AST frontend in derive mode using pre-parsed AST for module `\dc_synchronizer'.
+Parameter \WIDTH = 4
+Parameter \RESET_VALUE = 12
+Generating RTLIL representation for module `$paramod$7dadd2ee277a1a481f9118ee9d3a80ac7aeb0d0b\dc_synchronizer'.
+Parameter \BUFFER_DEPTH = 4
+Parameter \RESET_VALUE = 3
+
+22.17. Executing AST frontend in derive mode using pre-parsed AST for module `\dc_token_ring'.
+Parameter \BUFFER_DEPTH = 4
+Parameter \RESET_VALUE = 3
+Generating RTLIL representation for module `$paramod$472709ea3bd0938e2c3e9c6e817c7d6d7fdedb92\dc_token_ring'.
+Note: Assuming pure combinatorial block at /home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_token_ring.v:32.5-38.8 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Parameter \BUFFER_DEPTH = 4
+
+22.18. Executing AST frontend in derive mode using pre-parsed AST for module `\dc_full_detector'.
+Parameter \BUFFER_DEPTH = 4
+Generating RTLIL representation for module `$paramod\dc_full_detector\BUFFER_DEPTH=s32'00000000000000000000000000000100'.
+Parameter \BUFFER_DEPTH = 4
+Parameter \RESET_VALUE = 12
+
+22.19. Executing AST frontend in derive mode using pre-parsed AST for module `\dc_token_ring'.
+Parameter \BUFFER_DEPTH = 4
+Parameter \RESET_VALUE = 12
+Generating RTLIL representation for module `$paramod$5e92e6b3c6bcb85ab5eddd5dee64d346c7f45743\dc_token_ring'.
+Note: Assuming pure combinatorial block at /home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_token_ring.v:32.5-38.8 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Parameter \DATA_WIDTH = 8
+Parameter \BUFFER_DEPTH = 4
+
+22.20. Executing AST frontend in derive mode using pre-parsed AST for module `\dc_data_buffer'.
+Parameter \DATA_WIDTH = 8
+Parameter \BUFFER_DEPTH = 4
+Generating RTLIL representation for module `$paramod$a166b2234bf005b190ab6420bb103d60852421bb\dc_data_buffer'.
+
+22.21. Analyzing design hierarchy..
+Top module:  \udma_uart_top
+Used module:     \edge_propagator
+Used module:         \pulp_sync_wedge
+Used module:             \pulp_clock_gating
+Used module:             $paramod\pulp_sync\STAGES=32'00000000000000000000000000000010
+Used module:     \udma_uart_rx
+Used module:     $paramod$a166b2234bf005b190ab6420bb103d60852421bb\udma_dc_fifo
+Used module:         $paramod$a166b2234bf005b190ab6420bb103d60852421bb\dc_token_ring_fifo_dout
+Used module:             $paramod$7dadd2ee277a1a481f9118ee9d3a80ac7aeb0d0b\dc_synchronizer
+Used module:             $paramod$472709ea3bd0938e2c3e9c6e817c7d6d7fdedb92\dc_token_ring
+Used module:         $paramod$a166b2234bf005b190ab6420bb103d60852421bb\dc_token_ring_fifo_din
+Used module:             $paramod\dc_full_detector\BUFFER_DEPTH=s32'00000000000000000000000000000100
+Used module:             $paramod$5e92e6b3c6bcb85ab5eddd5dee64d346c7f45743\dc_token_ring
+Used module:             $paramod$a166b2234bf005b190ab6420bb103d60852421bb\dc_data_buffer
+Used module:     \udma_uart_tx
+Used module:     $paramod$7654e522d750779c4fca23ed504328738d7ed1e9\io_tx_fifo
+Used module:         $paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo
+Used module:     $paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if
+
+22.22. Executing AST frontend in derive mode using pre-parsed AST for module `\tc_clk_gating'.
+Generating RTLIL representation for module `\tc_clk_gating'.
+Parameter \WIDTH = 1
+Parameter \RESET_VALUE = 1'0
+
+22.23. Executing AST frontend in derive mode using pre-parsed AST for module `\dc_synchronizer'.
+Parameter \WIDTH = 1
+Parameter \RESET_VALUE = 1'0
+Generating RTLIL representation for module `$paramod\dc_synchronizer\WIDTH=s32'00000000000000000000000000000001\RESET_VALUE=1'0'.
+Parameter \ONEHOT_WIDTH = 4
+
+22.24. Executing AST frontend in derive mode using pre-parsed AST for module `\onehot_to_bin'.
+Parameter \ONEHOT_WIDTH = 4
+Generating RTLIL representation for module `$paramod\onehot_to_bin\ONEHOT_WIDTH=s32'00000000000000000000000000000100'.
+Parameter \ONEHOT_WIDTH = 4
+Found cached RTLIL representation for module `$paramod\onehot_to_bin\ONEHOT_WIDTH=s32'00000000000000000000000000000100'.
+
+22.25. Analyzing design hierarchy..
+Top module:  \udma_uart_top
+Used module:     \edge_propagator
+Used module:         \pulp_sync_wedge
+Used module:             \pulp_clock_gating
+Used module:                 \tc_clk_gating
+Used module:             $paramod\pulp_sync\STAGES=32'00000000000000000000000000000010
+Used module:     \udma_uart_rx
+Used module:     $paramod$a166b2234bf005b190ab6420bb103d60852421bb\udma_dc_fifo
+Used module:         $paramod$a166b2234bf005b190ab6420bb103d60852421bb\dc_token_ring_fifo_dout
+Used module:             $paramod$7dadd2ee277a1a481f9118ee9d3a80ac7aeb0d0b\dc_synchronizer
+Used module:             $paramod$472709ea3bd0938e2c3e9c6e817c7d6d7fdedb92\dc_token_ring
+Used module:         $paramod$a166b2234bf005b190ab6420bb103d60852421bb\dc_token_ring_fifo_din
+Used module:             $paramod\dc_full_detector\BUFFER_DEPTH=s32'00000000000000000000000000000100
+Used module:                 $paramod\dc_synchronizer\WIDTH=s32'00000000000000000000000000000001\RESET_VALUE=1'0
+Used module:             $paramod$5e92e6b3c6bcb85ab5eddd5dee64d346c7f45743\dc_token_ring
+Used module:             $paramod$a166b2234bf005b190ab6420bb103d60852421bb\dc_data_buffer
+Used module:                 $paramod\onehot_to_bin\ONEHOT_WIDTH=s32'00000000000000000000000000000100
+Used module:     \udma_uart_tx
+Used module:     $paramod$7654e522d750779c4fca23ed504328738d7ed1e9\io_tx_fifo
+Used module:         $paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo
+Used module:     $paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if
+
+22.26. Analyzing design hierarchy..
+Top module:  \udma_uart_top
+Used module:     \edge_propagator
+Used module:         \pulp_sync_wedge
+Used module:             \pulp_clock_gating
+Used module:                 \tc_clk_gating
+Used module:             $paramod\pulp_sync\STAGES=32'00000000000000000000000000000010
+Used module:     \udma_uart_rx
+Used module:     $paramod$a166b2234bf005b190ab6420bb103d60852421bb\udma_dc_fifo
+Used module:         $paramod$a166b2234bf005b190ab6420bb103d60852421bb\dc_token_ring_fifo_dout
+Used module:             $paramod$7dadd2ee277a1a481f9118ee9d3a80ac7aeb0d0b\dc_synchronizer
+Used module:             $paramod$472709ea3bd0938e2c3e9c6e817c7d6d7fdedb92\dc_token_ring
+Used module:         $paramod$a166b2234bf005b190ab6420bb103d60852421bb\dc_token_ring_fifo_din
+Used module:             $paramod\dc_full_detector\BUFFER_DEPTH=s32'00000000000000000000000000000100
+Used module:                 $paramod\dc_synchronizer\WIDTH=s32'00000000000000000000000000000001\RESET_VALUE=1'0
+Used module:             $paramod$5e92e6b3c6bcb85ab5eddd5dee64d346c7f45743\dc_token_ring
+Used module:             $paramod$a166b2234bf005b190ab6420bb103d60852421bb\dc_data_buffer
+Used module:                 $paramod\onehot_to_bin\ONEHOT_WIDTH=s32'00000000000000000000000000000100
+Used module:     \udma_uart_tx
+Used module:     $paramod$7654e522d750779c4fca23ed504328738d7ed1e9\io_tx_fifo
+Used module:         $paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo
+Used module:     $paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if
+Removing unused module `$abstract\udma_uart_top'.
+Removing unused module `$abstract\udma_uart_tx'.
+Removing unused module `$abstract\udma_uart_rx'.
+Removing unused module `$abstract\udma_uart_reg_if'.
+Removing unused module `$abstract\udma_dc_fifo'.
+Removing unused module `$abstract\io_tx_fifo'.
+Removing unused module `$abstract\io_generic_fifo'.
+Removing unused module `$abstract\dc_token_ring_fifo_dout'.
+Removing unused module `$abstract\dc_token_ring_fifo_din'.
+Removing unused module `$abstract\dc_token_ring'.
+Removing unused module `$abstract\dc_synchronizer'.
+Removing unused module `$abstract\dc_full_detector'.
+Removing unused module `$abstract\dc_data_buffer'.
+Removing unused module `$abstract\onehot_to_bin'.
+Removing unused module `$abstract\edge_propagator'.
+Removing unused module `$abstract\pulp_sync_wedge'.
+Removing unused module `$abstract\pulp_sync'.
+Removing unused module `$abstract\pulp_clock_xor2'.
+Removing unused module `$abstract\pulp_clock_mux2'.
+Removing unused module `$abstract\pulp_clock_inverter'.
+Removing unused module `$abstract\pulp_clock_gating'.
+Removing unused module `$abstract\pulp_clock_buffer'.
+Removing unused module `$abstract\pulp_clock_and2'.
+Removing unused module `$abstract\tc_clk_xor2'.
+Removing unused module `$abstract\tc_clk_mux2'.
+Removing unused module `$abstract\tc_clk_inverter'.
+Removing unused module `$abstract\tc_clk_gating'.
+Removing unused module `$abstract\tc_clk_buffer'.
+Removing unused module `$abstract\tc_clk_and2'.
+Removed 29 unused modules.
+Renaming module udma_uart_top to udma_uart_top.
+
+23. Executing PROC pass (convert processes to netlists).
+
+23.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+23.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_top.sv:309$21 in module udma_uart_top.
+Marked 1 switch rules as full_case in process $proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_top.sv:296$19 in module udma_uart_top.
+Removed 1 dead cases from process $proc$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:143$155 in module $paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.
+Marked 1 switch rules as full_case in process $proc$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:143$155 in module $paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.
+Marked 4 switch rules as full_case in process $proc$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:97$144 in module $paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.
+Marked 3 switch rules as full_case in process $proc$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:82$134 in module $paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.
+Marked 3 switch rules as full_case in process $proc$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:58$120 in module $paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.
+Marked 1 switch rules as full_case in process $proc$/home/sahana/core5_udma/dependencies/common_cells/src/deprecated/pulp_sync_wedge.sv:47$103 in module pulp_sync_wedge.
+Marked 1 switch rules as full_case in process $proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:274$98 in module $paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.
+Marked 6 switch rules as full_case in process $proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:157$84 in module $paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.
+Marked 2 switch rules as full_case in process $proc$/home/sahana/core5_udma/udma_core/rtl/common/io_tx_fifo.sv:77$70 in module $paramod$7654e522d750779c4fca23ed504328738d7ed1e9\io_tx_fifo.
+Marked 3 switch rules as full_case in process $proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv:192$62 in module udma_uart_tx.
+Marked 2 switch rules as full_case in process $proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv:163$60 in module udma_uart_tx.
+Marked 11 switch rules as full_case in process $proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv:71$56 in module udma_uart_tx.
+Removed 1 dead cases from process $proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv:57$55 in module udma_uart_tx.
+Marked 1 switch rules as full_case in process $proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv:57$55 in module udma_uart_tx.
+Marked 2 switch rules as full_case in process $proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:258$52 in module udma_uart_rx.
+Marked 4 switch rules as full_case in process $proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:223$44 in module udma_uart_rx.
+Marked 2 switch rules as full_case in process $proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:210$42 in module udma_uart_rx.
+Marked 2 switch rules as full_case in process $proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:185$38 in module udma_uart_rx.
+Removed 1 dead cases from process $proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:84$31 in module udma_uart_rx.
+Marked 12 switch rules as full_case in process $proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:84$31 in module udma_uart_rx.
+Removed 1 dead cases from process $proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:70$30 in module udma_uart_rx.
+Marked 1 switch rules as full_case in process $proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:70$30 in module udma_uart_rx.
+Marked 1 switch rules as full_case in process $proc$/home/sahana/core5_udma/dependencies/common_cells/src/edge_propagator.sv:30$27 in module edge_propagator.
+Marked 1 switch rules as full_case in process $proc$/home/sahana/core5_udma/dependencies/common_cells/src/deprecated/pulp_sync.sv:26$158 in module $paramod\pulp_sync\STAGES=32'00000000000000000000000000000010.
+Marked 1 switch rules as full_case in process $proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_synchronizer.v:24$204 in module $paramod\dc_synchronizer\WIDTH=s32'00000000000000000000000000000001\RESET_VALUE=1'0.
+Marked 2 switch rules as full_case in process $proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_data_buffer.sv:34$182 in module $paramod$a166b2234bf005b190ab6420bb103d60852421bb\dc_data_buffer.
+Marked 1 switch rules as full_case in process $proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_token_ring.v:32$179 in module $paramod$5e92e6b3c6bcb85ab5eddd5dee64d346c7f45743\dc_token_ring.
+Marked 1 switch rules as full_case in process $proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_token_ring.v:24$177 in module $paramod$5e92e6b3c6bcb85ab5eddd5dee64d346c7f45743\dc_token_ring.
+Marked 1 switch rules as full_case in process $proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_full_detector.v:47$173 in module $paramod\dc_full_detector\BUFFER_DEPTH=s32'00000000000000000000000000000100.
+Marked 1 switch rules as full_case in process $proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_token_ring.v:32$164 in module $paramod$472709ea3bd0938e2c3e9c6e817c7d6d7fdedb92\dc_token_ring.
+Marked 1 switch rules as full_case in process $proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_token_ring.v:24$162 in module $paramod$472709ea3bd0938e2c3e9c6e817c7d6d7fdedb92\dc_token_ring.
+Marked 1 switch rules as full_case in process $proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_synchronizer.v:24$160 in module $paramod$7dadd2ee277a1a481f9118ee9d3a80ac7aeb0d0b\dc_synchronizer.
+Removed a total of 4 dead cases.
+
+23.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 30 redundant assignments.
+Promoted 35 assignments to connections.
+
+23.4. Executing PROC_INIT pass (extract init attributes).
+
+23.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \rstn_i in `\udma_uart_top.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_top.sv:309$21'.
+Found async reset \rstn_i in `\udma_uart_top.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_top.sv:296$19'.
+Found async reset \rstn_i in `$paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.$proc$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:97$144'.
+Found async reset \rstn_i in `$paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.$proc$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:82$134'.
+Found async reset \rstn_i in `$paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.$proc$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:58$120'.
+Found async reset \rstn_i in `\pulp_sync_wedge.$proc$/home/sahana/core5_udma/dependencies/common_cells/src/deprecated/pulp_sync_wedge.sv:47$103'.
+Found async reset \rstn_i in `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:157$84'.
+Found async reset \rstn_i in `$paramod$7654e522d750779c4fca23ed504328738d7ed1e9\io_tx_fifo.$proc$/home/sahana/core5_udma/udma_core/rtl/common/io_tx_fifo.sv:77$70'.
+Found async reset \rstn_i in `\udma_uart_tx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv:192$62'.
+Found async reset \rstn_i in `\udma_uart_tx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv:163$60'.
+Found async reset \rstn_i in `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:258$52'.
+Found async reset \rstn_i in `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:223$44'.
+Found async reset \rstn_i in `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:210$42'.
+Found async reset \rstn_i in `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:185$38'.
+Found async reset \rstn_tx_i in `\edge_propagator.$proc$/home/sahana/core5_udma/dependencies/common_cells/src/edge_propagator.sv:30$27'.
+Found async reset \rstn_i in `$paramod\pulp_sync\STAGES=32'00000000000000000000000000000010.$proc$/home/sahana/core5_udma/dependencies/common_cells/src/deprecated/pulp_sync.sv:26$158'.
+Found async reset \rstn in `$paramod\dc_synchronizer\WIDTH=s32'00000000000000000000000000000001\RESET_VALUE=1'0.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_synchronizer.v:24$204'.
+Found async reset \rstn in `$paramod$a166b2234bf005b190ab6420bb103d60852421bb\dc_data_buffer.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_data_buffer.sv:34$182'.
+Found async reset \rstn in `$paramod$5e92e6b3c6bcb85ab5eddd5dee64d346c7f45743\dc_token_ring.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_token_ring.v:24$177'.
+Found async reset \rstn in `$paramod\dc_full_detector\BUFFER_DEPTH=s32'00000000000000000000000000000100.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_full_detector.v:47$173'.
+Found async reset \rstn in `$paramod$472709ea3bd0938e2c3e9c6e817c7d6d7fdedb92\dc_token_ring.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_token_ring.v:24$162'.
+Found async reset \rstn in `$paramod$7dadd2ee277a1a481f9118ee9d3a80ac7aeb0d0b\dc_synchronizer.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_synchronizer.v:24$160'.
+
+23.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~68 debug messages>
+
+23.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\udma_uart_top.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_top.sv:309$21'.
+     1/6: $0\r_uart_en_rx_sync[2:0]
+     2/6: $0\r_uart_en_tx_sync[2:0]
+     3/6: $0\r_uart_bits[1:0]
+     4/6: $0\r_uart_div[15:0]
+     5/6: $0\r_uart_parity_en[0:0]
+     6/6: $0\r_uart_stop_bits[0:0]
+Creating decoders for process `\udma_uart_top.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_top.sv:296$19'.
+     1/2: $0\r_status_sync[3:0] [3:2]
+     2/2: $0\r_status_sync[3:0] [1:0]
+Creating decoders for process `$paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.$proc$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:143$155'.
+     1/1: $1$mem2reg_rd$\buffer$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:143$118_DATA[7:0]$157
+Creating decoders for process `$paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.$proc$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:97$144'.
+     1/2: $0\pointer_out[0:0]
+     2/2: $0\pointer_in[0:0]
+Creating decoders for process `$paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.$proc$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:82$134'.
+     1/7: $2$mem2reg_wr$\buffer$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:93$117_ADDR[0:0]$142
+     2/7: $2$mem2reg_wr$\buffer$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:93$117_DATA[7:0]$143
+     3/7: $1$mem2reg_wr$\buffer$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:93$117_DATA[7:0]$139
+     4/7: $1$mem2reg_wr$\buffer$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:93$117_ADDR[0:0]$138
+     5/7: $1\loop1[31:0]
+     6/7: $0\buffer[1][7:0]
+     7/7: $0\buffer[0][7:0]
+Creating decoders for process `$paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.$proc$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:58$120'.
+     1/1: $0\elements[1:0]
+Creating decoders for process `\pulp_sync_wedge.$proc$/home/sahana/core5_udma/dependencies/common_cells/src/deprecated/pulp_sync_wedge.sv:47$103'.
+     1/1: $0\serial_q[0:0]
+Creating decoders for process `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:274$98'.
+     1/4: $1\cfg_data_o[31:0] [31:16]
+     2/4: $1\cfg_data_o[31:0] [15:0]
+     3/4: $1\s_rx_valid_clr[0:0]
+     4/4: $1\s_err_clr[0:0]
+Creating decoders for process `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:157$84'.
+     1/24: $0\r_uart_rx_data_valid[0:0]
+     2/24: $0\r_uart_rx_data[7:0]
+     3/24: $0\r_uart_rx_clean_fifo[0:0]
+     4/24: $0\r_tx_clr[0:0]
+     5/24: $0\r_tx_en[0:0]
+     6/24: $0\r_rx_clr[0:0]
+     7/24: $0\r_rx_en[0:0]
+     8/24: $0\r_uart_rx_irq_en[0:0]
+     9/24: $0\r_uart_err_irq_en[0:0]
+    10/24: $0\r_uart_rx_polling_en[0:0]
+    11/24: $0\r_err_overflow[0:0]
+    12/24: $0\r_err_parity[0:0]
+    13/24: $0\r_uart_en_rx[0:0]
+    14/24: $0\r_uart_en_tx[0:0]
+    15/24: $0\r_tx_continuous[0:0]
+    16/24: $0\r_tx_size[15:0]
+    17/24: $0\r_tx_startaddr[11:0]
+    18/24: $0\r_rx_continuous[0:0]
+    19/24: $0\r_rx_size[15:0]
+    20/24: $0\r_rx_startaddr[11:0]
+    21/24: $0\r_uart_bits[1:0]
+    22/24: $0\r_uart_div[15:0]
+    23/24: $0\r_uart_parity_en[0:0]
+    24/24: $0\r_uart_stop_bits[0:0]
+Creating decoders for process `$paramod$7654e522d750779c4fca23ed504328738d7ed1e9\io_tx_fifo.$proc$/home/sahana/core5_udma/udma_core/rtl/common/io_tx_fifo.sv:77$70'.
+     1/1: $0\r_inflight[1:0]
+Creating decoders for process `\udma_uart_tx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv:192$62'.
+     1/2: $0\bit_done[0:0]
+     2/2: $0\baud_cnt[15:0]
+Creating decoders for process `\udma_uart_tx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv:163$60'.
+     1/4: $0\CS[2:0]
+     2/4: $0\reg_bit_count[2:0]
+     3/4: $0\parity_bit[0:0]
+     4/4: $0\reg_data[7:0]
+Creating decoders for process `\udma_uart_tx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv:71$56'.
+     1/24: $10\NS[2:0]
+     2/24: $9\NS[2:0]
+     3/24: $8\NS[2:0]
+     4/24: $7\NS[2:0]
+     5/24: $6\NS[2:0]
+     6/24: $5\NS[2:0]
+     7/24: $3\reg_bit_count_next[2:0]
+     8/24: $4\sampleData[0:0]
+     9/24: $3\sampleData[0:0]
+    10/24: $2\reg_bit_count_next[2:0]
+    11/24: $4\NS[2:0]
+    12/24: $3\NS[2:0]
+    13/24: $2\reg_data_next[7:0]
+    14/24: $2\sampleData[0:0]
+    15/24: $2\NS[2:0]
+    16/24: $2\tx_ready_o[0:0]
+    17/24: $1\sampleData[0:0]
+    18/24: $1\reg_data_next[7:0]
+    19/24: $1\NS[2:0]
+    20/24: $1\tx_ready_o[0:0]
+    21/24: $1\baudgen_en[0:0]
+    22/24: $1\parity_bit_next[0:0]
+    23/24: $1\reg_bit_count_next[2:0]
+    24/24: $1\tx_o[0:0]
+Creating decoders for process `\udma_uart_tx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv:57$55'.
+     1/1: $1\s_target_bits[2:0]
+Creating decoders for process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:258$52'.
+     1/1: $0\r_error_parity[0:0]
+Creating decoders for process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:223$44'.
+     1/2: $0\bit_done[0:0]
+     2/2: $0\baud_cnt[15:0]
+Creating decoders for process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:210$42'.
+     1/1: $0\reg_rx_sync[2:0]
+Creating decoders for process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:185$38'.
+     1/4: $0\CS[2:0]
+     2/4: $0\reg_bit_count[2:0]
+     3/4: $0\parity_bit[0:0]
+     4/4: $0\reg_data[7:0]
+Creating decoders for process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:84$31'.
+     1/39: $4\err_overflow_o[0:0]
+     2/39: $4\char_event_o[0:0]
+     3/39: $3\char_event_o[0:0]
+     4/39: $3\err_overflow_o[0:0]
+     5/39: $3\rx_valid_o[0:0]
+     6/39: $3\err_parity_o[0:0]
+     7/39: $2\rx_valid_o[0:0]
+     8/39: $2\char_event_o[0:0]
+     9/39: $2\err_overflow_o[0:0]
+    10/39: $2\err_parity_o[0:0]
+    11/39: $8\NS[2:0]
+    12/39: $3\s_set_error_parity[0:0]
+    13/39: $7\NS[2:0]
+    14/39: $2\s_set_error_parity[0:0]
+    15/39: $6\NS[2:0]
+    16/39: $5\NS[2:0]
+    17/39: $3\reg_bit_count_next[2:0]
+    18/39: $2\reg_bit_count_next[2:0]
+    19/39: $4\NS[2:0]
+    20/39: $2\s_sample_data[0:0]
+    21/39: $2\reg_data_next[7:0]
+    22/39: $3\NS[2:0]
+    23/39: $2\s_err_clear[0:0]
+    24/39: $2\start_bit[0:0]
+    25/39: $2\baudgen_en[0:0]
+    26/39: $2\NS[2:0]
+    27/39: $1\s_err_clear[0:0]
+    28/39: $1\start_bit[0:0]
+    29/39: $1\baudgen_en[0:0]
+    30/39: $1\NS[2:0]
+    31/39: $1\s_set_error_parity[0:0]
+    32/39: $1\s_sample_data[0:0]
+    33/39: $1\parity_bit_next[0:0]
+    34/39: $1\reg_bit_count_next[2:0]
+    35/39: $1\reg_data_next[7:0]
+    36/39: $1\rx_valid_o[0:0]
+    37/39: $1\char_event_o[0:0]
+    38/39: $1\err_overflow_o[0:0]
+    39/39: $1\err_parity_o[0:0]
+Creating decoders for process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:70$30'.
+     1/1: $1\s_target_bits[2:0]
+Creating decoders for process `\edge_propagator.$proc$/home/sahana/core5_udma/dependencies/common_cells/src/edge_propagator.sv:30$27'.
+     1/2: $0\sync_a[1:0]
+     2/2: $0\r_input_reg[0:0]
+Creating decoders for process `$paramod\pulp_sync\STAGES=32'00000000000000000000000000000010.$proc$/home/sahana/core5_udma/dependencies/common_cells/src/deprecated/pulp_sync.sv:26$158'.
+     1/1: $0\r_reg[1:0]
+Creating decoders for process `$paramod\dc_synchronizer\WIDTH=s32'00000000000000000000000000000001\RESET_VALUE=1'0.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_synchronizer.v:24$204'.
+     1/2: $0\d_out[0:0]
+     2/2: $0\d_middle[0:0]
+Creating decoders for process `\tc_clk_gating.$proc$/home/sahana/core5_udma/dependencies/tech_cells_generic/src/rtl/tc_clk.sv:40$200'.
+     1/1: $0\clk_en[0:0]
+Creating decoders for process `$paramod$a166b2234bf005b190ab6420bb103d60852421bb\dc_data_buffer.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_data_buffer.sv:34$182'.
+     1/4: $2$lookahead\data$181[31:0]$189
+     2/4: $2$bitselwrite$pos$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_data_buffer.sv:40$180[31:0]$188
+     3/4: $1$lookahead\data$181[31:0]$187
+     4/4: $1$bitselwrite$pos$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_data_buffer.sv:40$180[31:0]$186
+Creating decoders for process `$paramod$5e92e6b3c6bcb85ab5eddd5dee64d346c7f45743\dc_token_ring.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_token_ring.v:32$179'.
+     1/1: $1\next_state[3:0]
+Creating decoders for process `$paramod$5e92e6b3c6bcb85ab5eddd5dee64d346c7f45743\dc_token_ring.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_token_ring.v:24$177'.
+     1/1: $0\state[3:0]
+Creating decoders for process `$paramod\dc_full_detector\BUFFER_DEPTH=s32'00000000000000000000000000000100.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_full_detector.v:47$173'.
+     1/1: $0\latched_full_s[0:0]
+Creating decoders for process `$paramod$472709ea3bd0938e2c3e9c6e817c7d6d7fdedb92\dc_token_ring.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_token_ring.v:32$164'.
+     1/1: $1\next_state[3:0]
+Creating decoders for process `$paramod$472709ea3bd0938e2c3e9c6e817c7d6d7fdedb92\dc_token_ring.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_token_ring.v:24$162'.
+     1/1: $0\state[3:0]
+Creating decoders for process `$paramod$7dadd2ee277a1a481f9118ee9d3a80ac7aeb0d0b\dc_synchronizer.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_synchronizer.v:24$160'.
+     1/2: $0\d_out[3:0]
+     2/2: $0\d_middle[3:0]
+
+23.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `$paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.$mem2reg_rd$\buffer$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:143$118_DATA' from process `$paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.$proc$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:143$155'.
+No latch inferred for signal `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.\cfg_data_o' from process `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:274$98'.
+No latch inferred for signal `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.\s_err_clr' from process `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:274$98'.
+No latch inferred for signal `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.\s_rx_valid_clr' from process `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:274$98'.
+No latch inferred for signal `\udma_uart_tx.\tx_o' from process `\udma_uart_tx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv:71$56'.
+No latch inferred for signal `\udma_uart_tx.\tx_ready_o' from process `\udma_uart_tx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv:71$56'.
+No latch inferred for signal `\udma_uart_tx.\NS' from process `\udma_uart_tx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv:71$56'.
+No latch inferred for signal `\udma_uart_tx.\reg_data_next' from process `\udma_uart_tx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv:71$56'.
+No latch inferred for signal `\udma_uart_tx.\reg_bit_count_next' from process `\udma_uart_tx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv:71$56'.
+No latch inferred for signal `\udma_uart_tx.\parity_bit_next' from process `\udma_uart_tx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv:71$56'.
+No latch inferred for signal `\udma_uart_tx.\baudgen_en' from process `\udma_uart_tx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv:71$56'.
+No latch inferred for signal `\udma_uart_tx.\sampleData' from process `\udma_uart_tx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv:71$56'.
+No latch inferred for signal `\udma_uart_tx.\s_target_bits' from process `\udma_uart_tx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv:57$55'.
+No latch inferred for signal `\udma_uart_rx.\err_parity_o' from process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:84$31'.
+No latch inferred for signal `\udma_uart_rx.\err_overflow_o' from process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:84$31'.
+No latch inferred for signal `\udma_uart_rx.\char_event_o' from process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:84$31'.
+No latch inferred for signal `\udma_uart_rx.\rx_valid_o' from process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:84$31'.
+No latch inferred for signal `\udma_uart_rx.\NS' from process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:84$31'.
+No latch inferred for signal `\udma_uart_rx.\reg_data_next' from process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:84$31'.
+No latch inferred for signal `\udma_uart_rx.\reg_bit_count_next' from process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:84$31'.
+No latch inferred for signal `\udma_uart_rx.\parity_bit_next' from process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:84$31'.
+No latch inferred for signal `\udma_uart_rx.\s_sample_data' from process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:84$31'.
+No latch inferred for signal `\udma_uart_rx.\baudgen_en' from process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:84$31'.
+No latch inferred for signal `\udma_uart_rx.\start_bit' from process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:84$31'.
+No latch inferred for signal `\udma_uart_rx.\s_set_error_parity' from process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:84$31'.
+No latch inferred for signal `\udma_uart_rx.\s_err_clear' from process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:84$31'.
+No latch inferred for signal `\udma_uart_rx.\s_target_bits' from process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:70$30'.
+Latch inferred for signal `\tc_clk_gating.\clk_en' from process `\tc_clk_gating.$proc$/home/sahana/core5_udma/dependencies/tech_cells_generic/src/rtl/tc_clk.sv:40$200': $auto$proc_dlatch.cc:432:proc_dlatch$1051
+No latch inferred for signal `$paramod$5e92e6b3c6bcb85ab5eddd5dee64d346c7f45743\dc_token_ring.\next_state' from process `$paramod$5e92e6b3c6bcb85ab5eddd5dee64d346c7f45743\dc_token_ring.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_token_ring.v:32$179'.
+No latch inferred for signal `$paramod$472709ea3bd0938e2c3e9c6e817c7d6d7fdedb92\dc_token_ring.\next_state' from process `$paramod$472709ea3bd0938e2c3e9c6e817c7d6d7fdedb92\dc_token_ring.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_token_ring.v:32$164'.
+
+23.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\udma_uart_top.\r_uart_stop_bits' using process `\udma_uart_top.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_top.sv:309$21'.
+  created $adff cell `$procdff$1066' with positive edge clock and positive level reset.
+Creating register for signal `\udma_uart_top.\r_uart_parity_en' using process `\udma_uart_top.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_top.sv:309$21'.
+  created $adff cell `$procdff$1071' with positive edge clock and positive level reset.
+Creating register for signal `\udma_uart_top.\r_uart_div' using process `\udma_uart_top.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_top.sv:309$21'.
+  created $adff cell `$procdff$1076' with positive edge clock and positive level reset.
+Creating register for signal `\udma_uart_top.\r_uart_bits' using process `\udma_uart_top.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_top.sv:309$21'.
+  created $adff cell `$procdff$1081' with positive edge clock and positive level reset.
+Creating register for signal `\udma_uart_top.\r_uart_en_rx_sync' using process `\udma_uart_top.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_top.sv:309$21'.
+  created $adff cell `$procdff$1086' with positive edge clock and positive level reset.
+Creating register for signal `\udma_uart_top.\r_uart_en_tx_sync' using process `\udma_uart_top.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_top.sv:309$21'.
+  created $adff cell `$procdff$1091' with positive edge clock and positive level reset.
+Creating register for signal `\udma_uart_top.\r_status_sync' using process `\udma_uart_top.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_top.sv:296$19'.
+  created $adff cell `$procdff$1096' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.\pointer_in' using process `$paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.$proc$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:97$144'.
+  created $adff cell `$procdff$1101' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.\pointer_out' using process `$paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.$proc$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:97$144'.
+  created $adff cell `$procdff$1106' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.\loop1' using process `$paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.$proc$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:82$134'.
+  created $adff cell `$procdff$1111' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.\buffer[0]' using process `$paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.$proc$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:82$134'.
+  created $adff cell `$procdff$1116' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.\buffer[1]' using process `$paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.$proc$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:82$134'.
+  created $adff cell `$procdff$1121' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.$mem2reg_wr$\buffer$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:93$117_ADDR' using process `$paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.$proc$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:82$134'.
+  created $adff cell `$procdff$1126' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.$mem2reg_wr$\buffer$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:93$117_DATA' using process `$paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.$proc$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:82$134'.
+  created $adff cell `$procdff$1131' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.\elements' using process `$paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.$proc$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:58$120'.
+  created $adff cell `$procdff$1136' with positive edge clock and positive level reset.
+Creating register for signal `\pulp_sync_wedge.\serial_q' using process `\pulp_sync_wedge.$proc$/home/sahana/core5_udma/dependencies/common_cells/src/deprecated/pulp_sync_wedge.sv:47$103'.
+  created $adff cell `$procdff$1141' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.\r_uart_stop_bits' using process `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:157$84'.
+  created $adff cell `$procdff$1146' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.\r_uart_parity_en' using process `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:157$84'.
+  created $adff cell `$procdff$1151' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.\r_uart_div' using process `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:157$84'.
+  created $adff cell `$procdff$1156' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.\r_uart_bits' using process `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:157$84'.
+  created $adff cell `$procdff$1161' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.\r_rx_startaddr' using process `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:157$84'.
+  created $adff cell `$procdff$1166' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.\r_rx_size' using process `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:157$84'.
+  created $adff cell `$procdff$1171' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.\r_rx_continuous' using process `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:157$84'.
+  created $adff cell `$procdff$1176' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.\r_rx_en' using process `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:157$84'.
+  created $adff cell `$procdff$1181' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.\r_rx_clr' using process `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:157$84'.
+  created $adff cell `$procdff$1186' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.\r_tx_startaddr' using process `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:157$84'.
+  created $adff cell `$procdff$1191' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.\r_tx_size' using process `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:157$84'.
+  created $adff cell `$procdff$1196' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.\r_tx_continuous' using process `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:157$84'.
+  created $adff cell `$procdff$1201' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.\r_tx_en' using process `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:157$84'.
+  created $adff cell `$procdff$1206' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.\r_tx_clr' using process `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:157$84'.
+  created $adff cell `$procdff$1211' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.\r_uart_en_tx' using process `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:157$84'.
+  created $adff cell `$procdff$1216' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.\r_uart_en_rx' using process `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:157$84'.
+  created $adff cell `$procdff$1221' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.\r_err_parity' using process `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:157$84'.
+  created $adff cell `$procdff$1226' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.\r_err_overflow' using process `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:157$84'.
+  created $adff cell `$procdff$1231' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.\r_uart_rx_clean_fifo' using process `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:157$84'.
+  created $adff cell `$procdff$1236' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.\r_uart_rx_polling_en' using process `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:157$84'.
+  created $adff cell `$procdff$1241' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.\r_uart_err_irq_en' using process `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:157$84'.
+  created $adff cell `$procdff$1246' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.\r_uart_rx_irq_en' using process `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:157$84'.
+  created $adff cell `$procdff$1251' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.\r_uart_rx_data' using process `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:157$84'.
+  created $adff cell `$procdff$1256' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.\r_uart_rx_data_valid' using process `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:157$84'.
+  created $adff cell `$procdff$1261' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$7654e522d750779c4fca23ed504328738d7ed1e9\io_tx_fifo.\r_inflight' using process `$paramod$7654e522d750779c4fca23ed504328738d7ed1e9\io_tx_fifo.$proc$/home/sahana/core5_udma/udma_core/rtl/common/io_tx_fifo.sv:77$70'.
+  created $adff cell `$procdff$1266' with positive edge clock and positive level reset.
+Creating register for signal `\udma_uart_tx.\baud_cnt' using process `\udma_uart_tx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv:192$62'.
+  created $adff cell `$procdff$1271' with positive edge clock and positive level reset.
+Creating register for signal `\udma_uart_tx.\bit_done' using process `\udma_uart_tx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv:192$62'.
+  created $adff cell `$procdff$1276' with positive edge clock and positive level reset.
+Creating register for signal `\udma_uart_tx.\CS' using process `\udma_uart_tx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv:163$60'.
+  created $adff cell `$procdff$1281' with positive edge clock and positive level reset.
+Creating register for signal `\udma_uart_tx.\reg_data' using process `\udma_uart_tx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv:163$60'.
+  created $adff cell `$procdff$1286' with positive edge clock and positive level reset.
+Creating register for signal `\udma_uart_tx.\reg_bit_count' using process `\udma_uart_tx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv:163$60'.
+  created $adff cell `$procdff$1291' with positive edge clock and positive level reset.
+Creating register for signal `\udma_uart_tx.\parity_bit' using process `\udma_uart_tx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv:163$60'.
+  created $adff cell `$procdff$1296' with positive edge clock and positive level reset.
+Creating register for signal `\udma_uart_rx.\r_error_parity' using process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:258$52'.
+  created $adff cell `$procdff$1301' with positive edge clock and positive level reset.
+Creating register for signal `\udma_uart_rx.\baud_cnt' using process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:223$44'.
+  created $adff cell `$procdff$1306' with positive edge clock and positive level reset.
+Creating register for signal `\udma_uart_rx.\bit_done' using process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:223$44'.
+  created $adff cell `$procdff$1311' with positive edge clock and positive level reset.
+Creating register for signal `\udma_uart_rx.\reg_rx_sync' using process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:210$42'.
+  created $adff cell `$procdff$1316' with positive edge clock and positive level reset.
+Creating register for signal `\udma_uart_rx.\CS' using process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:185$38'.
+  created $adff cell `$procdff$1321' with positive edge clock and positive level reset.
+Creating register for signal `\udma_uart_rx.\reg_data' using process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:185$38'.
+  created $adff cell `$procdff$1326' with positive edge clock and positive level reset.
+Creating register for signal `\udma_uart_rx.\reg_bit_count' using process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:185$38'.
+  created $adff cell `$procdff$1331' with positive edge clock and positive level reset.
+Creating register for signal `\udma_uart_rx.\parity_bit' using process `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:185$38'.
+  created $adff cell `$procdff$1336' with positive edge clock and positive level reset.
+Creating register for signal `\edge_propagator.\sync_a' using process `\edge_propagator.$proc$/home/sahana/core5_udma/dependencies/common_cells/src/edge_propagator.sv:30$27'.
+  created $adff cell `$procdff$1341' with positive edge clock and positive level reset.
+Creating register for signal `\edge_propagator.\r_input_reg' using process `\edge_propagator.$proc$/home/sahana/core5_udma/dependencies/common_cells/src/edge_propagator.sv:30$27'.
+  created $adff cell `$procdff$1346' with positive edge clock and positive level reset.
+Creating register for signal `$paramod\pulp_sync\STAGES=32'00000000000000000000000000000010.\r_reg' using process `$paramod\pulp_sync\STAGES=32'00000000000000000000000000000010.$proc$/home/sahana/core5_udma/dependencies/common_cells/src/deprecated/pulp_sync.sv:26$158'.
+  created $adff cell `$procdff$1351' with positive edge clock and positive level reset.
+Creating register for signal `$paramod\dc_synchronizer\WIDTH=s32'00000000000000000000000000000001\RESET_VALUE=1'0.\d_out' using process `$paramod\dc_synchronizer\WIDTH=s32'00000000000000000000000000000001\RESET_VALUE=1'0.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_synchronizer.v:24$204'.
+  created $adff cell `$procdff$1356' with positive edge clock and positive level reset.
+Creating register for signal `$paramod\dc_synchronizer\WIDTH=s32'00000000000000000000000000000001\RESET_VALUE=1'0.\d_middle' using process `$paramod\dc_synchronizer\WIDTH=s32'00000000000000000000000000000001\RESET_VALUE=1'0.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_synchronizer.v:24$204'.
+  created $adff cell `$procdff$1361' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$a166b2234bf005b190ab6420bb103d60852421bb\dc_data_buffer.\data' using process `$paramod$a166b2234bf005b190ab6420bb103d60852421bb\dc_data_buffer.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_data_buffer.sv:34$182'.
+  created $adff cell `$procdff$1366' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$a166b2234bf005b190ab6420bb103d60852421bb\dc_data_buffer.$bitselwrite$pos$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_data_buffer.sv:40$180' using process `$paramod$a166b2234bf005b190ab6420bb103d60852421bb\dc_data_buffer.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_data_buffer.sv:34$182'.
+  created $adff cell `$procdff$1371' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$a166b2234bf005b190ab6420bb103d60852421bb\dc_data_buffer.$lookahead\data$181' using process `$paramod$a166b2234bf005b190ab6420bb103d60852421bb\dc_data_buffer.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_data_buffer.sv:34$182'.
+  created $adff cell `$procdff$1376' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$5e92e6b3c6bcb85ab5eddd5dee64d346c7f45743\dc_token_ring.\state' using process `$paramod$5e92e6b3c6bcb85ab5eddd5dee64d346c7f45743\dc_token_ring.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_token_ring.v:24$177'.
+  created $adff cell `$procdff$1381' with positive edge clock and positive level reset.
+Creating register for signal `$paramod\dc_full_detector\BUFFER_DEPTH=s32'00000000000000000000000000000100.\latched_full_s' using process `$paramod\dc_full_detector\BUFFER_DEPTH=s32'00000000000000000000000000000100.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_full_detector.v:47$173'.
+  created $adff cell `$procdff$1386' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$472709ea3bd0938e2c3e9c6e817c7d6d7fdedb92\dc_token_ring.\state' using process `$paramod$472709ea3bd0938e2c3e9c6e817c7d6d7fdedb92\dc_token_ring.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_token_ring.v:24$162'.
+  created $adff cell `$procdff$1391' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$7dadd2ee277a1a481f9118ee9d3a80ac7aeb0d0b\dc_synchronizer.\d_out' using process `$paramod$7dadd2ee277a1a481f9118ee9d3a80ac7aeb0d0b\dc_synchronizer.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_synchronizer.v:24$160'.
+  created $adff cell `$procdff$1396' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$7dadd2ee277a1a481f9118ee9d3a80ac7aeb0d0b\dc_synchronizer.\d_middle' using process `$paramod$7dadd2ee277a1a481f9118ee9d3a80ac7aeb0d0b\dc_synchronizer.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_synchronizer.v:24$160'.
+  created $adff cell `$procdff$1401' with positive edge clock and positive level reset.
+
+23.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+23.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\udma_uart_top.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_top.sv:309$21'.
+Removing empty process `udma_uart_top.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_top.sv:309$21'.
+Removing empty process `udma_uart_top.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_top.sv:296$19'.
+Found and cleaned up 1 empty switch in `$paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.$proc$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:143$155'.
+Removing empty process `$paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.$proc$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:143$155'.
+Found and cleaned up 5 empty switches in `$paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.$proc$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:97$144'.
+Removing empty process `$paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.$proc$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:97$144'.
+Found and cleaned up 2 empty switches in `$paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.$proc$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:82$134'.
+Removing empty process `$paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.$proc$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:82$134'.
+Found and cleaned up 3 empty switches in `$paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.$proc$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:58$120'.
+Removing empty process `$paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.$proc$/home/sahana/core5_udma/udma_core/rtl/common/io_generic_fifo.sv:58$120'.
+Removing empty process `pulp_sync_wedge.$proc$/home/sahana/core5_udma/dependencies/common_cells/src/deprecated/pulp_sync_wedge.sv:47$103'.
+Found and cleaned up 1 empty switch in `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:274$98'.
+Removing empty process `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:274$98'.
+Found and cleaned up 9 empty switches in `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:157$84'.
+Removing empty process `$paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_reg_if.sv:157$84'.
+Found and cleaned up 3 empty switches in `$paramod$7654e522d750779c4fca23ed504328738d7ed1e9\io_tx_fifo.$proc$/home/sahana/core5_udma/udma_core/rtl/common/io_tx_fifo.sv:77$70'.
+Removing empty process `$paramod$7654e522d750779c4fca23ed504328738d7ed1e9\io_tx_fifo.$proc$/home/sahana/core5_udma/udma_core/rtl/common/io_tx_fifo.sv:77$70'.
+Found and cleaned up 2 empty switches in `\udma_uart_tx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv:192$62'.
+Removing empty process `udma_uart_tx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv:192$62'.
+Found and cleaned up 3 empty switches in `\udma_uart_tx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv:163$60'.
+Removing empty process `udma_uart_tx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv:163$60'.
+Found and cleaned up 11 empty switches in `\udma_uart_tx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv:71$56'.
+Removing empty process `udma_uart_tx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv:71$56'.
+Found and cleaned up 1 empty switch in `\udma_uart_tx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv:57$55'.
+Removing empty process `udma_uart_tx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_tx.sv:57$55'.
+Found and cleaned up 2 empty switches in `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:258$52'.
+Removing empty process `udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:258$52'.
+Found and cleaned up 3 empty switches in `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:223$44'.
+Removing empty process `udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:223$44'.
+Found and cleaned up 1 empty switch in `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:210$42'.
+Removing empty process `udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:210$42'.
+Found and cleaned up 3 empty switches in `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:185$38'.
+Removing empty process `udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:185$38'.
+Found and cleaned up 12 empty switches in `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:84$31'.
+Removing empty process `udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:84$31'.
+Found and cleaned up 1 empty switch in `\udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:70$30'.
+Removing empty process `udma_uart_rx.$proc$/home/sahana/core5_udma/udma_uart/rtl/udma_uart_rx.sv:70$30'.
+Removing empty process `edge_propagator.$proc$/home/sahana/core5_udma/dependencies/common_cells/src/edge_propagator.sv:30$27'.
+Removing empty process `$paramod\pulp_sync\STAGES=32'00000000000000000000000000000010.$proc$/home/sahana/core5_udma/dependencies/common_cells/src/deprecated/pulp_sync.sv:26$158'.
+Removing empty process `$paramod\dc_synchronizer\WIDTH=s32'00000000000000000000000000000001\RESET_VALUE=1'0.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_synchronizer.v:24$204'.
+Found and cleaned up 1 empty switch in `\tc_clk_gating.$proc$/home/sahana/core5_udma/dependencies/tech_cells_generic/src/rtl/tc_clk.sv:40$200'.
+Removing empty process `tc_clk_gating.$proc$/home/sahana/core5_udma/dependencies/tech_cells_generic/src/rtl/tc_clk.sv:40$200'.
+Found and cleaned up 1 empty switch in `$paramod$a166b2234bf005b190ab6420bb103d60852421bb\dc_data_buffer.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_data_buffer.sv:34$182'.
+Removing empty process `$paramod$a166b2234bf005b190ab6420bb103d60852421bb\dc_data_buffer.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_data_buffer.sv:34$182'.
+Found and cleaned up 1 empty switch in `$paramod$5e92e6b3c6bcb85ab5eddd5dee64d346c7f45743\dc_token_ring.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_token_ring.v:32$179'.
+Removing empty process `$paramod$5e92e6b3c6bcb85ab5eddd5dee64d346c7f45743\dc_token_ring.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_token_ring.v:32$179'.
+Removing empty process `$paramod$5e92e6b3c6bcb85ab5eddd5dee64d346c7f45743\dc_token_ring.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_token_ring.v:24$177'.
+Removing empty process `$paramod\dc_full_detector\BUFFER_DEPTH=s32'00000000000000000000000000000100.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_full_detector.v:47$173'.
+Found and cleaned up 1 empty switch in `$paramod$472709ea3bd0938e2c3e9c6e817c7d6d7fdedb92\dc_token_ring.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_token_ring.v:32$164'.
+Removing empty process `$paramod$472709ea3bd0938e2c3e9c6e817c7d6d7fdedb92\dc_token_ring.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_token_ring.v:32$164'.
+Removing empty process `$paramod$472709ea3bd0938e2c3e9c6e817c7d6d7fdedb92\dc_token_ring.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_token_ring.v:24$162'.
+Removing empty process `$paramod$7dadd2ee277a1a481f9118ee9d3a80ac7aeb0d0b\dc_synchronizer.$proc$/home/sahana/core5_udma/dependencies/logint_dc_fifo_xbar/dc_synchronizer.v:24$160'.
+Cleaned up 68 empty switches.
+
+23.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module udma_uart_top.
+<suppressed ~14 debug messages>
+Optimizing module pulp_clock_gating.
+Optimizing module $paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.
+<suppressed ~25 debug messages>
+Optimizing module $paramod$a166b2234bf005b190ab6420bb103d60852421bb\dc_token_ring_fifo_din.
+Optimizing module $paramod$a166b2234bf005b190ab6420bb103d60852421bb\dc_token_ring_fifo_dout.
+<suppressed ~1 debug messages>
+Optimizing module pulp_sync_wedge.
+<suppressed ~2 debug messages>
+Optimizing module $paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.
+<suppressed ~50 debug messages>
+Optimizing module $paramod$7654e522d750779c4fca23ed504328738d7ed1e9\io_tx_fifo.
+<suppressed ~3 debug messages>
+Optimizing module udma_uart_tx.
+<suppressed ~24 debug messages>
+Optimizing module $paramod$a166b2234bf005b190ab6420bb103d60852421bb\udma_dc_fifo.
+Optimizing module udma_uart_rx.
+<suppressed ~39 debug messages>
+Optimizing module edge_propagator.
+<suppressed ~4 debug messages>
+Optimizing module $paramod\pulp_sync\STAGES=32'00000000000000000000000000000010.
+<suppressed ~2 debug messages>
+Optimizing module $paramod\onehot_to_bin\ONEHOT_WIDTH=s32'00000000000000000000000000000100.
+<suppressed ~2 debug messages>
+Optimizing module $paramod\dc_synchronizer\WIDTH=s32'00000000000000000000000000000001\RESET_VALUE=1'0.
+<suppressed ~5 debug messages>
+Optimizing module tc_clk_gating.
+<suppressed ~10 debug messages>
+Optimizing module $paramod$a166b2234bf005b190ab6420bb103d60852421bb\dc_data_buffer.
+<suppressed ~7 debug messages>
+Optimizing module $paramod$5e92e6b3c6bcb85ab5eddd5dee64d346c7f45743\dc_token_ring.
+<suppressed ~3 debug messages>
+Optimizing module $paramod\dc_full_detector\BUFFER_DEPTH=s32'00000000000000000000000000000100.
+<suppressed ~3 debug messages>
+Optimizing module $paramod$472709ea3bd0938e2c3e9c6e817c7d6d7fdedb92\dc_token_ring.
+<suppressed ~3 debug messages>
+Optimizing module $paramod$7dadd2ee277a1a481f9118ee9d3a80ac7aeb0d0b\dc_synchronizer.
+<suppressed ~5 debug messages>
+
+24. Executing FLATTEN pass (flatten design).
+Deleting now unused module pulp_clock_gating.
+Deleting now unused module $paramod$0ad33d1f997ad726d24e822dff04b6fc58b9a6fb\io_generic_fifo.
+Deleting now unused module $paramod$a166b2234bf005b190ab6420bb103d60852421bb\dc_token_ring_fifo_din.
+Deleting now unused module $paramod$a166b2234bf005b190ab6420bb103d60852421bb\dc_token_ring_fifo_dout.
+Deleting now unused module pulp_sync_wedge.
+Deleting now unused module $paramod$1de9a1f4945d4c5eb81ccb3e0154152c48ddb6ac\udma_uart_reg_if.
+Deleting now unused module $paramod$7654e522d750779c4fca23ed504328738d7ed1e9\io_tx_fifo.
+Deleting now unused module udma_uart_tx.
+Deleting now unused module $paramod$a166b2234bf005b190ab6420bb103d60852421bb\udma_dc_fifo.
+Deleting now unused module udma_uart_rx.
+Deleting now unused module edge_propagator.
+Deleting now unused module $paramod\pulp_sync\STAGES=32'00000000000000000000000000000010.
+Deleting now unused module $paramod\onehot_to_bin\ONEHOT_WIDTH=s32'00000000000000000000000000000100.
+Deleting now unused module $paramod\dc_synchronizer\WIDTH=s32'00000000000000000000000000000001\RESET_VALUE=1'0.
+Deleting now unused module tc_clk_gating.
+Deleting now unused module $paramod$a166b2234bf005b190ab6420bb103d60852421bb\dc_data_buffer.
+Deleting now unused module $paramod$5e92e6b3c6bcb85ab5eddd5dee64d346c7f45743\dc_token_ring.
+Deleting now unused module $paramod\dc_full_detector\BUFFER_DEPTH=s32'00000000000000000000000000000100.
+Deleting now unused module $paramod$472709ea3bd0938e2c3e9c6e817c7d6d7fdedb92\dc_token_ring.
+Deleting now unused module $paramod$7dadd2ee277a1a481f9118ee9d3a80ac7aeb0d0b\dc_synchronizer.
+<suppressed ~24 debug messages>
+
+25. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \udma_uart_top..
+Removed 187 unused cells and 1054 unused wires.
+<suppressed ~541 debug messages>

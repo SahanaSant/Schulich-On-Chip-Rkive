@@ -1,0 +1,364 @@
+Reading timing models for corner max_ff_n40C_5v50…
+Reading timing library for the 'max_ff_n40C_5v50' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50.lib'…
+Reading timing models for corner max_tt_025C_5v00…
+Reading timing library for the 'max_tt_025C_5v00' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib'…
+Reading timing models for corner nom_ff_n40C_5v50…
+Reading timing library for the 'nom_ff_n40C_5v50' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50.lib'…
+[WARNING STA-1140] /home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50 already exists.
+Reading timing models for corner nom_tt_025C_5v00…
+Reading timing library for the 'nom_tt_025C_5v00' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib'…
+[WARNING STA-1140] /home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00 already exists.
+Reading timing models for corner min_ss_125C_4v50…
+Reading timing library for the 'min_ss_125C_4v50' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50.lib'…
+Reading timing models for corner min_ff_n40C_5v50…
+Reading timing library for the 'min_ff_n40C_5v50' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50.lib'…
+[WARNING STA-1140] /home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50 already exists.
+Reading timing models for corner min_tt_025C_5v00…
+Reading timing library for the 'min_tt_025C_5v00' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib'…
+[WARNING STA-1140] /home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00 already exists.
+Reading timing models for corner max_ss_125C_4v50…
+Reading timing library for the 'max_ss_125C_4v50' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50.lib'…
+[WARNING STA-1140] /home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50 already exists.
+Reading timing models for corner nom_ss_125C_4v50…
+Reading timing library for the 'nom_ss_125C_4v50' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50.lib'…
+[WARNING STA-1140] /home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50.lib line 17, library gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50 already exists.
+Reading OpenROAD database at '/home/sahana/core5_udma/hardening/uart_top/runs/TRIAL_8/39-openroad-globalrouting/udma_uart_top.odb'…
+Reading design constraints file at '/home/sahana/core5_udma/hardening/uart_top/constraints.closure.sdc'…
+[INFO] Setting signal min routing layer to: Metal2 and clock min routing layer to Metal2. 
+[INFO] Setting signal max routing layer to: Metal5 and clock max routing layer to Metal5. 
++ global_route -congestion_iterations 50 -verbose
+[INFO GRT-0020] Min routing layer: Metal2
+[INFO GRT-0021] Max routing layer: Metal5
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0088] Layer Metal1  Track-Pitch = 0.5600  line-2-Via Pitch: 0.4750
+[INFO GRT-0088] Layer Metal2  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal3  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal4  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal5  Track-Pitch = 0.9000  line-2-Via Pitch: 0.8200
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 0
+[INFO GRT-0019] Found 100 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 17
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+Metal1     Horizontal          0             0          0.00%
+Metal2     Vertical        33156         22104          33.33%
+Metal3     Horizontal      33728         22481          33.35%
+Metal4     Vertical        33147         22098          33.33%
+Metal5     Horizontal      20562         13846          32.66%
+---------------------------------------------------------------
+
+[INFO GRT-0197] Via related to pin nodes: 10780
+[INFO GRT-0198] Via related Steiner nodes: 286
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 13584
+[INFO GRT-0112] Final usage 3D: 51187
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+Metal1               0             0            0.00%             0 /  0 /  0
+Metal2           22104          5303           23.99%             0 /  0 /  0
+Metal3           22481          4866           21.64%             0 /  0 /  0
+Metal4           22098           152            0.69%             0 /  0 /  0
+Metal5           13846           114            0.82%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total            80529         10435           12.96%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 129981 um
+[INFO GRT-0014] Routed nets: 1958
+[INFO GRT-0303] Global routing runtime = 00:00:00
++ repair_design -verbose -max_wire_length 0 -slew_margin 40 -cap_margin 40
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |      2003
+       10 |     +0.0% |       0 |       0 |             0 |      1993
+       20 |     +0.0% |       0 |       0 |             0 |      1983
+       30 |     +0.0% |       0 |       0 |             0 |      1973
+       40 |     +0.0% |       0 |       0 |             0 |      1963
+       50 |     +0.0% |       0 |       0 |             0 |      1953
+       60 |     +0.0% |       0 |       0 |             0 |      1943
+       70 |     +0.0% |       0 |       0 |             0 |      1933
+       80 |     +0.0% |       0 |       0 |             0 |      1923
+       90 |     +0.0% |       0 |       0 |             0 |      1913
+      100 |     +0.0% |       0 |       0 |             0 |      1903
+      110 |     +0.0% |       0 |       0 |             0 |      1893
+      120 |     +0.0% |       0 |       0 |             0 |      1883
+      130 |     +0.0% |       0 |       0 |             0 |      1873
+      140 |     +0.0% |       0 |       2 |             1 |      1863
+      150 |     +0.0% |       0 |       2 |             1 |      1853
+      160 |     +0.0% |       0 |       2 |             1 |      1843
+      170 |     +0.0% |       0 |       2 |             1 |      1833
+      180 |     +0.0% |       0 |       2 |             1 |      1823
+      190 |     +0.0% |       0 |       2 |             1 |      1813
+      200 |     +0.0% |       0 |       2 |             1 |      1803
+      210 |     +0.0% |       0 |       2 |             1 |      1793
+      220 |     +0.0% |       0 |       2 |             1 |      1783
+      230 |     +0.0% |       0 |       2 |             1 |      1773
+      240 |     +0.0% |       0 |       2 |             1 |      1763
+      250 |     +0.0% |       0 |       2 |             1 |      1753
+      260 |     +0.0% |       0 |       2 |             1 |      1743
+      270 |     +0.0% |       0 |       2 |             1 |      1733
+      280 |     +0.0% |       0 |       2 |             1 |      1723
+      290 |     +0.0% |       0 |       2 |             1 |      1713
+      300 |     +0.0% |       0 |       2 |             1 |      1703
+      310 |     +0.0% |       0 |       2 |             1 |      1693
+      320 |     +0.0% |       0 |       2 |             1 |      1683
+      330 |     +0.0% |       0 |       2 |             1 |      1673
+      340 |     +0.0% |       0 |       2 |             1 |      1663
+      350 |     +0.0% |       0 |       2 |             1 |      1653
+      360 |     +0.0% |       0 |       2 |             1 |      1643
+      370 |     +0.0% |       0 |       2 |             1 |      1633
+      380 |     +0.0% |       0 |       2 |             1 |      1623
+      390 |     +0.0% |       0 |       2 |             1 |      1613
+      400 |     +0.0% |       0 |       2 |             1 |      1603
+      410 |     +0.0% |       0 |       2 |             1 |      1593
+      420 |     +0.0% |       0 |       2 |             1 |      1583
+      430 |     +0.0% |       0 |       2 |             1 |      1573
+      440 |     +0.0% |       0 |       2 |             1 |      1563
+      450 |     +0.0% |       0 |       2 |             1 |      1553
+      460 |     +0.0% |       0 |       2 |             1 |      1543
+      470 |     +0.0% |       0 |       2 |             1 |      1533
+      480 |     +0.0% |       0 |       2 |             1 |      1523
+      490 |     +0.0% |       2 |       4 |             3 |      1513
+      500 |     +0.0% |       2 |       4 |             3 |      1503
+      510 |     +0.0% |       2 |       4 |             3 |      1493
+      520 |     +0.0% |       2 |       4 |             3 |      1483
+      530 |     +0.0% |       2 |       4 |             3 |      1473
+      540 |     +0.0% |       2 |       4 |             3 |      1463
+      550 |     +0.1% |       2 |       6 |             5 |      1453
+      560 |     +0.1% |       2 |       6 |             5 |      1443
+      570 |     +0.1% |       2 |       6 |             5 |      1433
+      580 |     +0.1% |       2 |       6 |             5 |      1423
+      590 |     +0.1% |       2 |       6 |             5 |      1413
+      600 |     +0.1% |       2 |       6 |             5 |      1403
+      610 |     +0.1% |       5 |       9 |             8 |      1393
+      620 |     +0.1% |       8 |      13 |            11 |      1383
+      630 |     +0.1% |       8 |      13 |            11 |      1373
+      640 |     +0.1% |       8 |      13 |            11 |      1363
+      650 |     +0.1% |       8 |      13 |            11 |      1353
+      660 |     +0.1% |       8 |      13 |            11 |      1343
+      670 |     +0.1% |       8 |      13 |            11 |      1333
+      680 |     +0.1% |       8 |      13 |            11 |      1323
+      690 |     +0.1% |       8 |      13 |            11 |      1313
+      700 |     +0.1% |       8 |      13 |            11 |      1303
+      710 |     +0.1% |       8 |      13 |            11 |      1293
+      720 |     +0.1% |       8 |      13 |            11 |      1283
+      730 |     +0.1% |       8 |      13 |            11 |      1273
+      740 |     +0.1% |       8 |      13 |            11 |      1263
+      750 |     +0.1% |       8 |      13 |            11 |      1253
+      760 |     +0.1% |       8 |      13 |            11 |      1243
+      770 |     +0.1% |       8 |      13 |            11 |      1233
+      780 |     +0.1% |       8 |      13 |            11 |      1223
+      790 |     +0.1% |       8 |      13 |            11 |      1213
+      800 |     +0.1% |       8 |      13 |            11 |      1203
+      810 |     +0.1% |       8 |      13 |            11 |      1193
+      820 |     +0.1% |       9 |      14 |            12 |      1183
+      830 |     +0.1% |      11 |      16 |            14 |      1173
+      840 |     +0.1% |      11 |      16 |            14 |      1163
+      850 |     +0.1% |      11 |      16 |            14 |      1153
+      860 |     +0.1% |      11 |      16 |            14 |      1143
+      870 |     +0.1% |      11 |      16 |            14 |      1133
+      880 |     +0.1% |      11 |      16 |            14 |      1123
+      890 |     +0.1% |      11 |      16 |            14 |      1113
+      900 |     +0.1% |      11 |      16 |            14 |      1103
+      910 |     +0.1% |      11 |      16 |            14 |      1093
+      920 |     +0.1% |      11 |      16 |            14 |      1083
+      930 |     +0.1% |      11 |      16 |            14 |      1073
+      940 |     +0.1% |      11 |      16 |            14 |      1063
+      950 |     +0.1% |      11 |      16 |            14 |      1053
+      960 |     +0.1% |      11 |      16 |            14 |      1043
+      970 |     +0.1% |      11 |      16 |            14 |      1033
+      980 |     +0.1% |      11 |      16 |            14 |      1023
+      990 |     +0.1% |      11 |      16 |            14 |      1013
+     1000 |     +0.1% |      11 |      16 |            14 |      1003
+     1010 |     +0.1% |      11 |      16 |            14 |       993
+     1020 |     +0.1% |      11 |      16 |            14 |       983
+     1030 |     +0.1% |      14 |      19 |            17 |       973
+     1040 |     +0.1% |      14 |      19 |            17 |       963
+     1050 |     +0.1% |      14 |      19 |            17 |       953
+     1060 |     +0.1% |      14 |      19 |            17 |       943
+     1070 |     +0.1% |      14 |      19 |            17 |       933
+     1080 |     +0.1% |      14 |      19 |            17 |       923
+     1090 |     +0.1% |      14 |      19 |            17 |       913
+     1100 |     +0.1% |      14 |      19 |            17 |       903
+     1110 |     +0.1% |      14 |      19 |            17 |       893
+     1120 |     +0.1% |      14 |      19 |            17 |       883
+     1130 |     +0.1% |      14 |      19 |            17 |       873
+     1140 |     +0.1% |      14 |      19 |            17 |       863
+     1150 |     +0.1% |      14 |      19 |            17 |       853
+     1160 |     +0.1% |      14 |      19 |            17 |       843
+     1170 |     +0.1% |      14 |      19 |            17 |       833
+     1180 |     +0.1% |      14 |      19 |            17 |       823
+     1190 |     +0.1% |      14 |      19 |            17 |       813
+     1200 |     +0.0% |      18 |      23 |            21 |       803
+     1210 |     +0.0% |      22 |      27 |            25 |       793
+     1220 |     +0.0% |      22 |      27 |            25 |       783
+     1230 |     +0.0% |      22 |      27 |            25 |       773
+     1240 |     +0.0% |      22 |      27 |            25 |       763
+     1250 |     +0.0% |      22 |      27 |            25 |       753
+     1260 |     +0.0% |      22 |      27 |            25 |       743
+     1270 |     +0.0% |      22 |      27 |            25 |       733
+     1280 |     +0.0% |      22 |      27 |            25 |       723
+     1290 |     +0.0% |      22 |      27 |            25 |       713
+     1300 |     +0.0% |      22 |      27 |            25 |       703
+     1310 |     +0.0% |      22 |      27 |            25 |       693
+     1320 |     +0.0% |      22 |      27 |            25 |       683
+     1330 |     +0.0% |      22 |      27 |            25 |       673
+     1340 |     +0.0% |      22 |      27 |            25 |       663
+     1350 |     +0.0% |      22 |      27 |            25 |       653
+     1360 |     +0.0% |      22 |      27 |            25 |       643
+     1370 |     +0.0% |      22 |      27 |            25 |       633
+     1380 |     +0.0% |      22 |      27 |            25 |       623
+     1390 |     +0.0% |      22 |      27 |            25 |       613
+     1400 |     +0.0% |      22 |      27 |            25 |       603
+     1410 |     +0.0% |      22 |      27 |            25 |       593
+     1420 |     +0.0% |      22 |      27 |            25 |       583
+     1430 |     +0.0% |      22 |      27 |            25 |       573
+     1440 |     +0.0% |      22 |      27 |            25 |       563
+     1450 |     +0.0% |      22 |      27 |            25 |       553
+     1460 |     +0.0% |      22 |      27 |            25 |       543
+     1470 |     +0.0% |      22 |      27 |            25 |       533
+     1480 |     +0.0% |      22 |      27 |            25 |       523
+     1490 |     +0.0% |      22 |      27 |            25 |       513
+     1500 |     +0.0% |      22 |      27 |            25 |       503
+     1510 |     +0.0% |      22 |      27 |            25 |       493
+     1520 |     +0.0% |      22 |      27 |            25 |       483
+     1530 |     +0.0% |      22 |      27 |            25 |       473
+     1540 |     +0.0% |      22 |      27 |            25 |       463
+     1550 |     +0.0% |      22 |      27 |            25 |       453
+     1560 |     +0.0% |      22 |      27 |            25 |       443
+     1570 |     +0.0% |      22 |      27 |            25 |       433
+     1580 |     +0.0% |      22 |      27 |            25 |       423
+     1590 |     +0.0% |      23 |      28 |            26 |       413
+     1600 |     -0.0% |      26 |      30 |            28 |       403
+     1610 |     -0.0% |      26 |      30 |            28 |       393
+     1620 |     -0.0% |      26 |      30 |            28 |       383
+     1630 |     -0.0% |      26 |      30 |            28 |       373
+     1640 |     -0.0% |      26 |      30 |            28 |       363
+     1650 |     -0.0% |      26 |      30 |            28 |       353
+     1660 |     -0.0% |      26 |      30 |            28 |       343
+     1670 |     -0.0% |      26 |      30 |            28 |       333
+     1680 |     -0.0% |      26 |      30 |            28 |       323
+     1690 |     -0.0% |      26 |      30 |            28 |       313
+     1700 |     -0.0% |      26 |      30 |            28 |       303
+     1710 |     -0.0% |      26 |      30 |            28 |       293
+     1720 |     -0.0% |      26 |      30 |            28 |       283
+     1730 |     -0.0% |      26 |      30 |            28 |       273
+     1740 |     -0.0% |      26 |      30 |            28 |       263
+     1750 |     -0.0% |      26 |      30 |            28 |       253
+     1760 |     -0.0% |      26 |      30 |            28 |       243
+     1770 |     -0.0% |      26 |      30 |            28 |       233
+     1780 |     -0.0% |      26 |      30 |            28 |       223
+     1790 |     -0.0% |      26 |      30 |            28 |       213
+     1800 |     -0.0% |      26 |      30 |            28 |       203
+     1810 |     -0.0% |      26 |      30 |            28 |       193
+     1820 |     -0.0% |      26 |      30 |            28 |       183
+     1830 |     -0.0% |      26 |      30 |            28 |       173
+     1840 |     -0.0% |      26 |      30 |            28 |       163
+     1850 |     -0.0% |      26 |      30 |            28 |       153
+     1860 |     -0.0% |      26 |      30 |            28 |       143
+     1870 |     -0.0% |      26 |      30 |            28 |       133
+     1880 |     -0.0% |      26 |      30 |            28 |       123
+     1890 |     -0.0% |      26 |      30 |            28 |       113
+     1900 |     -0.0% |      26 |      30 |            28 |       103
+     1910 |     -0.0% |      26 |      30 |            28 |        93
+     1920 |     -0.0% |      26 |      30 |            28 |        83
+     1930 |     -0.0% |      26 |      30 |            28 |        73
+     1940 |     -0.0% |      26 |      30 |            28 |        63
+     1950 |     -0.0% |      26 |      30 |            28 |        53
+     1960 |     -0.0% |      26 |      30 |            28 |        43
+     1970 |     -0.0% |      26 |      30 |            28 |        33
+     1980 |     -0.0% |      26 |      30 |            28 |        23
+     1990 |     -0.0% |      26 |      30 |            28 |        13
+     2000 |     -0.0% |      26 |      30 |            28 |         3
+    final |     -0.0% |      26 |      30 |            28 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0034] Found 29 slew violations.
+[INFO RSZ-0039] Resized 26 instances.
+[INFO RSZ-0038] Inserted 30 buffers in 28 nets.
++ detailed_placement -max_displacement  500 100 
+Placement Analysis
+---------------------------------
+total displacement        387.0 u
+average displacement        0.1 u
+max displacement           40.3 u
+original HPWL           79229.5 u
+legalized HPWL          82125.2 u
+delta HPWL                    4 %
+
+[INFO DPL-0020] Mirrored 705 instances
+[INFO DPL-0021] HPWL before           82125.2 u
+[INFO DPL-0022] HPWL after            79479.8 u
+[INFO DPL-0023] HPWL delta               -3.2 %
++ global_route -congestion_iterations 50 -verbose
+[INFO GRT-0020] Min routing layer: Metal2
+[INFO GRT-0021] Max routing layer: Metal5
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0088] Layer Metal1  Track-Pitch = 0.5600  line-2-Via Pitch: 0.4750
+[INFO GRT-0088] Layer Metal2  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal3  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal4  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal5  Track-Pitch = 0.9000  line-2-Via Pitch: 0.8200
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 0
+[INFO GRT-0019] Found 100 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 17
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+Metal1     Horizontal          0             0          0.00%
+Metal2     Vertical        33156         22104          33.33%
+Metal3     Horizontal      33728         22481          33.35%
+Metal4     Vertical        33147         22098          33.33%
+Metal5     Horizontal      20562         13846          32.66%
+---------------------------------------------------------------
+
+[INFO GRT-0197] Via related to pin nodes: 10863
+[INFO GRT-0198] Via related Steiner nodes: 287
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 13699
+[INFO GRT-0112] Final usage 3D: 51566
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+Metal1               0             0            0.00%             0 /  0 /  0
+Metal2           22104          5312           24.03%             0 /  0 /  0
+Metal3           22481          4915           21.86%             0 /  0 /  0
+Metal4           22098           139            0.63%             0 /  0 /  0
+Metal5           13846           103            0.74%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total            80529         10469           13.00%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 130426 um
+[INFO GRT-0014] Routed nets: 1988
+[INFO GRT-0303] Global routing runtime = 00:00:00
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 120 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Endcap cell                             194     851.74
+  Tap cell                                942    4135.76
+  Tie cell                                 33     289.77
+  Clock buffer                            119    9913.52
+  Timing Repair Buffer                    492   13136.08
+  Inverter                                 69     605.88
+  Sequential cell                         339   25455.54
+  Multi-Input combinational cell          843   17713.07
+  Total                                  3031   72101.34
+Writing OpenROAD database to '/home/sahana/core5_udma/hardening/uart_top/runs/TRIAL_8/41-openroad-repairdesignpostgrt/udma_uart_top.odb'…
+Writing netlist to '/home/sahana/core5_udma/hardening/uart_top/runs/TRIAL_8/41-openroad-repairdesignpostgrt/udma_uart_top.nl.v'…
+Writing powered netlist to '/home/sahana/core5_udma/hardening/uart_top/runs/TRIAL_8/41-openroad-repairdesignpostgrt/udma_uart_top.pnl.v'…
+Writing layout to '/home/sahana/core5_udma/hardening/uart_top/runs/TRIAL_8/41-openroad-repairdesignpostgrt/udma_uart_top.def'…
+Writing timing constraints to '/home/sahana/core5_udma/hardening/uart_top/runs/TRIAL_8/41-openroad-repairdesignpostgrt/udma_uart_top.sdc'…

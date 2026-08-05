@@ -1,0 +1,22 @@
+
+===========================================================================
+Clock Skew (Setup)
+============================================================================
+======================= min_ss_125C_4v50 Corner ===================================
+
+Clock periph_clk
+2.231802 source latency _1978_/CLK ^
+-2.193118 target latency _1969_/CLK ^
+0.250000 clock uncertainty
+0.000000 CRPR
+--------------
+0.288684 setup skew
+
+Clock sys_clk
+2.284621 source latency _2104_/CLK ^
+-2.251557 target latency _2105_/CLK ^
+0.250000 clock uncertainty
+0.000000 CRPR
+--------------
+0.283064 setup skew
+

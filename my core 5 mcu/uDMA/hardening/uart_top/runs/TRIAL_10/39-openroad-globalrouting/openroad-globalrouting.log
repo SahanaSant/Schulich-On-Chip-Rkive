@@ -1,0 +1,69 @@
+Reading timing models for corner nom_tt_025C_5v00…
+Reading timing library for the 'nom_tt_025C_5v00' corner at '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib'…
+Reading OpenROAD database at '/home/sahana/core5_udma/hardening/uart_top/runs/TRIAL_10/37-openroad-resizertimingpostcts/udma_uart_top.odb'…
+Reading design constraints file at '/home/sahana/core5_udma/hardening/uart_top/constraints.closure.sdc'…
+[INFO] Setting signal min routing layer to: Metal2 and clock min routing layer to Metal2. 
+[INFO] Setting signal max routing layer to: Metal5 and clock max routing layer to Metal5. 
++ global_route -congestion_iterations 50 -verbose
+[INFO GRT-0020] Min routing layer: Metal2
+[INFO GRT-0021] Max routing layer: Metal5
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0088] Layer Metal1  Track-Pitch = 0.5600  line-2-Via Pitch: 0.4750
+[INFO GRT-0088] Layer Metal2  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal3  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal4  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal5  Track-Pitch = 0.9000  line-2-Via Pitch: 0.8200
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 0
+[INFO GRT-0019] Found 100 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 17
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+Metal1     Horizontal          0             0          0.00%
+Metal2     Vertical        33156         22104          33.33%
+Metal3     Horizontal      33728         22481          33.35%
+Metal4     Vertical        33147         22098          33.33%
+Metal5     Horizontal      20562         13846          32.66%
+---------------------------------------------------------------
+
+[INFO GRT-0197] Via related to pin nodes: 10967
+[INFO GRT-0198] Via related Steiner nodes: 294
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 13947
+[INFO GRT-0112] Final usage 3D: 53162
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+Metal1               0             0            0.00%             0 /  0 /  0
+Metal2           22104          5814           26.30%             0 /  0 /  0
+Metal3           22481          5145           22.89%             0 /  0 /  0
+Metal4           22098           230            1.04%             0 /  0 /  0
+Metal5           13846           132            0.95%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total            80529         11321           14.06%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 139179 um
+[INFO GRT-0014] Routed nets: 1995
+[INFO GRT-0303] Global routing runtime = 00:00:00
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 0 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Endcap cell                             194     851.74
+  Tap cell                                942    4135.76
+  Tie cell                                 33     289.77
+  Clock buffer                            121    9948.65
+  Timing Repair Buffer                    499   20086.08
+  Inverter                                 69     605.88
+  Sequential cell                         339   25455.54
+  Multi-Input combinational cell          843   17732.83
+  Total                                  3040   79106.23
+Writing OpenROAD database to '/home/sahana/core5_udma/hardening/uart_top/runs/TRIAL_10/39-openroad-globalrouting/udma_uart_top.odb'…
+Writing layout to '/home/sahana/core5_udma/hardening/uart_top/runs/TRIAL_10/39-openroad-globalrouting/udma_uart_top.def'…

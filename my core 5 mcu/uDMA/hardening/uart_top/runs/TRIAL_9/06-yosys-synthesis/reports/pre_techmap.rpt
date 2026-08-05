@@ -1,0 +1,43 @@
+147. Printing statistics.
+
+=== udma_uart_top ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     1384 wires
+     1842 wire bits
+      136 public wires
+      587 public wire bits
+       43 ports
+      279 port bits
+     1662 cells
+      448   $_ANDNOT_
+       28   $_AND_
+      223   $_DFFE_PN0P_
+       24   $_DFFE_PN1P_
+       81   $_DFF_PN0_
+       11   $_DFF_PN1_
+       73   $_MUX_
+       55   $_NAND_
+       29   $_NOR_
+       44   $_NOT_
+       72   $_ORNOT_
+      477   $_OR_
+       13   $_XNOR_
+       84   $_XOR_
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_DFFE_PN0P_ is unknown!
+   Area for cell type $_DFFE_PN1P_ is unknown!
+   Area for cell type $_DFF_PN0_ is unknown!
+   Area for cell type $_DFF_PN1_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+

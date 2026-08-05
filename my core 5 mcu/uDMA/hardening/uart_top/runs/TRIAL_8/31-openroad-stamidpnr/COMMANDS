@@ -1,0 +1,1 @@
+openroad -exit -no_splash -metrics /home/sahana/core5_udma/hardening/uart_top/runs/TRIAL_8/31-openroad-stamidpnr/or_metrics_out.json /nix/store/iqyiydf2bhwgfxm1zn9qnqfm9wvgby9d-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/openroad/sta/corner.tcl
