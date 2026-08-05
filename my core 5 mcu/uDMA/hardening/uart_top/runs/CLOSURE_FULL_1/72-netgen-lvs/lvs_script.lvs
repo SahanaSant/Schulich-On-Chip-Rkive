@@ -1,7 +1,0 @@
-set circuit1 [readnet spice /home/sahana/core5_udma/hardening/uart_top/runs/CLOSURE_FULL_1/70-magic-spiceextraction/udma_uart_top.spice]
-set circuit2 [readnet verilog /dev/null]
-puts "Reading SPICE netlist file '/home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/spice/gf180mcu_fd_sc_mcu7t5v0.spice'..."
-readnet spice /home/sahana/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/spice/gf180mcu_fd_sc_mcu7t5v0.spice $circuit2
-puts "Reading Verilog netlist file '/home/sahana/core5_udma/hardening/uart_top/runs/CLOSURE_FULL_1/54-openroad-fillinsertion/udma_uart_top.pnl.v'..."
-readnet verilog /home/sahana/core5_udma/hardening/uart_top/runs/CLOSURE_FULL_1/54-openroad-fillinsertion/udma_uart_top.pnl.v $circuit2
-lvs "$circuit1 udma_uart_top" "$circuit2 udma_uart_top" /nix/store/ffl2vg3m80k0p74pyffnmai83fnv38mf-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/netgen/setup.tcl /home/sahana/core5_udma/hardening/uart_top/runs/CLOSURE_FULL_1/72-netgen-lvs/reports/lvs.netgen.rpt -blackbox -json

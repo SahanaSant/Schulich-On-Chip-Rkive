@@ -1,5 +1,0 @@
-`verilator_config
-lint_off -rule DECLFILENAME
-lint_off -rule EOFNEWLINE
-lint_off -rule UNDRIVEN -file "/home/sahana/core5_udma/hardening/uart_top/runs/RUN_2026-07-26_12-59-27/tmp/9462c6495c484f7da6eb05d9bfc3b600.bb.v"
-lint_off -rule UNUSEDSIGNAL -file "/home/sahana/core5_udma/hardening/uart_top/runs/RUN_2026-07-26_12-59-27/tmp/9462c6495c484f7da6eb05d9bfc3b600.bb.v"

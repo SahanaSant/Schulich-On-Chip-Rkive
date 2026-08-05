@@ -1,2 +1,7 @@
 # FuseSoC-generated work products.
 /build/
+
+# LibreLane-generated work products. Keep reviewed configs, constraints, and
+# concise signoff summaries in Git; archive full run directories separately.
+/hardening/**/runs/
+/hardening/**/*.log

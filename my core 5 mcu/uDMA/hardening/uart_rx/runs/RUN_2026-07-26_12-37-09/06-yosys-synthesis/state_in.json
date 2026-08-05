@@ -1,9 +1,0 @@
-{
-    "json_h": "/home/sahana/core5_udma/hardening/uart_rx/runs/RUN_2026-07-26_12-37-09/05-yosys-jsonheader/udma_uart_rx.h.json",
-    "metrics": {
-        "design__lint_error__count": 0,
-        "design__lint_timing_construct__count": 0,
-        "design__lint_warning__count": 1,
-        "design__inferred_latch__count": 0
-    }
-}
