@@ -1,2 +1,7 @@
 # FuseSoC-generated work products.
 /build/
+
+# LibreLane-generated run products. Keep reusable configs and constraints,
+# but do not stage large tool outputs or logs.
+/hardening/**/runs/
+/hardening/**/*.log
