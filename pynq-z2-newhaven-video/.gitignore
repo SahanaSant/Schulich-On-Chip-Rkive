@@ -1,0 +1,24 @@
+.vendor/
+build/
+__pycache__/
+*.py[cod]
+*.rgb565
+*.mp4
+*.avi
+*.mov
+
+# Vivado-generated data
+.Xil/
+*.cache/
+*.gen/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.xpr
+*.jou
+*.log
+*.bit
+*.bin
+*.hwh
+*.xsa
