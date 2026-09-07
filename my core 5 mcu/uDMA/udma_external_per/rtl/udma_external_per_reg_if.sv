@@ -124,7 +124,7 @@ module udma_external_per_reg_if #(
             r_tx_continuous    <=  'h0;
             r_tx_en             =  'h0;
             r_tx_clr            =  'h0;
-            r_tx_datasize      <= 2'b10;
+            r_rx_datasize      <= 2'b10;
             r_tx_datasize      <= 2'b10;
             r_ext_per_setup    <=  'h0;
         end
